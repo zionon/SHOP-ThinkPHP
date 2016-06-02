@@ -20,5 +20,7 @@ class GoodsModel extends Model{
 	protected function _before_insert(&$data, $option){
 		//获取当前时间并添加到表单中这样就会插入到数据库中
 		$data['addtime'] = date('Y-m-d H:i:s',time());
+		//过滤这个字段
+		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
 }
