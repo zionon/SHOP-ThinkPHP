@@ -17,7 +17,6 @@ class GoodsController extends Controller{
 			 * 第二个参数:表单的类型，当前是添加还是修改的表单，1:添加2:修改
 			 * $_POST:表单中原始的数据，I('post.'):过滤之后的$_POST的数据，过滤xss攻击
 			 */
-			$_POST['addtime'] = date("Y-m-d;H:m:s");
 			if ($model->create(I('post.'),1)) {
 				//插入到数据库中
 				if ($model->add()) {
