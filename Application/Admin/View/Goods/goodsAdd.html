@@ -26,8 +26,12 @@
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">商品名称：</td>
-                    <td><input type="text" name="goods_name" value="" size="30" />
+                    <td><input type="text" name="goods_name" size="60" />
                     <span class="require-field">*</span></td>
+                </tr>
+                <tr>
+                    <td class="label">LOGO:</td>
+                    <td><input type="file" name="logo" size="60" /></td>
                 </tr>
                 <tr>
                     <td class="label">本店售价：</td>
