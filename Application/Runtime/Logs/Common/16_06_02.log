@@ -1,0 +1,15 @@
+[ 2016-06-02T12:38:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/Images/ecshop_logo.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-06-02T12:38:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/Images/menu_minus.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+
+[ 2016-06-02T12:38:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/Images/menu_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
