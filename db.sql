@@ -1,6 +1,6 @@
-drop database if exists shop_thinkphp;
+drop database if exists shopThinkphp;
 create database shop_thinkphp;
-use shop_thinkphp;
+use shopThinkphp;
 set names utf8;
 
 
