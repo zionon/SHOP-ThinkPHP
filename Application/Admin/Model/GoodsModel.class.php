@@ -54,8 +54,7 @@ class GoodsModel extends Model{
 				$data['big_logo'] = $biglogo;
 				$data['mid_logo'] = $midlogo;
 				$data['sm_logo'] = $smlogo;
-				}
-			
+			}
 		}
 
 		//获取当前时间并添加到表单中这样就会插入到数据库中
@@ -63,4 +62,53 @@ class GoodsModel extends Model{
 		//过滤这个字段
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
+
+	/**
+	 * 实现翻页，搜索，排序
+	 * 
+	 */
+	public function search($perPage = 3) {
+		//翻页
+		//取出总的记录数
+		$count = $this->count();
+		//生成翻页类的对象
+		$pageObj = new \Think\Page($count, $perPage);
+		//设置样式
+		$pageObj->setConfig('next','下一页');
+		$pageObj->setConfig('prev','上一页');
+		//生成页面下面显示的上一页、下一页的字符串
+		$pageString = $pageObj->show();
+
+		//取某一页的数据
+		$data = $this->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
+		//返回数据
+		return array(
+			'data' => $data,		//数据
+			'page' => $pageString,	//翻页字符串
+		);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

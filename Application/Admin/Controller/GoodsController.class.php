@@ -21,7 +21,7 @@ class GoodsController extends Controller{
 				//插入到数据库中
 				if ($model->add()) {
 					//显示成功信息并等待1秒之后跳转
-					$this->success('操作成功！',U('lst'));
+					$this->success('操作成功！',U('list'));
 					exit;
 				}
 			}
@@ -35,8 +35,14 @@ class GoodsController extends Controller{
 		$this->display();
 	}
 
-	public function lst() {
-		echo "显示商品列表";
+	//商品列表页
+	public function goodsList() {
+		$model = D('goods');
+		//返回数据和翻页
+		$data = $model->search();
+		// dump($data);
+		$this->assign($data);
+		$this->display();
 	}
 }
 
