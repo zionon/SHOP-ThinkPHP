@@ -34,8 +34,8 @@
         </p>
         <p>
             添加时间:
-            从<input type="text" name="fa" value="<?php echo I('get.fa'); ?>" size="20" />
-            到<input type="text" name="ta" value="<?php echo I('get.ta'); ?>" size="20" />
+            从<input type="text" id="fa" name="fa" value="<?php echo I('get.fa'); ?>" size="20" />
+            到<input type="text" id="ta" name="ta" value="<?php echo I('get.ta'); ?>" size="20" />
         </p>
         <p>
             排序方式:<!-- 如果odby为空 ，那么默认的id_desc -->
@@ -66,7 +66,7 @@
                 <th>操作</th>
             </tr>
             <?php foreach($data as $k => $v): ?>
-            <tr>
+            <tr class="tron">
                 <td align="center"><?php echo $v['id']; ?></td>
                 <td align="center" class="first-cell"><span><?php echo $v['goods_name']; ?></span></td>
                 <td align="center"><img src="/Public/Uploads/<?php echo $v['sm_logo']; ?>" /></td>
@@ -94,9 +94,35 @@
     <!-- 分页结束 -->
     </div>
 </form>
+<!-- 引入时间插件 -->
+<script type="text/javascript" src="__PUBLIC__/datetimepicker/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/datetimepicker/jquery-ui-1.9.2.custom.min.css" />
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/datetimepicker/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/datetimepicker/datepicker-zh_cn.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="__PUBLIC__/datetimepicker/time/jquery-ui-timepicker-addon.min.css" />
+<script type="text/javascript" src="__PUBLIC__/datetimepicker/time/jquery-ui-timepicker-addon.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/datetimepicker/time/i18n/jquery-ui-timepicker-addon-i18n.min.js"></script>
+<script>
+    //添加时间插件
+    $.timepicker.setDefaults($.timepicker.regional['zh-CN']);   //设置使用中文
+    $("#fa").datetimepicker();
+    $("#ta").datetimepicker();
+</script>
 
-<div id="footer">
-共执行 7 个查询，用时 0.028849 秒，Gzip 已禁用，内存占用 3.219 MB<br />
-版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
+<!-- 引入行高亮显示 -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/tron.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
