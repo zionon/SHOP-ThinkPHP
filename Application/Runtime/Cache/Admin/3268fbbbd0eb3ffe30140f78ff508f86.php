@@ -76,7 +76,7 @@
                 <td align="center"><?php echo $v['addtime']; ?></td>
                 <td align="center">
                     <a href="<?php echo U('goodsEdit?id='.$v['id']); ?>">修改</a>
-                    <a href="">删除</a>
+                    <a onclick="return confirm('确定要删除吗?');" href="<?php echo U('delete?id='.$v['id'];) ?>">删除</a>
                 </td>
             </tr>
             <?php endforeach; ?>

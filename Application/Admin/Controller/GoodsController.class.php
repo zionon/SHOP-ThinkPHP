@@ -64,6 +64,16 @@ class GoodsController extends Controller{
 		$this->assign('data',$data);
 		$this->display();
 	}
+
+	//商品删除
+	public function delete(){
+		$model = D('goods');
+		if (FALSE !== $model->delete(I('get.id'))) {
+			$this->success('删除成功!',U('goodsList'));
+		} else {
+			$this->error('删除失败!原因:'.$model->getError());
+		}
+	}
 }
 
 

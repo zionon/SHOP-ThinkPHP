@@ -119,6 +119,19 @@ class GoodsModel extends Model{
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
 
+	protected function _before_delete($option) {
+		$id = $option['where']['id'];	//要删除的商品ID
+		//删除原来的图片
+		//先查询出原来的图片的路径
+		$oldLogo = $this->field('logo,mbig_logo,big_logo,mid_logo,sm_logo')->find($id);
+		//从硬盘上删除
+		unlink('./Public/Uploads/'.$oldLogo['logo']);
+		unlink('./Public/Uploads/'.$oldLogo['mbig_logo']);
+		unlink('./Public/Uploads/'.$oldLogo['big_logo']);
+		unlink('./Public/Uploads/'.$oldLogo['mid_logo']);
+		unlink('./Public/Uploads/'.$oldLogo['sm_logo']);
+	}
+
 	/**
 	 * 实现翻页，搜索，排序
 	 * 
@@ -193,27 +206,3 @@ class GoodsModel extends Model{
 		);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
