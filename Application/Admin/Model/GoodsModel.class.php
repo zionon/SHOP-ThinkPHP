@@ -65,7 +65,7 @@ class GoodsModel extends Model{
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
 
-	protected function _defore_update(&$data, $option) {
+	protected function _before_update(&$data, $option) {
 		$id = $option['where']['id'];	//要修改商品的ID
 		//处理LOGO
 		//判断有没有选择图片
