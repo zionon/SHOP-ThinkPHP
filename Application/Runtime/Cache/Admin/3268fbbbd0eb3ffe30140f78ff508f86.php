@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="__GROUP__/Goods/goodsAdd">添加新商品</a></span>
+    <span class="action-span"><a href="/index.php/Admin/Goods/goodsAdd">添加新商品</a></span>
     <span class="action-span1"><a href="__GROUP__">ECSHOP 管理中心</a></span>
     <span id="search_id" class="action-span1"> - 商品列表 </span>
     <div style="clear:both"></div>

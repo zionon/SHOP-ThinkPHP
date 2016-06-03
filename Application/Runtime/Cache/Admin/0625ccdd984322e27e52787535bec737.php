@@ -22,7 +22,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/goods/goodsAdd" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsAdd" method="post">
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">商品名称：</td>

@@ -84,7 +84,7 @@ class GoodsModel extends Model{
 			} else {
 				//生成缩略图
 				//先拼成原图上的路径
-				$logo = $info['logo']['savepath'] . $info['logo']['savaname'];
+				$logo = $info['logo']['savepath'] . $info['logo']['savename'];
 				//评出缩略图的路径和名称
 				$mbiglogo = $info['logo']['savepath'] . 'mbig_' . $info['logo']['savename'];
 				$biglogo = $info['logo']['savepath'] . 'big_' . $info['logo']['savename'];

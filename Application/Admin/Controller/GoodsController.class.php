@@ -21,7 +21,7 @@ class GoodsController extends Controller{
 				//插入到数据库中
 				if ($model->add()) {
 					//显示成功信息并等待1秒之后跳转
-					$this->success('操作成功！',U('list'));
+					$this->success('操作成功！',U('goodsList'));
 					exit;
 				}
 			}

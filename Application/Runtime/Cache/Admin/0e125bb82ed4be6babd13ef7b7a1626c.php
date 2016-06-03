@@ -11,7 +11,7 @@
     <span class="action-span"><a href="__GROUP__/Goods/goodsList">商品列表</a>
     </span>
     <span class="action-span1"><a href="__GROUP__">ECSHOP 管理中心</a></span>
-    <span id="search_id" class="action-span1"> - 添加新商品 </span>
+    <span><a href="/index.php/Admin/Goods/goodsAdd">- 添加新商品</a></span>
     <div style="clear:both"></div>
 </h1>
 
@@ -22,7 +22,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsEdit/id/6.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsEdit/id/9.html" method="post">
         <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <table width="90%" id="general-table" align="center">
                 <tr>
