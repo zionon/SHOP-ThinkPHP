@@ -15,7 +15,7 @@
 </h1>
 <!-- 搜索表单 -->
 <div class="form-div">
-    <form action="/index.php/Admin/Goods/goodsList" method="GET" name="searchForm">
+    <form action="/index.php/Admin/Goods/goodSList" method="GET" name="searchForm">
         <p>
             商品名称:
             <input type="text" name="gn" size="60" value="<?php echo I('get.gn'); ?>" />

@@ -35,13 +35,33 @@ class GoodsController extends Controller{
 		$this->display();
 	}
 
-	//商品列表页
+	//商品列表
 	public function goodsList() {
 		$model = D('goods');
 		//返回数据和翻页
 		$data = $model->search();
 		// dump($data);
 		$this->assign($data);
+		$this->display();
+	}
+
+	//商品修改
+	public function goodsEdit() {
+		$id = I('get.id');	//要修改的商品ID
+		$model = D('goods');
+		if (IS_POST) {
+			if ($model->create(I('post.'), 2)) {
+				if (FALSE !== $model->save()) {		
+					$this->success('操作成功 ！',U('goodsList'));
+					exit;
+				}
+			}
+			$error = $model->getErroe();
+			$this->error($error);
+		}
+		//根据ID取出要修改的商品原信息
+		$data = $model->find($id);
+		$this->assign('data',$data);
 		$this->display();
 	}
 }
