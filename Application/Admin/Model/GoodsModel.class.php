@@ -67,10 +67,46 @@ class GoodsModel extends Model{
 	 * 实现翻页，搜索，排序
 	 * 
 	 */
-	public function search($perPage = 3) {
+	public function search($perPage = 5) {
+		//搜索
+		$where = array();		//空的where条件
+		//商品名称
+		$gn = I('get.gn');
+		if ($gn) {
+			$where['goods_name'] = array('like',"%$gn%");	//WHERE goods_name LIKE '%$gn%'
+		}
+		//价格
+		$fp = I('get.fp');
+		$tp = I('get.tp');
+		if ($fp && $tp) {
+			$where['shop_price'] = array('between',array($fp,$tp));	//WHERE shop_price BETWEEN $fp AND $tp
+		} elseif ($fp) {
+			$where['shop_price'] = array('egt',$fp);	//WHERE shop_price >= $fp
+		} elseif ($tp) {
+			$where['shop_price'] = array('elt',$tp);	//WHERE shop_price <= $tp
+		}
+		//是否上架
+		$ios = I('get.ios');
+		if ($ios) {
+			$where['is_on_sale'] = array('eq',$ios);	//WHERE is_on_sale = $ios
+		}
+		//添加时间
+		$fa = I('get.fa');
+		$ta = I('get.ta');
+		if ($fa && $ta) {
+			$where['addtime'] = array('between',array($fa,$ta));	//WHERE shop_price BETWEEN $fp AND $tp
+		} elseif ($fa) {
+			$where['addtime'] = array('egt',$fa);	//WHERE shop_price >= $fa
+		} elseif ($ta) {
+			$where['addtime'] = array('elt',$ta);	//WHERE shop_price <= $ta
+		}
+
+
+
+
 		//翻页
 		//取出总的记录数
-		$count = $this->count();
+		$count = $this->where($where)->count();
 		//生成翻页类的对象
 		$pageObj = new \Think\Page($count, $perPage);
 		//设置样式
@@ -80,7 +116,7 @@ class GoodsModel extends Model{
 		$pageString = $pageObj->show();
 
 		//取某一页的数据
-		$data = $this->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
+		$data = $this->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
 		//返回数据
 		return array(
 			'data' => $data,		//数据
