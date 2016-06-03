@@ -33,9 +33,17 @@
             <input type="radio" name="ios" value="否" <?php if($ios == '否') echo 'checked="checked"'; ?> />下架
         </p>
         <p>
-            添加时间
+            添加时间:
             从<input type="text" name="fa" value="<?php echo I('get.fa'); ?>" size="20" />
             到<input type="text" name="ta" value="<?php echo I('get.ta'); ?>" size="20" />
+        </p>
+        <p>
+            排序方式:<!-- 如果odby为空 ，那么默认的id_desc -->
+            <?php $odby = I('get.odby','id_desc'); ?> 
+            <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="id_desc" <?php if($odby == 'id_desc') echo 'checked="checked"'; ?> />以添加时间降序
+            <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="id_asc" <?php if($odby == 'id_asc') echo 'checked="checked"'; ?> />以添加时间升序
+            <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="price_desc" <?php if($odby == 'price_desc') echo 'checked="checked"'; ?> />以价格降序
+            <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="price_asc" <?php if($odby == 'price_asc') echo 'checked="checked"'; ?> />以价格升序  
         </p>
         <p>
             <input type="submit" value="搜索" />

@@ -101,7 +101,20 @@ class GoodsModel extends Model{
 			$where['addtime'] = array('elt',$ta);	//WHERE shop_price <= $ta
 		}
 
-
+		//排序
+		$orderby = 'id';	//默认的排序字段
+		$orderway = 'desc';	//默认的排序方式
+		$odby = I('get.odby');
+		if ($odby) {
+			if ($odby == 'id_asc') {
+				$orderway = 'asc';
+			} elseif ($odby == 'price_desc') {
+				$orderby = 'shop_price';
+			} elseif ($odby == 'price_asc') {
+				$orderby = 'shop_price';
+				$orderway = 'asc';
+			}
+		}
 
 
 		//翻页
@@ -116,7 +129,7 @@ class GoodsModel extends Model{
 		$pageString = $pageObj->show();
 
 		//取某一页的数据
-		$data = $this->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
+		$data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
 		//返回数据
 		return array(
 			'data' => $data,		//数据
