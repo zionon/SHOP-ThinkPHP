@@ -19,42 +19,23 @@
 <!-- 引入布局文件 -->
 
 <!-- 搜索表单 -->
-<!-- <div class="form-div">
+<div class="form-div">
     <form action="/index.php/Admin/Brand/brandList" method="GET" name="searchForm">
         <p>
-            商品名称:
-            <input type="text" name="gn" size="60" value="<?php echo I('get.gn'); ?>" />
+            品牌名称:
+            <input type="text" name="bn" size="60" value="<?php echo I('get.bn'); ?>" />
         </p>
         <p>
-            价   格:
-            从<input type="text" name="fp" size="8" value="<?php echo I('get.fp'); ?>" />
-            到<input type="text" name="tp" size="8" value="<?php echo I('get.tp'); ?>" />
-        </p>
-        <p>
-            是否上架:
-            <?php $ios = I('get.ios'); ?>
-            <input type="radio" name="ios" value="" <?php if($ios == '') echo 'checked="checked"'; ?> />全部
-            <input type="radio" name="ios" value="是" <?php if($ios == '是') echo 'checked="checked"'; ?> />上架
-            <input type="radio" name="ios" value="否" <?php if($ios == '否') echo 'checked="checked"'; ?> />下架
-        </p>
-        <p>
-            添加时间:
-            从<input type="text" id="fa" name="fa" value="<?php echo I('get.fa'); ?>" size="20" />
-            到<input type="text" id="ta" name="ta" value="<?php echo I('get.ta'); ?>" size="20" />
-        </p>
-        <p>
-            排序方式:如果odby为空 ，那么默认的id_desc
+            <!-- 排序方式:如果odby为空 ，那么默认的id_desc -->
             <?php $odby = I('get.odby','id_desc'); ?> 
             <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="id_desc" <?php if($odby == 'id_desc') echo 'checked="checked"'; ?> />以添加时间降序
             <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="id_asc" <?php if($odby == 'id_asc') echo 'checked="checked"'; ?> />以添加时间升序
-            <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="price_desc" <?php if($odby == 'price_desc') echo 'checked="checked"'; ?> />以价格降序
-            <input type="radio" name="odby" onclick="this.parentNode.parentNode.submit();" value="price_asc" <?php if($odby == 'price_asc') echo 'checked="checked"'; ?> />以价格升序  
         </p>
         <p>
             <input type="submit" value="搜索" />
         </p>
     </form>
-</div> -->
+</div>
 
 <!-- 商品列表 -->
 <form method="post" action="" name="listForm" onsubmit="">
@@ -92,6 +73,7 @@
     </div>
 </form>
 <!-- 引入行高亮显示 -->
+<script type="text/javascript" src="/Public/datetimepicker/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Admin/Js/tron.js"></script>
 </body>
 </html>

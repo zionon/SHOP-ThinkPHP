@@ -29,11 +29,27 @@ class BrandModel extends Model{
 
 	//实现翻页，排序，搜索
 	public function search($perPage = 5) {
+		//搜索
+		$where = array();	//空的搜索条件
+		//品牌名称
+		$bn = I('get.bn');
+		if ($bn) {
+			$where['brand_name'] = array('like',"%$bn%");	//WHERE brand_name like '%$bn%'
+		}
 
+		//排序
+		$orderby = 'id';	//默认的排序字段
+		$orderway = 'desc';	//默认的排序方式
+		$odby = I('get.odby');
+		if ($odby) {
+			if ($odby == 'id_asc') {
+				$orderway = 'asc';
+			}
+		}
 
 		//翻页
 		//取出总的记录数
-		$count = $this->count();
+		$count = $this->where($where)->count();
 		//生成翻页类的对象
 		$pageObj = new \Think\Page($count, $perPage);
 		//设置样式
@@ -42,7 +58,7 @@ class BrandModel extends Model{
 		//生成页面下面显示的上一页，下一页的字符串
 		$pageString = $pageObj->show();
 		//取某一页的数据
-		$data = $this->limit($pageObj->firstRow . ',' . $pageObj->listRows)->select();
+		$data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow . ',' . $pageObj->listRows)->select();
 		return array(
 			'data' => $data,		//数据
 			'page' => $pageString,	//翻页字符串

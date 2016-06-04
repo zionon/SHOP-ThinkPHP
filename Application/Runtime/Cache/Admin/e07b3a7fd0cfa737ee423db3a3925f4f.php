@@ -26,7 +26,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/brand/brandAdd" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Brand/brandAdd.html" method="post">
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">品牌名称：</td>
