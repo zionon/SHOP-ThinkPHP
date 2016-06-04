@@ -74,7 +74,7 @@
             <tr class="tron">
                 <td align="center"><?php echo $v['id']; ?></td>
                 <td align="center" class="first-cell"><span><?php echo $v['goods_name']; ?></span></td>
-                <td align="center"><img src="/Public/Uploads/<?php echo $v['sm_logo']; ?>" /></td>
+                <td align="center"><?php showImage($v['sm_logo']); ?></td>
                 <td align="center"><?php echo $v['marker_price']; ?></td>
                 <td align="center"><?php echo $v['shop_price']; ?></td>
                 <td align="center"><?php echo $v['is_on_sale']; ?></td>
