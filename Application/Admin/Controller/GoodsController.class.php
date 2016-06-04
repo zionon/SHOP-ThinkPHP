@@ -31,6 +31,12 @@ class GoodsController extends Controller{
 			//由控制器显示错误信息，并在3秒跳回上一个页面
 			$this->error($error);
 		}
+		//设置页面信息
+		$this->assign(array(
+			'_page_title' => '商品添加',
+			'_page_btn_name' => '商品列表',
+			'_page_btn_link' => U('goodsList'),
+			));
 		//显示表单
 		$this->display();
 	}
@@ -42,6 +48,12 @@ class GoodsController extends Controller{
 		$data = $model->search();
 		// dump($data);
 		$this->assign($data);
+		// 设置页面信息
+		$this->assign(array(
+			'_page_title' => '商品列表',
+			'_page_btn_name' => '商品添加',
+			'_page_btn_link' => U('goodsAdd'),
+			));
 		$this->display();
 	}
 
@@ -62,6 +74,12 @@ class GoodsController extends Controller{
 		//根据ID取出要修改的商品原信息
 		$data = $model->find($id);
 		$this->assign('data',$data);
+		//设置页面信息
+		$this->assign(array(
+			'_page_title' => '修改商品',
+			'_page_btn_name' => '商品列表',
+			'_page_btn_link' => U('goodsList'),
+			));
 		$this->display();
 	}
 

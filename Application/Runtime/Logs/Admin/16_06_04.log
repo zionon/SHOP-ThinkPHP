@@ -594,3 +594,469 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
 
+[ 2016-06-04T14:58:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-06-04T15:01:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-06-04T15:01:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-06-04T15:01:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2016-06-04T15:02:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-06-04T15:02:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-06-04T15:02:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-06-04T15:02:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-06-04T15:02:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-06-04T15:02:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-06-04T15:02:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-06-04T15:02:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-06-04T15:02:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: _page_btn_name /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 11 行.
+NOTIC: [8] Undefined variable: _page_title /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 15 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-06-04T15:03:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-06-04T15:03:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-06-04T15:03:46+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+

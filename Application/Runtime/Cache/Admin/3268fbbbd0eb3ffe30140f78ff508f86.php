@@ -8,11 +8,16 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="/index.php/Admin/Goods/goodsAdd">添加新商品</a></span>
-    <span class="action-span1"><a href="__GROUP__">ECSHOP 管理中心</a></span>
-    <span id="search_id" class="action-span1"> - 商品列表 </span>
-    <div style="clear:both"></div>
+    <?php if($_page_btn_name): ?>
+    <span class="action-span"><a href="<?php echo $_page_btn_link; ?>"><?php echo $_page_btn_name; ?></a></span>
+    <?php endif; ?>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - <?php echo $_page_title; ?> </span>
+    <div style="clear: both"></div>
 </h1>
+<!-- 内容-->
+<!-- 引入布局文件 -->
+
 <!-- 搜索表单 -->
 <div class="form-div">
     <form action="/index.php/Admin/Goods/goodsList" method="GET" name="searchForm">
@@ -111,5 +116,22 @@
 
 <!-- 引入行高亮显示 -->
 <script type="text/javascript" src="/Public/Admin/Js/tron.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
