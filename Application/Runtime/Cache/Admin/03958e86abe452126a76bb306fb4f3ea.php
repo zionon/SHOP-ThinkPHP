@@ -73,7 +73,7 @@
                 <td><?php showImage($v['logo'],40,40); ?></td>
                 <td align="center">
                     <a href="">修改</a>
-                    <a href="">删除</a>
+                    <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete?id='.$v['id']); ?>">删除</a>
                 </td>
             </tr>
             <?php endforeach; ?>

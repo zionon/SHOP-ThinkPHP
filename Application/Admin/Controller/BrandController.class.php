@@ -50,4 +50,25 @@ class BrandController extends Controller{
 			));
 		$this->display();
 	}
+
+	//删除品牌
+	public function delete() {
+		$model = new \Admin\Model\BrandModel();
+		if (FALSE !== $model->delete(I('get.id'))) {
+			$this->success('删除成功',U('brandList'));
+			exit;
+		} else {
+			$this->error('删除失败！原因：',$this->getError());
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
