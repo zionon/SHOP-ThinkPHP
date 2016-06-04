@@ -26,6 +26,7 @@ class BrandController extends Controller{
 				$this->error($error);
 			}
 		} else {
+			//设置页面信息
 			$this->assign(array(
 				'_page_title' => '添加品牌',
 				'_page_btn_name' => '品牌列表',
@@ -37,6 +38,16 @@ class BrandController extends Controller{
 
 	//品牌列表
 	public function brandList() {
-		echo "这里是品牌列表";
+		$model = new \Admin\Model\BrandModel();
+		//返回数据和翻页
+		$data = $model->search();
+		$this->assign($data);
+		//设置页面信息
+		$this->assign(array(
+			'_page_title' => '品牌列表',
+			'_page_btn_name' => '添加品牌',
+			'_page_btn_link' => U('brandAdd'),
+			));
+		$this->display();
 	}
 }
