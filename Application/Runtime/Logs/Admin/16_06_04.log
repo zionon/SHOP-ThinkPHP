@@ -1680,3 +1680,723 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
 
+[ 2016-06-04T20:44:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2016-06-04T20:53:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-06-04T20:53:20+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2016-06-04T20:53:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_goods` ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-06-04T20:53:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-06-04T20:56:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-06-04T20:56:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2016-06-04T20:56:34+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-06-04T20:56:57+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-06-04T21:21:38+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-06-04T21:22:00+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+
+[ 2016-06-04T21:22:01+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2016-06-04T21:23:19+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+
+[ 2016-06-04T21:23:20+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+
+[ 2016-06-04T21:23:21+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-06-04T21:23:21+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+
+[ 2016-06-04T21:23:21+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+
+[ 2016-06-04T21:24:43+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-06-04T21:24:44+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-06-04T21:24:44+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+
+[ 2016-06-04T21:24:45+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+
+[ 2016-06-04T21:24:45+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+
+[ 2016-06-04T21:24:45+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-06-04T21:24:46+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2016-06-04T21:31:24+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2016-06-04T21:31:27+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+
+[ 2016-06-04T21:31:46+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2016-06-04T21:31:47+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-06-04T21:34:39+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-06-04T21:34:41+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2016-06-04T21:34:50+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2016-06-04T21:35:53+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-06-04T21:36:26+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0017s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-06-04T21:37:00+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-06-04T21:37:06+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-06-04T21:37:09+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-06-04T21:39:11+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+
+[ 2016-06-04T21:39:20+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+
+[ 2016-06-04T21:40:23+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-06-04T21:40:30+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+
+[ 2016-06-04T21:43:22+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-06-04T21:43:28+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1220 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+
+[ 2016-06-04T21:43:52+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: INSERT INTO `st_brand` (`brand_name`,`site_url`,`logo`) VALUES ('1111','44444','brand/2016-06-04/5752db18f18ce.jpg') [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+
+[ 2016-06-04T21:43:54+08:00 ] 127.0.0.1 /index.php/Admin/Brand/brandList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-06-04T21:45:41+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-06-04T21:45:47+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: INSERT INTO `st_brand` (`brand_name`,`site_url`,`logo`) VALUES ('14356','76574','brand/2016-06-04/5752db8b6e843.jpg') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+
+[ 2016-06-04T21:45:48+08:00 ] 127.0.0.1 /index.php/Admin/Brand/brandList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-06-04T21:46:40+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-06-04T21:46:46+08:00 ] 127.0.0.1 /index.php/Admin/brand/brandAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: INSERT INTO `st_brand` (`brand_name`,`site_url`,`logo`) VALUES ('456','78675','Brand/2016-06-04/5752dbc601ba6.jpg') [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+
+[ 2016-06-04T21:46:47+08:00 ] 127.0.0.1 /index.php/Admin/Brand/brandList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
