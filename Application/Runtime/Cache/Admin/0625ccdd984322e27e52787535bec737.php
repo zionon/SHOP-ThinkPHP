@@ -26,8 +26,19 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsAdd" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsAdd.html" method="post">
             <table width="90%" id="general-table" align="center">
+                <tr>
+                    <td class="label">所在品牌</td>
+                    <td>
+                        <select name="brand_id">
+                            <option value="">请选择</option>
+                            <?php foreach ($brandData as $k => $v): ?>
+                                <option value="<?php echo $v['id'] ?>"><?php echo $v['brand_name']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
                 <tr>
                     <td class="label">商品名称：</td>
                     <td><input type="text" name="goods_name" size="60" />

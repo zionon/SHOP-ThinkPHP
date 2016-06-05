@@ -31,8 +31,12 @@ class GoodsController extends Controller{
 			//由控制器显示错误信息，并在3秒跳回上一个页面
 			$this->error($error);
 		}
+		//取出所有的品牌
+		$brandModel = new \Admin\Model\BrandModel();
+		$brandData = $brandModel->select();
 		//设置页面信息
 		$this->assign(array(
+			'brandData' => $brandData,
 			'_page_title' => '商品添加',
 			'_page_btn_name' => '商品列表',
 			'_page_btn_link' => U('goodsList'),

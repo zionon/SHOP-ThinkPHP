@@ -6,9 +6,9 @@ use Think\Model;
 class GoodsModel extends Model{
 
 	//添加时调用create方法允许接收的字段
-	protected $insertFields = 'goods_name,market_price,shop_price,is_on_sale,goods_desc';
+	protected $insertFields = 'goods_name,market_price,shop_price,is_on_sale,goods_desc,brand_id';
 	//修改时调用create方法允许接收的字段
-	protected $updateFields = 'id,goods_name,market_price,shop_price,is_on_sale,goods_desc';
+	protected $updateFields = 'id,goods_name,market_price,shop_price,is_on_sale,goods_desc,brand_id';
 	//定义验证规则
 	protected $_validate = array(
 		array('goods_name','require','商品名称不能为空!',1),
