@@ -51,6 +51,33 @@ class BrandController extends Controller{
 		$this->display();
 	}
 
+	//修改品牌
+	public function brandEdit() {
+		$id = I('get.id');
+		$model = new \Admin\Model\BrandModel();
+		if (IS_POST) {
+			if ($model->create(I('post.'), 2)) {
+				if (FALSE !== $model->save()) {
+					$this->success('修改成功！！',U('brandList'));
+					exit;
+				} else {
+					$error = $model->getError();
+					$this->error($error);
+				}
+			}
+		}
+		//根据ID取出要修改的品牌
+		$data = $model->find($id);
+		$this->assign('data',$data);
+		$this->assign(array(
+			'_page_title' => '修改品牌',
+			'_page_btn_name' => '品牌列表',
+			'_page_btn_link' => U('brandList'),
+			));
+		$this->display();
+
+	}
+
 	//删除品牌
 	public function delete() {
 		$model = new \Admin\Model\BrandModel();

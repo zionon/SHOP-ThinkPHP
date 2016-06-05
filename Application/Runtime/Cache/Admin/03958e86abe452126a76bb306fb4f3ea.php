@@ -42,6 +42,7 @@
     <div class="list-div" id="listDiv">
         <table cellpadding="3" cellspacing="1">
             <tr>
+                <th>品牌ID</th>
                 <th>品牌名称</th>
                 <th>官方网站</th>
                 <th>品牌LOGO</th>
@@ -49,11 +50,12 @@
             </tr>
             <?php foreach($data as $k => $v): ?>
             <tr class="tron">
+                <td align="center"><?php echo $v['id']; ?></td>
                 <td align="center" class="first-cell"><span><?php echo $v['brand_name']; ?></span></td>
                 <td align="center"><?php echo $v['site_url']; ?></td>
                 <td><?php showImage($v['logo'],40,40); ?></td>
                 <td align="center">
-                    <a href="">修改</a>
+                    <a href="<?php echo U('brandEdit?id='.$v['id']); ?>">修改</a>
                     <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete?id='.$v['id']); ?>">删除</a>
                 </td>
             </tr>

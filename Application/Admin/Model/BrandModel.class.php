@@ -6,8 +6,8 @@ use Think\Model;
 
 class BrandModel extends Model{
 	//添加调用create方法允许接收的字段
-	protected $insertFidlds = 'brand_name,site_url';
-
+	protected $insertFields = 'brand_name,site_url';	//插入允许调用的字段
+	protected $updateFields = 'id,brand_name,site_url';	//修改允许调用的字段
 	//定义验证规则
 	protected $_validate = array(
 		array('brand_name','require','品牌名称不能为空！！',1),
@@ -64,4 +64,28 @@ class BrandModel extends Model{
 			'page' => $pageString,	//翻页字符串
 		);
 	}
+
+	//删除之前
+	protected function _before_delete($option) {
+		$id = $option['where']['id'];	//要删除商品的ID
+		//删除原来的图片
+		//查询出原来图片的路径
+		$oldImage = $this->field('logo')->find($id);
+		deleteImage($oldImage);
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
