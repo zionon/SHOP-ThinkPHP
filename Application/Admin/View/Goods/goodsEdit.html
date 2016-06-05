@@ -12,6 +12,22 @@
         <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <table width="90%" id="general-table" align="center">
                 <tr>
+                    <td class="label">所在品牌：</td>
+                    <td>
+                        <select name="brand_id">
+                            <option value="">请选择</option>
+                            <?php foreach ($brandData as $k => $v):
+                                if($data['brand_id'] == $v['id'])
+                                    $select = 'selected="selected"';
+                                else
+                                    $select = '';
+                            ?>
+                            <option <?php echo $select; ?> value="<?php echo $v['id'] ?>"><?php echo $v['brand_name']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <td class="label">商品名称：</td>
                     <td><input type="text" name="goods_name" size="60" value="<?php echo $data['goods_name']; ?>" />
                     <span class="require-field">*</span></td>

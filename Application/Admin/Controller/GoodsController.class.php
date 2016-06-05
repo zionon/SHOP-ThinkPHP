@@ -78,8 +78,12 @@ class GoodsController extends Controller{
 		//根据ID取出要修改的商品原信息
 		$data = $model->find($id);
 		$this->assign('data',$data);
+		//取出所有的品牌
+		$brandModel = new \Admin\Model\BrandModel();
+		$brandData = $brandModel->select();
 		//设置页面信息
 		$this->assign(array(
+			'brandData' => $brandData,
 			'_page_title' => '修改商品',
 			'_page_btn_name' => '商品列表',
 			'_page_btn_link' => U('goodsList'),
