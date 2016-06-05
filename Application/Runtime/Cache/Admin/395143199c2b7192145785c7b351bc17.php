@@ -26,7 +26,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Brand/brandEdit/id/6.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Brand/brandEdit/id/5.html" method="post">
         <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <table width="90%" id="general-table" align="center">
                 <tr>

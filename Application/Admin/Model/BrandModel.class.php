@@ -74,6 +74,23 @@ class BrandModel extends Model{
 		deleteImage($oldImage);
 	}
 
+	//修改之前
+	protected function _before_update(&$data, $option) {
+		//要修改的ID
+		$id = $option['where']['id'];
+		//处理logo
+		//判读啊有没有选择图片
+		if ($_FILES['logo']['error'] == 0) {
+			$ret = uploadOne('logo','Brand');
+			//把路径放入到表单中
+			$data['logo'] = $ret['images'][0];
+			//查询出原来的图片的路径
+			$oldLogo = $this->field('logo')->find($id);
+			//从硬盘上删除原来的图片
+			deleteImage($oldLogo);
+		}
+	}
+
 }
 
 
