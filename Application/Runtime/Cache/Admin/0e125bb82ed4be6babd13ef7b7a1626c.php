@@ -32,12 +32,7 @@
                 <tr>
                     <td class="label">所在品牌：</td>
                     <td>
-                        <select name="brand_id">
-                            <option value="">请选择</option>
-                            <?php foreach ($brandData as $k => $v): if($data['brand_id'] == $v['id']) $select = 'selected="selected"'; else $select = ''; ?>
-                            <option <?php echo $select; ?> value="<?php echo $v['id'] ?>"><?php echo $v['brand_name']; ?></option>
-                            <?php endforeach; ?>
-                        </select>
+                        <?php buildSelect('brand','brand_id','id','brand_name',$data['brand_id']); ?>
                     </td>
                 </tr>
                 <tr>
