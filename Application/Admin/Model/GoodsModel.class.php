@@ -89,22 +89,22 @@ class GoodsModel extends Model{
 		//商品名称
 		$gn = I('get.gn');
 		if ($gn) {
-			$where['goods_name'] = array('like',"%$gn%");	//WHERE goods_name LIKE '%$gn%'
+			$where['a.goods_name'] = array('like',"%$gn%");	//WHERE goods_name LIKE '%$gn%'
 		}
 		//价格
 		$fp = I('get.fp');
 		$tp = I('get.tp');
 		if ($fp && $tp) {
-			$where['shop_price'] = array('between',array($fp,$tp));	//WHERE shop_price BETWEEN $fp AND $tp
+			$where['a.shop_price'] = array('between',array($fp,$tp));	//WHERE shop_price BETWEEN $fp AND $tp
 		} elseif ($fp) {
-			$where['shop_price'] = array('egt',$fp);	//WHERE shop_price >= $fp
+			$where['a.shop_price'] = array('egt',$fp);	//WHERE shop_price >= $fp
 		} elseif ($tp) {
-			$where['shop_price'] = array('elt',$tp);	//WHERE shop_price <= $tp
+			$where['a.shop_price'] = array('elt',$tp);	//WHERE shop_price <= $tp
 		}
 		//是否上架
 		$ios = I('get.ios');
 		if ($ios) {
-			$where['is_on_sale'] = array('eq',$ios);	//WHERE is_on_sale = $ios
+			$where['a.is_on_sale'] = array('eq',$ios);	//WHERE is_on_sale = $ios
 		}
 		//添加时间
 		$fa = I('get.fa');
@@ -118,7 +118,7 @@ class GoodsModel extends Model{
 		}
 
 		//排序
-		$orderby = 'id';	//默认的排序字段
+		$orderby = 'a.id';	//默认的排序字段
 		$orderway = 'desc';	//默认的排序方式
 		$odby = I('get.odby');
 		if ($odby) {
@@ -145,7 +145,14 @@ class GoodsModel extends Model{
 		$pageString = $pageObj->show();
 
 		//取某一页的数据
-		$data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
+		// $data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
+		$data = $this->order("$orderby $orderway")		//排序
+		->field('a.*,b.brand_name')
+		->alias('a')
+		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id')
+		->where($where)
+		->limit($pageObj->firstRow.','.$pageObj->listRows)
+		->select();
 		//返回数据
 		return array(
 			'data' => $data,		//数据
