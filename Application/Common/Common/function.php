@@ -12,7 +12,7 @@ function removeXSS($data){
 	// 执行过滤
 	return $_clean_xss_obj->purify($data);
 }
-
+//显示图片
 function showImage($url, $width = '', $height = ''){
 	$ic = C('IMAGE_CONFIG');
 	if ($width) {
@@ -23,7 +23,7 @@ function showImage($url, $width = '', $height = ''){
 	}
 	echo "<img $width $height src='{$ic['viewPath']}$url' />";
 }
-
+//上传图片
 function uploadOne($imgName, $dirName, $thumb = array()){
 	//上传logo
 	if (isset($_FILES[$imgName]) && $_FILES[$imgName]['error'] == 0) {
@@ -60,7 +60,7 @@ function uploadOne($imgName, $dirName, $thumb = array()){
 		}
 	}
 }
-
+//删除图片
 function deleteImage($image = array()) {
 	$savePath = C('IMAGE_CONFIG');
 	foreach ($image as $v) {
