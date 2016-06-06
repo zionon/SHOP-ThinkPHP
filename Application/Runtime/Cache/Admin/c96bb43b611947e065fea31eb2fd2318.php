@@ -26,7 +26,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/MemberLevel/memberLevelAdd" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/MemberLevel/memberLevelAdd.html" method="post">
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">级别名称：</td>
