@@ -89,22 +89,22 @@ class GoodsModel extends Model{
 		//商品名称
 		$gn = I('get.gn');
 		if ($gn) {
-			$where['a.goods_name'] = array('like',"%$gn%");	//WHERE goods_name LIKE '%$gn%'
+			$where['goods_name'] = array('like',"%$gn%");	//WHERE goods_name LIKE '%$gn%'
 		}
 		//价格
 		$fp = I('get.fp');
 		$tp = I('get.tp');
 		if ($fp && $tp) {
-			$where['a.shop_price'] = array('between',array($fp,$tp));	//WHERE shop_price BETWEEN $fp AND $tp
+			$where['shop_price'] = array('between',array($fp,$tp));	//WHERE shop_price BETWEEN $fp AND $tp
 		} elseif ($fp) {
-			$where['a.shop_price'] = array('egt',$fp);	//WHERE shop_price >= $fp
+			$where['shop_price'] = array('egt',$fp);	//WHERE shop_price >= $fp
 		} elseif ($tp) {
-			$where['a.shop_price'] = array('elt',$tp);	//WHERE shop_price <= $tp
+			$where['shop_price'] = array('elt',$tp);	//WHERE shop_price <= $tp
 		}
 		//是否上架
 		$ios = I('get.ios');
 		if ($ios) {
-			$where['a.is_on_sale'] = array('eq',$ios);	//WHERE is_on_sale = $ios
+			$where['is_on_sale'] = array('eq',$ios);	//WHERE is_on_sale = $ios
 		}
 		//添加时间
 		$fa = I('get.fa');
@@ -115,6 +115,11 @@ class GoodsModel extends Model{
 			$where['addtime'] = array('egt',$fa);	//WHERE shop_price >= $fa
 		} elseif ($ta) {
 			$where['addtime'] = array('elt',$ta);	//WHERE shop_price <= $ta
+		}
+		//品牌
+		$brandId = I('get.brand_id');
+		if ($brandId) {
+			$where['brand_id'] = array('eq',$brandId);
 		}
 
 		//排序

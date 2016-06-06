@@ -22,6 +22,10 @@
 <div class="form-div">
     <form action="/index.php/Admin/Goods/goodsList" method="GET" name="searchForm">
         <p>
+            品   牌:
+            <?php buildSelect('brand','brand_id','id','brand_name',I('get.brand_id')); ?>
+        </p>
+        <p>
             商品名称:
             <input type="text" name="gn" size="60" value="<?php echo I('get.gn'); ?>" />
         </p>
