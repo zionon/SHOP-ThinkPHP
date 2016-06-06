@@ -37,3 +37,35 @@ create table st_brand
 	logo varchar(150) not null default '' comment '品牌Logo图片',
 	primary key(id)
 )engine=InnoDB default charset=utf8 comment '品牌';
+
+drop table if exists st_member_level;
+create table st_member_level
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	level_name varchar(30) not null comment '级别名称',
+	jifen_bottom mediumint unsigned not null comment '积分下限',
+	jifen_top mediumint unsigned not null comment '积分上限 ',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '会员级别'
+
+drop table if exists st_member_price;
+create table st_member_price
+(
+	price decimal(10,2) not null comment '会员价格',
+	level_id mediumint unsigned not null comment '级别Id',
+	goods_id mediumint unsigned not null comment '商品Id',
+	key level_id(level_id),
+	key goods_id(goods_id)
+)engine=InnoDB default charset=utf8 comment '会员价格'
+
+
+
+
+
+
+
+
+
+
+
+
