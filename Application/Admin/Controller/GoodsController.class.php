@@ -124,6 +124,18 @@ class GoodsController extends Controller{
 			$this->error('删除失败!原因:'.$model->getError());
 		}
 	}
+
+	//处理AJAX删除图片的请求
+	public function ajaxDelPic() {
+		$picId = I('get.picid');
+		//根据ID从硬盘上数据删除中删除图片
+		$gpModle = D('goods_pic');
+		$pic = $gpModle->field('pic,sm_pic,mid_pic,big_pic')->find($picId);
+		//从硬盘删除图片
+		deleteImage($pic);
+		//从数据库中删除记录
+		$gpModle->delete($picId);
+	}
 }
 
 

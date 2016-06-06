@@ -113,7 +113,7 @@
                         <ul id="old_pic_list">
                             <?php foreach($gpData as $k => $v): ?>
                                 <li>
-                                <input type="button" value="删除" /><br />
+                                <input pic_id="<?php echo $v['id']; ?>" class="btn_del_pic" type="button" value="删除" /><br />
                                 <?php showImage($v['mid_pic'], 150); ?>
                                 </li>
                             <?php endforeach; ?>
