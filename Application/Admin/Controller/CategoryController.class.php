@@ -18,4 +18,15 @@ class CategoryController extends Controller{
 		));
 		$this->display();
 	}
+
+	//删除
+	public function delete() {
+		$model = new \Admin\Model\CategoryModel();
+		if ($model->delete(I('get.id')) !== FALSE) {
+			$this->success('删除成功!!',U('categoryList'));
+		} else {
+			$this->error('删除失败！原因:'.$model->getError());
+		}
+	}
+	
 }

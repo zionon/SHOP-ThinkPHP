@@ -53,6 +53,20 @@ class CategoryModel extends Model {
 		return $_ret;
 	}
 
+	//钩子函数，删除之前
+	protected function _before_delete(&$option) {
+		//修改原$option,把所有子分类的ID页加进来，这样TP会一起删除
+		//先找出所有子分类的ID
+		$children = $this->getChildren($option['where']['id']);
+		$children[] = $option['where']['id'];
+		$option['where']['id'] = array(
+			0 => 'IN',
+			1 => implode(',', $children),
+		);
+		dump($children);
+		dump($option);
+		die;
+	}
 
 }
 
