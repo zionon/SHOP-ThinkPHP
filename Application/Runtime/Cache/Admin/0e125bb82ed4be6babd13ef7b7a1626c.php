@@ -166,5 +166,35 @@ $("#tabbar-div p span").click(function(){
     })
 </script>
 
+<script type="text/javascript">
+    //删除图片
+    $(".btn_del_pic").click(function(){
+        if (confirm('确定要删除吗？')) {
+            //先选中删除按钮所在的li标签
+            var li = $(this).parent();
+            //从这个按钮上获取pic_id属性
+            var pid = $(this).attr("pic_id");
+            $.ajax({
+                type : "GET",
+                url : "<?php echo U('ajaxDelPic','',FALSE); ?>/picid/"+pid,
+                success : function(data){
+                    //把图片从页面中删除掉
+                    li.remove();
+                }
+            });
+        }
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

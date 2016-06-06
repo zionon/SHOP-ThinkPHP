@@ -6305,3 +6305,1276 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
 
+[ 2016-06-06T14:57:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2016-06-06T14:57:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-06-06T14:57:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxDelPic/picid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0007s ]
+SQL: SELECT `pic`,`sm_pic`,`mid_pic`,`big_pic` FROM `st_goods_pic` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_goods_pic` WHERE `id` = 4 [ RunTime:0.0084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-06-06T15:08:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-06-06T15:08:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-06-06T15:08:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0004s ]
+NOTIC: [8] Array to string conversion /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 143 行.
+NOTIC: [8] Undefined variable: Array /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 143 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 143 行.
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: UPDATE `st_goods` SET `brand_id`='1',`goods_name`='测试相册',`shop_price`='66.00',`market_price`='77.00',`is_on_sale`='是',`goods_desc`='<p>hello world</p>' WHERE `id` = 22 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+
+[ 2016-06-06T15:08:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-06-06T15:09:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-06-06T15:09:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-06-06T15:11:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-06-06T15:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-06-06T15:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-06-06T15:11:47+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0007s ]
+NOTIC: [8] Array to string conversion /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 143 行.
+NOTIC: [8] Undefined variable: Array /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 143 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 143 行.
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: UPDATE `st_goods` SET `brand_id`='1',`goods_name`='测试相册',`shop_price`='66.00',`market_price`='77.00',`is_on_sale`='是',`goods_desc`='<p>hello world</p>' WHERE `id` = 22 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+
+[ 2016-06-06T15:11:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-06-06T15:11:52+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-06-06T15:11:52+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-06-06T15:13:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-06-06T15:13:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2016-06-06T15:13:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0004s ]
+
+[ 2016-06-06T15:14:34+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0003s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: K /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 147 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 147 行.
+NOTIC: [8] Undefined variable: K /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 149 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 149 行.
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+NOTIC: [2] finfo_file(): Empty filename or path /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 164 行.
+SQL: UPDATE `st_goods` SET `brand_id`='1',`goods_name`='测试相册',`shop_price`='66.00',`market_price`='77.00',`is_on_sale`='是',`goods_desc`='<p>hello world</p>' WHERE `id` = 22 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+
+[ 2016-06-06T15:14:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-06-06T15:14:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-06-06T15:14:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-06-06T15:14:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0010s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: K /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 147 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 147 行.
+NOTIC: [8] Undefined variable: K /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 149 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 149 行.
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+NOTIC: [2] finfo_file(): Empty filename or path /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 164 行.
+SQL: UPDATE `st_goods` SET `brand_id`='1',`goods_name`='测试相册',`shop_price`='66.00',`market_price`='77.00',`is_on_sale`='是',`goods_desc`='<p>hello world</p>' WHERE `id` = 22 [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+
+[ 2016-06-06T15:14:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-06-06T15:15:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2016-06-06T15:15:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-06-06T15:18:09+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2016-06-06T15:18:09+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-06-06T15:18:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-06-06T15:18:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-06-06T15:18:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: INSERT INTO `st_goods_pic` (`pic`,`big_pic`,`mid_pic`,`sm_pic`,`goods_id`) VALUES ('Goods/2016-06-06/575523ba497a8.jpg','Goods/2016-06-06/thumb_0_575523ba497a8.jpg','Goods/2016-06-06/thumb_1_575523ba497a8.jpg','Goods/2016-06-06/thumb_2_575523ba497a8.jpg','22') [ RunTime:0.0005s ]
+SQL: UPDATE `st_goods` SET `brand_id`='1',`goods_name`='测试相册',`shop_price`='66.00',`market_price`='77.00',`is_on_sale`='是',`goods_desc`='<p>hello world</p>' WHERE `id` = 22 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+
+[ 2016-06-06T15:18:19+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002046s ]
+
+[ 2016-06-06T15:18:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-06-06T15:18:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006646s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2016-06-06T15:36:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-06-06T15:36:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-06-06T15:36:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 22 [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('33','1','22') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('45','2','22') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('67','3','22') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','22') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: INSERT INTO `st_goods_pic` (`pic`,`big_pic`,`mid_pic`,`sm_pic`,`goods_id`) VALUES ('Goods/2016-06-06/5755281ba39df.jpg','Goods/2016-06-06/thumb_0_5755281ba39df.jpg','Goods/2016-06-06/thumb_1_5755281ba39df.jpg','Goods/2016-06-06/thumb_2_5755281ba39df.jpg','22') [ RunTime:0.0005s ]
+SQL: UPDATE `st_goods` SET `brand_id`='1',`goods_name`='测试相册',`shop_price`='66.00',`market_price`='77.00',`is_on_sale`='是',`goods_desc`='<p>hello world</p>' WHERE `id` = 22 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+
+[ 2016-06-06T15:37:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2016-06-06T15:37:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '22'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '22'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2016-06-06T15:37:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: v /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 55 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2016-06-06T15:37:10+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxDelPic/picid/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `pic`,`sm_pic`,`mid_pic`,`big_pic` FROM `st_goods_pic` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_goods_pic` WHERE `id` = 7 [ RunTime:0.0087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-06-06T15:37:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxDelPic/picid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `pic`,`sm_pic`,`mid_pic`,`big_pic` FROM `st_goods_pic` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_goods_pic` WHERE `id` = 8 [ RunTime:0.0085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
