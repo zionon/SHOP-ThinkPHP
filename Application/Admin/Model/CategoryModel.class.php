@@ -63,9 +63,6 @@ class CategoryModel extends Model {
 			0 => 'IN',
 			1 => implode(',', $children),
 		);
-		dump($children);
-		dump($option);
-		die;
 	}
 
 }
