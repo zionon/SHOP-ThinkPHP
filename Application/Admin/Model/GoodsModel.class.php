@@ -82,6 +82,25 @@ class GoodsModel extends Model{
 			//从硬盘上删除
 			deleteImage($oldLogo);
 		}
+
+		//处理会员价格
+		$mp = I('post.member_price');
+		$mpModel = D('member_price');
+		//先删除原来的会员价格
+		$mpModel->where(array(
+			'goods_id'=>$id,
+		))->delete();
+		//在添加会员价格
+		foreach ($mp as $k => $v) {
+			$_v = (float)$v;
+			if ($_v > 0) {
+				$mpModel->add(array(
+					'price' => $_v,
+					'level_id' => $k,
+					'goods_id' => $id,
+				));
+			}
+		}
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
 
