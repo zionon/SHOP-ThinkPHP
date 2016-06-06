@@ -34,8 +34,12 @@ class GoodsController extends Controller{
 		//取出所有的品牌
 		$brandModel = new \Admin\Model\BrandModel();
 		$brandData = $brandModel->select();
+		//取出所有的会员级别
+		$mlModel = new \Admin\Model\MemberLevelModel();
+		$mlData = $mlModel->select();
 		//设置页面信息
 		$this->assign(array(
+			'mlData' => $mlData,
 			'brandData' => $brandData,
 			'_page_title' => '商品添加',
 			'_page_btn_name' => '商品列表',

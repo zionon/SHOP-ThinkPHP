@@ -1891,3 +1891,465 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
 
+[ 2016-06-06T11:29:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2016-06-06T11:34:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2016-06-06T11:35:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+
+[ 2016-06-06T11:35:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+
+[ 2016-06-06T11:35:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-06-06T11:35:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+
+[ 2016-06-06T11:43:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+
+[ 2016-06-06T11:44:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-06-06T11:46:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+
+[ 2016-06-06T11:47:36+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/memberLevelList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-06-06T11:47:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: mlData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/GoodsController.class.php 第 42 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0625ccdd984322e27e52787535bec737.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2016-06-06T11:47:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: mlData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/GoodsController.class.php 第 42 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0625ccdd984322e27e52787535bec737.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-06-06T11:48:10+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-06-06T11:48:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-06-06T11:48:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+
+[ 2016-06-06T11:56:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-06-06T11:57:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_goods` (`brand_id`,`goods_name`,`shop_price`,`market_price`,`is_on_sale`,`goods_desc`,`addtime`) VALUES ('3','测试商品会员价格','122','133','是','<p>test</p>','2016-06-06 11:57:21') [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+
+[ 2016-06-06T11:57:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 84 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 84 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 84 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 84 行.
+NOTIC: [8] Undefined index: marker_price /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-06-06T11:58:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `st_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2016-06-06T12:00:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-06-06T12:00:43+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_goods` (`brand_id`,`goods_name`,`shop_price`,`market_price`,`is_on_sale`,`goods_desc`,`addtime`) VALUES ('0','3','33','44','是','','2016-06-06 12:00:43') [ RunTime:0.0085s ]
+
+[ 2016-06-06T12:04:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-06-06T12:04:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_goods` (`brand_id`,`goods_name`,`shop_price`,`market_price`,`is_on_sale`,`goods_desc`,`addtime`) VALUES ('0','56','86','66','是','','2016-06-06 12:04:37') [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0005s ]
+
+[ 2016-06-06T12:07:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-06-06T12:07:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_goods` (`brand_id`,`goods_name`,`shop_price`,`market_price`,`is_on_sale`,`goods_desc`,`addtime`) VALUES ('0','44','55','66','是','','2016-06-06 12:07:30') [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('77','1','18') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('88','2','18') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','3','18') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_member_price` (`price`,`level_id`,`goods_id`) VALUES ('99','4','18') [ RunTime:0.0004s ]
+

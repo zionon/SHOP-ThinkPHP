@@ -46,6 +46,14 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="label">会员价格：</td>
+                    <td>
+                        <?php foreach ($mlData as $k => $v): ?>
+                            <?php echo $v['level_name']; ?>：¥<input type="text" name="member_price[<?php echo $v['id']; ?>]" size="8" />元<br />
+                        <?php endforeach; ?>
+                    </td>
+                </tr>
+                <tr>
                     <td class="label">是否上架：</td>
                     <td>
                         <input type="radio" name="is_on_sale" value="是" checked="checked" /> 是

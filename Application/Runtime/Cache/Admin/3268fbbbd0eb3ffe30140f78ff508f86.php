@@ -81,7 +81,7 @@
                 <td align="center"><?php echo $v['brand_name']; ?></td>
                 <td align="center" class="first-cell"><span><?php echo $v['goods_name']; ?></span></td>
                 <td align="center"><?php showImage($v['sm_logo']); ?></td>
-                <td align="center"><?php echo $v['marker_price']; ?></td>
+                <td align="center"><?php echo $v['market_price']; ?></td>
                 <td align="center"><?php echo $v['shop_price']; ?></td>
                 <td align="center"><?php echo $v['is_on_sale']; ?></td>
                 <td align="center"><?php echo $v['addtime']; ?></td>

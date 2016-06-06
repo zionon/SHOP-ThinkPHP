@@ -43,6 +43,22 @@ class GoodsModel extends Model{
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
 
+	protected function _after_insert($data, $option) {
+		$mp = I('post.member_price');
+		$mpModel = D('member_price');
+		foreach ($mp as $k => $v) {
+			$_v = (float)$v;
+			dump($_v);
+			if ($_v > 0) {
+				$mpModel->add(array(
+					'price' => $_v,
+					'level_id' => $k,
+					'goods_id' => $data['id'],
+				));
+			}
+		}
+	}
+
 	protected function _before_update(&$data, $option) {
 		$id = $option['where']['id'];	//要修改商品的ID
 		//处理LOGO
