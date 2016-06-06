@@ -96,7 +96,13 @@
             </table>
             <!-- 商品相册 -->
             <table style="display: none" width="90%" class="tab_table" align="center">
-                <tr><td></td></tr>
+                <tr>
+                    <td>
+                        <input type="button" id="btn_add_pic" value="添加一张" />
+                        <hr />
+                        <ul id="ul_pic_list"></ul>
+                    </td>
+                </tr>
             </table>                                              
             <div class="button-div">
                 <input type="submit" value=" 确定 " class="button"/>
@@ -135,6 +141,14 @@ $("#tabbar-div p span").click(function(){
     //设置当前按钮选中
     $(this).removeClass("tab-back").addClass("tab-front");
 });
+</script>
+
+<script>
+    //添加一张
+    $("#btn_add_pic").click(function(){
+        var file = '<li><input type="file" name="pic[]" /></li>';
+        $("#ul_pic_list").append(file);
+    })
 </script>
 
 

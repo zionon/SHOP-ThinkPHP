@@ -58,7 +58,18 @@ create table st_member_price
 	key goods_id(goods_id)
 )engine=InnoDB default charset=utf8 comment '会员价格'
 
-
+drop table if exists st_goods_pic;
+create table st_goods_pic
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	pic varchar(150) not null comment '原图',
+	sm_pic varchar(150) not null comment '小图',
+	mid_pic varchar(150) not null comment '中图',
+	big_pic varchar(150) not null comment '大图',
+	goods_id mediumint unsigned null comment '商品Id',
+	primary key (id),
+	key goods_id(goods_id)
+)engine=InnoDB default charset=utf8 comment '商品相册';
 
 
 

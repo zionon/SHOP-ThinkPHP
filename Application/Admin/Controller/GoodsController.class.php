@@ -10,6 +10,16 @@ class GoodsController extends Controller{
 	public function goodsAdd() {
 		//判断用户是否提交了表单
 		if (IS_POST) {
+			$pics = array();
+			foreach ($_FILES['pic']['name'] as $k => $v) {
+				$pics[] = array(
+					'name' => $v,
+					'type' => $_FILES['pic']['type'][$k],
+					'tmp_name' => $_FILES['pic']['tmp_name'][$k],
+					'error' => $_FILES['pic']['error'][$k],
+					'size' => $_FILES['pic']['size'][$k],
+					);
+			}
 			$model = D('Goods');
 			//2.create方法：a.接收数据并保存到模型中，b.根据模型中定义的规则验证表单
 			/**

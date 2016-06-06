@@ -44,6 +44,7 @@ class GoodsModel extends Model{
 	}
 
 	protected function _after_insert($data, $option) {
+		//商品插入后处理会员价格
 		$mp = I('post.member_price');
 		$mpModel = D('member_price');
 		foreach ($mp as $k => $v) {
@@ -54,6 +55,40 @@ class GoodsModel extends Model{
 					'level_id' => $k,
 					'goods_id' => $data['id'],
 				));
+			}
+		}
+		//商品插入后处理相册图片
+		if (isset($_FILES['pic'])) {
+			$pics = array();
+			foreach ($_FILES['pic']['name'] as $k => $v) {
+				$pics[] = array(
+					'name' => $v,
+					'type' => $_FILES['pic']['type'][$k],
+					'tmp_name' => $_FILES['pic']['tmp_name'][$k],
+					'error' => $_FILES['pic']['error'][$k],
+					'size' => $_FILES['pic']['error'][$k],
+				);
+			}
+			$_FILES = $pics;	//把处理好的数组赋给$_FILES,因为uploadOne函数是到$_FILES中找图片
+			$gpModel = D('goods_pic');
+			//循环每个上传
+			foreach ($pics as $k => $v) {
+				if ($v['error'] == 0) {
+					$ret = uploadOne($k, 'Goods', array(
+						array(650,650),
+						array(350,350),
+						array(50,50),
+					));
+					if ($ret['ok'] == 1) {
+						$gpModel->add(array(
+							'pic' => $ret['images'][0],
+							'big_pic' => $ret['images'][1],
+							'mid_pic' => $ret['images'][2],
+							'sm_pic' => $ret['images'][3],
+							'goods_id' => $data['id'],
+						));
+					}
+				}
 			}
 		}
 	}
