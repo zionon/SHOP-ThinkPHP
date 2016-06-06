@@ -48,7 +48,6 @@ class GoodsModel extends Model{
 		$mpModel = D('member_price');
 		foreach ($mp as $k => $v) {
 			$_v = (float)$v;
-			dump($_v);
 			if ($_v > 0) {
 				$mpModel->add(array(
 					'price' => $_v,
@@ -93,6 +92,11 @@ class GoodsModel extends Model{
 		$oldLogo = $this->field('logo,mbig_logo,big_logo,mid_logo,sm_logo')->find($id);
 		//从硬盘上删除
 		deleteImage($oldLogo);
+		//删除会员价格
+		$mpModel = D('member_price');
+		$mpModel->where(array(
+			'goods_id' => array('eq', $id),
+		))->delete();
 	}
 
 	/**

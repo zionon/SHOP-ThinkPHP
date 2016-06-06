@@ -82,12 +82,23 @@ class GoodsController extends Controller{
 		//根据ID取出要修改的商品原信息
 		$data = $model->find($id);
 		$this->assign('data',$data);
-		//取出所有的品牌
-		$brandModel = new \Admin\Model\BrandModel();
-		$brandData = $brandModel->select();
+		//取出所有的会员级别
+		$mlModel = new \Admin\Model\MemberLevelModel();
+		$mlData = $mlModel->select();
+		//取出这件商品已经设置好的会员价格
+		$mpModel = D('member_price');
+		$mpData = $mpModel->where(array(
+			'goods_id'=>array('eq',$id),
+		))->select();
+		//把取出来的二维数组转一维数组
+		$_mpData = array();
+		foreach ($mpData as $k => $v) {
+			$_mpData[$v['level_id']] = $v['price'];
+		}
 		//设置页面信息
 		$this->assign(array(
-			'brandData' => $brandData,
+			'mpData' => $_mpData,
+			'mlData' => $mlData,
 			'_page_title' => '修改商品',
 			'_page_btn_name' => '商品列表',
 			'_page_btn_link' => U('goodsList'),
