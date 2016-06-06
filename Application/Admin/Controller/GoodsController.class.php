@@ -10,16 +10,6 @@ class GoodsController extends Controller{
 	public function goodsAdd() {
 		//判断用户是否提交了表单
 		if (IS_POST) {
-			$pics = array();
-			foreach ($_FILES['pic']['name'] as $k => $v) {
-				$pics[] = array(
-					'name' => $v,
-					'type' => $_FILES['pic']['type'][$k],
-					'tmp_name' => $_FILES['pic']['tmp_name'][$k],
-					'error' => $_FILES['pic']['error'][$k],
-					'size' => $_FILES['pic']['size'][$k],
-					);
-			}
 			$model = D('Goods');
 			//2.create方法：a.接收数据并保存到模型中，b.根据模型中定义的规则验证表单
 			/**
@@ -92,9 +82,11 @@ class GoodsController extends Controller{
 		//根据ID取出要修改的商品原信息
 		$data = $model->find($id);
 		$this->assign('data',$data);
+
 		//取出所有的会员级别
 		$mlModel = new \Admin\Model\MemberLevelModel();
 		$mlData = $mlModel->select();
+
 		//取出这件商品已经设置好的会员价格
 		$mpModel = D('member_price');
 		$mpData = $mpModel->where(array(
@@ -105,10 +97,17 @@ class GoodsController extends Controller{
 		foreach ($mpData as $k => $v) {
 			$_mpData[$v['level_id']] = $v['price'];
 		}
+
+		//取出相册中现有的相片
+		$gpModle = D('goods_pic');
+		$gpData = $gpModle->field('id,mid_pic')->where(array(
+			'goods_id' => array('eq',$id),
+		))->select();
 		//设置页面信息
 		$this->assign(array(
 			'mpData' => $_mpData,
 			'mlData' => $mlData,
+			'gpData' => $gpData,
 			'_page_title' => '修改商品',
 			'_page_btn_name' => '商品列表',
 			'_page_btn_link' => U('goodsList'),

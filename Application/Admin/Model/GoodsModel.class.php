@@ -146,10 +146,26 @@ class GoodsModel extends Model{
 		$oldLogo = $this->field('logo,mbig_logo,big_logo,mid_logo,sm_logo')->find($id);
 		//从硬盘上删除
 		deleteImage($oldLogo);
+
 		//删除会员价格
 		$mpModel = D('member_price');
 		$mpModel->where(array(
 			'goods_id' => array('eq', $id),
+		))->delete();
+
+		//删除相册中的图片
+		//先从相册表中取出相册所在的硬盘路径
+		$gpModel = D('goods_pic');
+		$pics = $gpModel->field('pic,sm_pic,mid_pic,big_pic')->where(array(
+			'goods_id' => array('eq', $id),
+		))->select();
+		//循环每个图片从硬盘上删除图片
+		foreach ($pics as $k => $v) {
+			deleteImage($v);	//删除pic,sm_pic,mid_pic,big_pic四张 
+		}
+		//从数据库中把记录删除
+		$gpModel->where(array(
+			'goods_id' => array('eq',$id),
 		))->delete();
 	}
 

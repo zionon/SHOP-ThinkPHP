@@ -19,12 +19,19 @@
 <!-- 引入布局文件 -->
 
 
+<style type="text/css">
+    #ul_pic_list li{margin: 5px;list-style-type: none;}
+    #old_pic_list li{float: left;width: 150px;margin: 5px;list-style-type: none;}
+</style>
+
 <div class="tab-div">
     <div id="tabbar-div">
         <p>
             <span class="tab-front" id="general-tab">通用信息</span>
             <span class="tab-back">商品描述</span>
             <span class="tab-back">会员价格</span>
+            <span class="tab-back">商品属性</span>
+            <span class="tab-back">商品相册</span>
         </p>
     </div>
     <div id="tabbody-div">
@@ -97,7 +104,22 @@
             </table>
             <!-- 商品相册 -->
             <table style="display: none" width="90%" class="tab_table" align="center">
-                <tr><td></td></tr>
+                <tr>
+                    <td>
+                        <input id="btn_add_pic" type="button" value="添加一张" />
+                        <hr />
+                        <ul id="ul_pic_list"></ul>
+                        <hr />
+                        <ul id="old_pic_list">
+                            <?php foreach($gpData as $k => $v): ?>
+                                <li>
+                                <input type="button" value="删除" /><br />
+                                <?php showImage($v['mid_pic'], 150); ?>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </td>
+                </tr>
             </table>
             <div class="button-div">
                 <input type="submit" value=" 确定 " class="button"/>
@@ -134,6 +156,14 @@ $("#tabbar-div p span").click(function(){
     //设置当前按钮选中
     $(this).removeClass("tab-back").addClass("tab-front");
 });
+</script>
+
+<script>
+    //添加一张
+    $("#btn_add_pic").click(function(){
+        var file = '<li><input type="file" name="pic[]" /></li>';
+        $("#ul_pic_list").append(file);
+    })
 </script>
 
 </body>
