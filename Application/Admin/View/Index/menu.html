@@ -128,6 +128,7 @@ body {
                 <ul>
                     <li class="menu-item"><a href="<?php echo U('Goods/goodsList'); ?>" target="main-frame">商品列表</a></li>
                     <li class="menu-item"><a href="<?php echo U('Brand/brandList'); ?>" target="main-frame">商品品牌</a></li>
+                    <li class="menu-item"><a href="<?php echo U('Category/categoryList'); ?>" target="main-frame">分类列表</a></li>
                 </ul>
             </li>
 
