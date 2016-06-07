@@ -307,12 +307,15 @@ class GoodsModel extends Model{
 		//取某一页的数据
 		// $data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
 		$data = $this->order("$orderby $orderway")		//排序
-		->field('a.*,b.brand_name,c.cat_name')
+		->field('a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name')
 		->alias('a')
 		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id 
-				LEFT JOIN __CATEGORY__ c ON a.cat_id=c.id')
+				LEFT JOIN __CATEGORY__ c ON a.cat_id=c.id
+				LEFT JOIN __GOODS_CAT__ d ON a.id=d.goods_id
+				LEFT JOIN __CATEGORY__ e ON d.cat_id=e.id')
 		->where($where)
 		->limit($pageObj->firstRow.','.$pageObj->listRows)
+		->group('a.id')
 		->select();
 		//返回数据
 		return array(
