@@ -45,6 +45,7 @@ class GoodsModel extends Model{
 	}
 
 	protected function _after_insert($data, $option) {
+		// dump($_POST); die;
 		//商品插入后处理会员价格
 		$mp = I('post.member_price');
 		$mpModel = D('member_price');
@@ -58,6 +59,7 @@ class GoodsModel extends Model{
 				));
 			}
 		}
+
 		//商品插入后处理相册图片
 		if (isset($_FILES['pic'])) {
 			$pics = array();
@@ -90,6 +92,20 @@ class GoodsModel extends Model{
 						));
 					}
 				}
+			}
+		}
+
+		//处理拓展分类
+		$ecid = I('post.ext_cat_id');
+		if ($ecid) {
+			$gcModel = D('goods_cat');
+			foreach ($ecid as $k => $v) {
+				if (empty($v))
+					continue;
+				$gcModel->add(array(
+					'cat_id' => $v,
+					'goods_id' => $data['id'],
+				));
 			}
 		}
 	}

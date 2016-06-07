@@ -50,7 +50,7 @@
                     <td>
                         <ul id="cat_list">
                             <li>
-                                <select name="cat_id">
+                                <select name="ext_cat_id[]">
                                     <option value="">选择分类</option>
                                     <?php foreach ($catData as $k => $v): ?>
                                         <option value="<?php echo $v['id']; ?>"><?php echo str_repeat('-',8*$v['level']) . $v['cat_name']; ?></option>
