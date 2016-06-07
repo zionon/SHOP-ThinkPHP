@@ -80,7 +80,7 @@ function buildSelect($tableName, $selectName, $valueFieldName, $textFieldName, $
 		} else {
 			$selected = '';
 		}
-		$select .= '<option '.$selected.' value='.$value.'">'.$text.'</option>';
+		$select .= '<option '.$selected.' value='.$value.'>'.$text.'</option>';
 	}
 	$select .= '</select>';
 	echo $select;
