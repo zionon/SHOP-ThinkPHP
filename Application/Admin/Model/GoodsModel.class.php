@@ -265,16 +265,13 @@ class GoodsModel extends Model{
 		if ($brandId) {
 			$where['brand_id'] = array('eq',$brandId);
 		}
-		//分类搜索
+		//主分类搜索
 		$catId = I('get.cat_id');
 		if ($catId) {
-			//先取出所有子分类的ID
-			$catModel = new \Admin\Model\CategoryModel();
-			$children = $catModel->getChildren($catId);
-			//和子分类放一起
-			$children[] = $catId;
-			//搜索出所有这些分类下的商品
-			$where['cat_id'] = array('IN',$children);
+			//先查询出这个分类ID下所有的商品ID
+			$gids = $this->getGoodsIdByCatId($catId);
+			//应用到取数据的WHERE上
+			$where['a.id'] = array('in',$gids);
 		}
 
 		//排序
@@ -295,7 +292,7 @@ class GoodsModel extends Model{
 
 		//翻页
 		//取出总的记录数
-		$count = $this->where($where)->count();
+		$count = $this->alias('a')->where($where)->count();		//设置a为数据库表别名
 		//生成翻页类的对象
 		$pageObj = new \Think\Page($count, $perPage);
 		//设置样式
@@ -307,8 +304,8 @@ class GoodsModel extends Model{
 		//取某一页的数据
 		// $data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
 		$data = $this->order("$orderby $orderway")		//排序
-		->field('a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name')
 		->alias('a')
+		->field('a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name')
 		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id 
 				LEFT JOIN __CATEGORY__ c ON a.cat_id=c.id
 				LEFT JOIN __GOODS_CAT__ d ON a.id=d.goods_id
@@ -323,4 +320,45 @@ class GoodsModel extends Model{
 			'page' => $pageString,	//翻页字符串
 		);
 	}
+
+	//取出一个分类下所有商品的ID(即考虑主分类也考虑了拓展分类)
+	public function getGoodsIdByCatId($catId) {
+		//先取出所有的子分类的ID
+		$catModel = new \Admin\Model\CategoryModel();
+		$catData = $catModel->getChildren($catId);
+		//和子分类放一起
+		$children[] = $catId;
+		//取出主分类或者拓展分类在这些分类中的商品
+		//取出主分类下的商品ID
+		$gids = $this->field('id')->where(array('cat_id' => array('in',$children),))->select();
+		//取出拓展分类下的商品的ID
+		$gcModel = D('goods_cat');
+		$gids1 = $gcModel->field('DISTINCT goods_id id')->where(array('cat_id' => array('IN',$children),))->select();
+		//把主分类的ID和拓展分类下的商品ID合并成一个二维数组[两个都不为空时合并，否则取出不为空的数组]
+		if ($gids && $gids1) {
+			$gids = array_merge($gids, $gids1);
+		}elseif($gids1){
+			$gids = $gids1;
+		}
+		//二维转一维
+		$id = array();
+		foreach ($gids as $k => $v) {
+			if (!in_array($v['id'],$id)) {
+				$id[] = $v['id'];
+			}
+		}
+		return $id;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
