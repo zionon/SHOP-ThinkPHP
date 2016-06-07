@@ -20,7 +20,7 @@
 
 <!-- 商品列表 -->
 <div class="main-div">
-<form method="POST" action="/index.php/Admin/Category/categoryEdit/id/34.html" name="main_form">
+<form method="POST" action="/index.php/Admin/Category/categoryEdit/id/1.html" name="main_form">
     <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
         <table cellpadding="3" cellspacing="1">
             <tr>

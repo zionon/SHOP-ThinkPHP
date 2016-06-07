@@ -82,6 +82,15 @@ create table st_category
 	primary key (id)
 )engine=InnoDB default charset=utf8 comment '分类';
 
+drop table if exists st_goods_cat
+create table st_goods_cat
+(
+	cat_id mediumint unsigned not null comment '分类id',
+	goods_id mediumint unsigned not null comment '商品Id',
+	key goods_id(goods_id),
+	key cat_id(cat_id)
+)engine=InnoDB default charset=utf8 comment '商品拓展分类';
+
 
 
 
