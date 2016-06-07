@@ -6,14 +6,15 @@ use Think\Model;
 class GoodsModel extends Model{
 
 	//添加时调用create方法允许接收的字段
-	protected $insertFields = 'goods_name,market_price,shop_price,is_on_sale,goods_desc,brand_id';
+	protected $insertFields = 'goods_name,market_price,shop_price,is_on_sale,goods_desc,brand_id,cat_id';
 	//修改时调用create方法允许接收的字段
-	protected $updateFields = 'id,goods_name,market_price,shop_price,is_on_sale,goods_desc,brand_id';
+	protected $updateFields = 'id,goods_name,market_price,shop_price,is_on_sale,goods_desc,brand_id,cat_id';
 	//定义验证规则
 	protected $_validate = array(
 		array('goods_name','require','商品名称不能为空!',1),
 		array('market_price','currency','市场价格必须是货币类型',1),
 		array('shop_price','currency','本店价格必须是货币类型',1),
+		array('cat_id', 'require', '必须选择主分类', 1),
 		);
 
 	//这个方法在添加之前会自动调用 －－》钩子方法
@@ -243,10 +244,21 @@ class GoodsModel extends Model{
 		} elseif ($ta) {
 			$where['addtime'] = array('elt',$ta);	//WHERE shop_price <= $ta
 		}
-		//品牌
+		//品牌搜索
 		$brandId = I('get.brand_id');
 		if ($brandId) {
 			$where['brand_id'] = array('eq',$brandId);
+		}
+		//分类搜索
+		$catId = I('get.cat_id');
+		if ($catId) {
+			//先取出所有子分类的ID
+			$catModel = new \Admin\Model\CategoryModel();
+			$children = $catModel->getChildren($catId);
+			//和子分类放一起
+			$children[] = $catId;
+			//搜索出所有这些分类下的商品
+			$where['cat_id'] = array('IN',$children);
 		}
 
 		//排序
@@ -279,9 +291,10 @@ class GoodsModel extends Model{
 		//取某一页的数据
 		// $data = $this->order("$orderby $orderway")->where($where)->limit($pageObj->firstRow.','.$pageObj->listRows)->select();
 		$data = $this->order("$orderby $orderway")		//排序
-		->field('a.*,b.brand_name')
+		->field('a.*,b.brand_name,c.cat_name')
 		->alias('a')
-		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id')
+		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id 
+				LEFT JOIN __CATEGORY__ c ON a.cat_id=c.id')
 		->where($where)
 		->limit($pageObj->firstRow.','.$pageObj->listRows)
 		->select();

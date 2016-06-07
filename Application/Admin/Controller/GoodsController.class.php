@@ -37,8 +37,12 @@ class GoodsController extends Controller{
 		//取出所有的会员级别
 		$mlModel = new \Admin\Model\MemberLevelModel();
 		$mlData = $mlModel->select();
+		//取出所有的分类做下拉框
+		$catModel = new \Admin\Model\CategoryModel();
+		$catData = $catModel->getTree();
 		//设置页面信息
 		$this->assign(array(
+			'catData' => $catData,
 			'mlData' => $mlData,
 			'brandData' => $brandData,
 			'_page_title' => '商品添加',
@@ -56,8 +60,12 @@ class GoodsController extends Controller{
 		$data = $model->search();
 		// dump($data);
 		$this->assign($data);
+		//取出所有的分类做下拉框
+		$catModel = new \Admin\Model\CategoryModel();
+		$catData = $catModel->getTree();
 		// 设置页面信息
 		$this->assign(array(
+			'catData' => $catData,
 			'_page_title' => '商品列表',
 			'_page_btn_name' => '商品添加',
 			'_page_btn_link' => U('goodsAdd'),
@@ -103,8 +111,13 @@ class GoodsController extends Controller{
 		$gpData = $gpModle->field('id,mid_pic')->where(array(
 			'goods_id' => array('eq',$id),
 		))->select();
+
+		//取出所有的分类做下拉框
+		$catModel = new \Admin\Model\CategoryModel();
+		$catData = $catModel->getTree();
 		//设置页面信息
 		$this->assign(array(
+			'catData' => $catData,
 			'mpData' => $_mpData,
 			'mlData' => $mlData,
 			'gpData' => $gpData,

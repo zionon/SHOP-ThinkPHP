@@ -21,10 +21,12 @@ create table st_goods
 	big_logo varchar(150) not null default '' comment '大图',
 	mbig_logo varchar(150) not null default '' comment '更大图',
 	brand_id mediumint unsigned not null default '0' comment '品牌id',
+	cat_id mediumint unsigned not null default '0' comment '主分类Id',
 	primary key (id),
 	key shop_price(shop_price),
 	key addtime(addtime),
 	key is_on_sale(is_on_sale),
+	key cat_id(cat_id),
 	key brand_id(brand_id)
 )engine=InnoDB default charset=utf8 comment '商品';
 
