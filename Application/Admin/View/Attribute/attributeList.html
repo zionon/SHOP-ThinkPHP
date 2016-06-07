@@ -37,7 +37,7 @@
 				<td><?php echo $v['attr_option_values']; ?></td>
 				<td><?php echo $v['type_id']; ?></td>
 		        <td align="center">
-		        	<a href="<?php echo U('attributeEdit?id='.$v['id'].'&type_id='.I('get.type_id')); ?>" title="编辑">编辑</a> |
+		        	<a href="<?php echo U('attributeEdit?id='.$v['id'].'&type_id='.$v['type_id']); ?>" title="编辑">编辑</a> |
 	                <a href="<?php echo U('delete?id='.$v['id'].'&p='.I('get.p').'&type_id='.I('get.type_id')); ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a> 
 		        </td>
 	        </tr>

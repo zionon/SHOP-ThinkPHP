@@ -30,7 +30,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/goods/goodsAdd" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsAdd.html" method="post">
             <!-- 基本信息 -->
             <table width="90%" class="tab_table" align="center">
                 <tr>
