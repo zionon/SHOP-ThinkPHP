@@ -21,7 +21,7 @@
 
 <div class="tab-div">
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Attribute/attributeAdd.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Attribute/attributeAdd/type_id/3.html" method="post">
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">属性名称：</td>
@@ -44,7 +44,7 @@
                 <tr>
                     <td class="label">所属类型:</td>
                     <td>
-                    <?php buildSelect('Type', 'type_id', 'id', 'type_name',I(get.type_id)); ?>
+                    <?php buildSelect('Type', 'type_id', 'id', 'type_name',I('get.type_id')); ?>
                     </td>
                 </tr>
             </table>

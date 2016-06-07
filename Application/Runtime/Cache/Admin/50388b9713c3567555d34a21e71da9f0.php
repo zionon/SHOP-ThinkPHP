@@ -31,6 +31,7 @@
             <tr class="tron">
                 <td align="center"><?php echo $v['type_name']; ?></td>
                 <td align="center">
+                    <a href="<?php echo U('Attribute/attributeList?type_id='.$v['id']); ?>" title="属性列表">属性列表</a>
                     <a href="<?php echo U('typeEdit?id='.$v['id']); ?>">修改</a>
                     <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete?id='.$v['id']); ?>">删除</a>
                 </td>

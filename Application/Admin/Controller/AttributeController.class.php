@@ -10,7 +10,7 @@ class AttributeController extends Controller{
 			$model = new \Admin\Model\AttributeModel();
 			if ($model->create(I('post.'),1)) {
 				if ($model->add()) {
-					$this->success('属性添加成功!!',U('attributeList'));
+					$this->success('属性添加成功!!',U('attributeList?p='.I('get.p').'&type_id='.I('get.type_id')));
 					exit;
 				}
 			} else {
@@ -35,7 +35,7 @@ class AttributeController extends Controller{
 			'page' => $data['page'],
 			'_page_title' => '属性列表',
 			'_page_btn_name' => '添加属性',
-			'_page_btn_link' => U('attributeAdd'),
+			'_page_btn_link' => U('attributeAdd?type_id='.I('get.type_id')),
 		));
 		$this->display();
 	}
