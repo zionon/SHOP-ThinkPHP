@@ -40,4 +40,22 @@ class AttributeModel extends Model{
 		$data['data'] = $this->alias('a')->where($where)->group('a.id')->limit($page->firstRow.','.$page->listRows)->select();
 		return $data;
 	}
+
+	protected function _before_insert(&$data,$option) {
+		//把中文逗号换成英文的
+		$data['attr_option_values'] = str_replace('，', ',', $data['attr_option_values']);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

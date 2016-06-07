@@ -101,7 +101,14 @@
             </table>
             <!-- 商品属性 -->
             <table style="display: none" width="90%" class="tab_table" align="center">
-                <tr><td></td></tr>
+                <tr>
+                    <td>
+                        商品类型：<?php buildSelect('Type', 'type_id', 'id', 'type_name'); ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td><ul id="attr_list"></ul></td>
+                </tr>
             </table>
             <!-- 商品相册 -->
             <table style="display: none" width="90%" class="tab_table" align="center">
@@ -158,6 +165,57 @@ $("#tabbar-div p span").click(function(){
         var file = '<li><input type="file" name="pic[]" /></li>';
         $("#ul_pic_list").append(file);
     })
+</script>
+
+<script type="text/javascript">
+    //选择类型获取属性的AJAX
+    $("select[name=type_id]").change(function(){
+        //获取当前选中的类型的ID
+        var typeId = $(this).val();
+        //如果选择了一个类型就执行AJAX取属性
+        if (typeId > 0) {
+            //根据类型ID执行AJAX取出这个类型下的属性，并获取返回的JSON数据
+            $.ajax({
+                type : "GET",
+                url : "<?php echo U('ajaxGetAttr', '', FALSE); ?>/type_id/"+typeId,
+                dataType : "json",
+                success : function(data){
+                    //把服务器返回的属性循环拼成一个LI字符串，并显示在页面中
+                    var li = "";
+                    //循环每个属性
+                    $(data).each(function(k,v){
+                        li += '<li>';
+                        //如果这个属性类型时可选的就有一个＋
+                        if (v.attr_type == '可选') {
+                            li += '<a href="">[+]</a>';
+                        }
+                        //属性名称
+                        li += v.attr_name + ' : ';
+                        //如果属性有可选值就做下拉框，否则做文本框
+                        if (v.attr_option_values == "") {
+                            li += '<input type="text" />';
+                        } else {
+                            li += '<select><option value="">请选择...</option>';
+                            //把可选值根据,转化成数组
+                            var _attr = v.attr_option_values.split(',');
+                            //循环每个值制作option
+                            for(var i=0; i<_attr.length; i++){
+                                li += '<option value="'+_attr[i]+'">';
+                                li += _attr[i];
+                                li += '</option>';
+                            }
+                            li += '</select>';
+                        }
+                        li += '</li>'
+                    });
+                    //把拼好的LI放到页面中
+                    $("#attr_list").html(li);
+                }
+            });
+        } else {
+            $("#attr_list").html("");   //如果选的是情选择，就直接清空
+        }
+    });
 </script>
 
 

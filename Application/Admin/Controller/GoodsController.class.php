@@ -156,6 +156,16 @@ class GoodsController extends Controller{
 		//从数据库中删除记录
 		$gpModle->delete($picId);
 	}
+
+	//处理获取属性的AJAX请求
+	public function ajaxGetAttr() {
+		$typeId = I('get.type_id');
+		$attrModel = new \Admin\Model\AttributeModel();
+		$attrData = $attrModel->where(array(
+			'type_id' => array('eq', $typeId),
+		))->select();
+		echo json_encode($attrData);
+	}
 }
 
 
