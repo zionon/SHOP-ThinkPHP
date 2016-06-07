@@ -1,0 +1,27 @@
+<!-- 引入布局文件 -->
+<layout name="layout" />
+
+<div class="tab-div">
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front" id="general-tab">通用信息</span>
+        </p>
+    </div>
+    <div id="tabbody-div">
+        <form enctype="multipart/form-data" action="__SELF__" method="post">
+        <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+            <table width="90%" id="general-table" align="center">
+                <tr>
+                    <td class="label">类型名称：</td>
+                    <td><input type="text" name="type_name" size="60" value="<?php echo $data['type_name']; ?>" />
+                    <span class="require-field">*</span></td>
+                </tr>
+            </table>
+            <div class="button-div">
+                <input type="submit" value=" 确定 " class="button"/>
+                <input type="reset" value=" 重置 " class="button" />
+            </div>
+        </form>
+    </div>
+</div>
+</html>

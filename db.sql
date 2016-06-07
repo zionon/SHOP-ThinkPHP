@@ -124,6 +124,15 @@ create table st_goods_attr
 	key attr_id(attr_id)
 )engine=InnoDB default charset=utf8 comment '商品属性';
 
+drop table if exists st_goods_number;
+create table st_goods_number
+(
+	goods_id mediumint unsigned not null comment '商品Id',
+	goods_number mediumint unsigned not null default '0' comment '库存量',
+	goods_attr_id varchar(150) not null comment '商品属性表的ID,如果有多个,就用程序拼成字符串存到这个字段中',
+	key goods_id(goods_id)
+)engine=InnoDB default charset=utf8 comment '库存量';
+
 
 
 
