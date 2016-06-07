@@ -22,17 +22,16 @@ class CategoryModel extends Model {
 		static $_ret = array();		//保存找到的子分类的ID
 		if ($isClear) {
 			$_ret = array();
-		} else {
-			//循环所有的分类找子分类
-			foreach ($data as $k => $v) {
-				if ($v['parent_id'] == $catId) {
-					$_ret[] = $v['id'];
-					//再找这个$v的子分类
-					$this->_getChildren($data,$v['id']);
-				}
-			}
-			return $_ret;
 		}
+		//循环所有的分类找子分类
+		foreach ($data as $k => $v) {
+			if ($v['parent_id'] == $catId) {
+				$_ret[] = $v['id'];
+				//再找这个$v的子分类
+				$this->_getChildren($data,$v['id']);
+			}
+		}
+		return $_ret;
 	}
 
 	public function getTree() {

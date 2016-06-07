@@ -60,12 +60,38 @@ class CategoryController extends Controller{
 		$model = new \Admin\Model\CategoryModel();
 		$id = I('get.id');
 		if (IS_POST) {
-			
+			if ($model->create(I('post.'),2)) {
+				if ($model->save()!== FALSE) {
+					$this->success('修改成功!',U('categoryList',array('p' => I('get.p', 1))));
+					exit;
+				}
+			} else {
+				$this->error($model->getError());
+			}
 		} else {
 			//取出所有的分类做下拉框
 			$catData = $model->getTree();
 			//取出当前分类的子分类
 			$children = $model->getChildren($id);
+			//取出当前分类
+			$data = $model->find($id);
+
+			// dump($data);
+			// dump($children);
+			// dump($catData);
+			// die;
+
+			$this->assign(array(
+				'children' => $children,
+				'data' => $data,
+				'catData' => $catData,
+			));
+			$this->assign(array(
+				'_page_title' => '分类修改',
+				'_page_btn_name' => '分类列表',
+				'_page_btn_link' => U('categoryList'),
+			));
+			$this->display();
 		}
 	}
 }
