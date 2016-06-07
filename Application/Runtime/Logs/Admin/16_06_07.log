@@ -8344,3 +8344,1718 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
 
+[ 2016-06-07T13:32:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList?cat_id=16&brand_id=&gn=&fp=&tp=&ios=&fa=&ta=&odby=id_desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('16')  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a WHERE a.id IN ('23','28') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  WHERE a.id IN ('23','28') GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-06-07T13:33:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList?cat_id=18&brand_id=&gn=&fp=&tp=&ios=&fa=&ta=&odby=id_desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('18')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('18')  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a WHERE a.id IN ('28','29') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  WHERE a.id IN ('28','29') GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-06-07T13:33:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList?cat_id=6&brand_id=&gn=&fp=&tp=&ios=&fa=&ta=&odby=id_desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('6')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('6')  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a WHERE a.id IN ('29') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  WHERE a.id IN ('29') GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-06-07T13:35:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList?cat_id=&brand_id=&gn=&fp=&tp=&ios=&fa=&ta=&odby=id_desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-06-07T13:36:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/delete/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0009s ]
+SQL: SELECT `logo`,`mbig_logo`,`big_logo`,`mid_logo`,`sm_logo` FROM `st_goods` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0013s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 28 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `pic`,`sm_pic`,`mid_pic`,`big_pic` FROM `st_goods_pic` WHERE `goods_id` = 28  [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_goods_pic` WHERE `goods_id` = 28 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_goods_cat` WHERE `goods_id` = 28 [ RunTime:0.0009s ]
+SQL: DELETE FROM `st_goods` WHERE `id` = 28 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-06-07T13:36:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-06-07T13:37:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-06-07T13:37:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 83 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-06-07T13:37:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 83 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-06-07T13:46:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-06-07T13:46:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-06-07T13:46:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-06-07T13:46:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-06-07T13:46:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 5,5   [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2016-06-07T13:46:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '17'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '17'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '17'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-06-07T13:46:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004758s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-06-07T13:46:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 5,5   [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-06-07T13:46:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 5,5   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-06-07T13:47:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-06-07T13:47:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-06-07T13:47:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-06-07T13:47:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-06-07T13:47:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0012s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2016-06-07T13:51:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-06-07T13:51:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002603s ]
+
+[ 2016-06-07T13:51:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-06-07T13:51:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-06-07T13:51:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-06-07T13:51:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-06-07T13:51:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '29'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '29'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-06-07T13:51:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0048s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-06-07T13:51:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 29 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_goods_cat` WHERE `goods_id` = 29 [ RunTime:0.0085s ]
+SQL: INSERT INTO `st_goods_cat` (`cat_id`,`goods_id`) VALUES ('1','29') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_goods_cat` (`cat_id`,`goods_id`) VALUES ('18','29') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_goods_cat` (`cat_id`,`goods_id`) VALUES ('5','29') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_goods_cat` (`cat_id`,`goods_id`) VALUES ('6','29') [ RunTime:0.0004s ]
+SQL: UPDATE `st_goods` SET `cat_id`='5',`brand_id`='0',`goods_name`='丝袜',`shop_price`='0.00',`market_price`='0.00',`is_on_sale`='是',`goods_desc`='' WHERE `id` = 29 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-06-07T13:51:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+

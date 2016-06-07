@@ -189,12 +189,31 @@ class GoodsModel extends Model{
 			}
 		}
 
+		//处理拓展分类
+		$ecid = I('post.ext_cat_id');
+		$gcModel = D('goods_cat');
+		//先删除原分类数据
+		$gcModel->where(array(
+			'goods_id'=>array('eq',$id),
+		))->delete();
+		if ($ecid) {
+			foreach ($ecid as $k => $v) {
+				if (empty($v)) 
+					continue;
+				$gcModel->add(array(
+					'cat_id' => $v,
+					'goods_id' => $id,
+				));
+			}
+		}
+
 		//使用自定义过滤文本
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
 	}
 
 	protected function _before_delete($option) {
-		$id = $option['where']['id'];	//要删除的商品ID
+		//要删除的商品ID
+		$id = $option['where']['id'];
 		//删除原来的图片
 		//先查询出原来的图片的路径
 		$oldLogo = $this->field('logo,mbig_logo,big_logo,mid_logo,sm_logo')->find($id);
@@ -219,6 +238,12 @@ class GoodsModel extends Model{
 		}
 		//从数据库中把记录删除
 		$gpModel->where(array(
+			'goods_id' => array('eq',$id),
+		))->delete();
+
+		//删除拓展分类
+		$gcModel = D('goods_cat');
+		$gcModel->where(array(
 			'goods_id' => array('eq',$id),
 		))->delete();
 	}

@@ -115,8 +115,15 @@ class GoodsController extends Controller{
 		//取出所有的分类做下拉框
 		$catModel = new \Admin\Model\CategoryModel();
 		$catData = $catModel->getTree();
+
+		//取出拓展分类ID
+		$gcModel = D('goods_cat');
+		$gcData = $gcModel->where(array(
+			'goods_id' => array('eq',$id),
+		))->select();
 		//设置页面信息
 		$this->assign(array(
+			'gcData' => $gcData,
 			'catData' => $catData,
 			'mpData' => $_mpData,
 			'mlData' => $mlData,

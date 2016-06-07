@@ -52,6 +52,35 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="label">拓展分类:<input type="button" id="btn_add_cat" value="添加一个" onclick="$('#cat_list').append($('#cat_list').find('li').eq(0).clone());" /></td>
+                    <td>
+                        <ul id="cat_list">
+                        <!-- 如果有原分类就循环输出，否则默认输出一个下拉框 -->
+                            <?php if($gcData): ?>
+                                <?php foreach ($gcData as $k1 => $v1): ?>
+                                <li>
+                                    <select name="ext_cat_id[]">
+                                        <option value="">选择分类</option>
+                                        <?php foreach ($catData as $k => $v): if($v['id'] == $v1['cat_id']) $select = 'selected="selected"'; else $select = ''; ?>
+                                        <option <?php echo $select; ?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['level']) . $v['cat_name']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </li>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <li>
+                                    <select name="ext_cat_id[]">
+                                        <option value="">选择分类</option>
+                                        <?php foreach ($catData as $k => $v): ?>
+                                        <option <?php echo $select; ?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['level']) . $v['cat_name']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </li>
+                            <?php endif; ?>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
                     <td class="label">所在品牌：</td>
                     <td>
                         <?php buildSelect('brand','brand_id','id','brand_name',$data['brand_id']); ?>
