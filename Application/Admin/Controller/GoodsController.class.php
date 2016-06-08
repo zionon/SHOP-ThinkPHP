@@ -165,6 +165,8 @@ class GoodsController extends Controller{
 			'type_id' => array('eq', $typeId),
 		))->select();
 		echo json_encode($attrData);
+		// dump($attrData);
+		// die;
 	}
 }
 

@@ -21,7 +21,7 @@
 
 <div class="tab-div">
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Attribute/attributeAdd.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Attribute/attributeAdd/type_id/2.html" method="post">
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">属性名称：</td>

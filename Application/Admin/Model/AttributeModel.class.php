@@ -6,7 +6,7 @@ use Think\Model;
 
 class AttributeModel extends Model{
 	protected $insertFields = 'attr_name,attr_type,attr_option_values,type_id';
-	protected $updateFields = '';
+	protected $updateFields = 'attr_name,attr_type,attr_option_values,type_id,id';
 	protected $_validate = array(
 		array('attr_name', 'require', '属性名称不能为空！', 1, 'regex', 3),
 		array('attr_name', '1,30', '属性名称的值最长不能超过 30 个字符！', 1, 'length', 3),
