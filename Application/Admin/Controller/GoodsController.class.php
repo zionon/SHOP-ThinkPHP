@@ -125,16 +125,25 @@ class GoodsController extends Controller{
 		))->select();
 
 		//取出这件商品已经设置了的属性值
-		$gaModel = D('goods_attr');
-		$gaData = $gaModel->alias('a')
-		->field('a.*,b.attr_name,b.attr_type,b.attr_option_values')
-		->join('LEFT JOIN __ATTRIBUTE__ b ON a.attr_id=b.id')
+		// $gaModel = D('goods_attr');
+		// $gaData = $gaModel->alias('a')
+		// ->field('a.*,b.attr_name,b.attr_type,b.attr_option_values')
+		// ->join('LEFT JOIN __ATTRIBUTE__ b ON a.attr_id=b.id')
+		// ->where(array(
+		// 	'a.goods_id' => array('eq', $id),
+		// ))->select();
+		
+		//取出当前类型下所有的属性
+		$attrModel = new \Admin\Model\AttributeModel();
+		$attrData = $attrModel->alias('a')
+		->field('a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id')
+		->join('LEFT JOIN __GOODS_ATTR__ b ON  (a.id=b.attr_id AND b.goods_id='.$id.')')
 		->where(array(
-			'a.goods_id' => array('eq', $id),
+			'a.type_id' => array('eq',$data['type_id']),
 		))->select();
 		//设置页面信息
 		$this->assign(array(
-			'gaData' => $gaData,
+			'attrData' => $attrData,
 			'gcData' => $gcData,
 			'catData' => $catData,
 			'mpData' => $_mpData,

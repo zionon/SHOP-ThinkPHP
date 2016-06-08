@@ -35,7 +35,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsEdit/id/35.html" method="post">
         <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <!-- 基本信息 -->
             <table width="90%" id="general-table" align="center" class="tab_table">
@@ -150,7 +150,7 @@
                 <tr>
                     <td><ul id="attr_list">
                     <?php
- $attrId = array(); foreach ($gaData as $k => $v): if(in_array($v['attr_id'], $attrId)) $opt = '-'; else { $opt = '+'; $attrId[] = $v['attr_id']; } ?>
+ $attrId = array(); foreach ($attrData as $k => $v): if(in_array($v['attr_id'], $attrId)) $opt = '-'; else { $opt = '+'; $attrId[] = $v['attr_id']; } ?>
                         <li>
                             <?php if($v['attr_type'] == '可选'): ?>
                                 <a onclick="addNewAttr(this)" href="#">[<?php echo $opt; ?>]</a>
