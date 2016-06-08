@@ -149,10 +149,11 @@
                 </tr>
                 <tr>
                     <td><ul id="attr_list">
-                    <?php foreach ($gaData as $k => $v): ?>
+                    <?php
+ $attrId = array(); foreach ($gaData as $k => $v): if(in_array($v['attr_id'], $attrId)) $opt = '-'; else { $opt = '+'; $attrId[] = $v['attr_id']; } ?>
                         <li>
                             <?php if($v['attr_type'] == '可选'): ?>
-                                <a onclick="addNewAttr(this)" href="#">[+]</a>
+                                <a onclick="addNewAttr(this)" href="#">[<?php echo $opt; ?>]</a>
                             <?php endif; ?>
                             <?php echo $v['attr_name']; ?>:
                             <?php if($v['attr_option_values']): $attr = explode(',', $v['attr_option_values']); ?>

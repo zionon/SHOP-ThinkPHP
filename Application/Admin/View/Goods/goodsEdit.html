@@ -141,10 +141,20 @@
                 </tr>
                 <tr>
                     <td><ul id="attr_list">
-                    <?php foreach ($gaData as $k => $v): ?>
+                    <?php
+                    $attrId = array();  //所有出现过的属性ID
+                    foreach ($gaData as $k => $v): 
+                        //判断如果这个属性ID第一次出现就是+否则是-
+                        if(in_array($v['attr_id'], $attrId))
+                            $opt = '-';
+                        else {
+                            $opt = '+';
+                            $attrId[] = $v['attr_id'];
+                        }
+                    ?>
                         <li>
                             <?php if($v['attr_type'] == '可选'): ?>
-                                <a onclick="addNewAttr(this)" href="#">[+]</a>
+                                <a onclick="addNewAttr(this)" href="#">[<?php echo $opt; ?>]</a>
                             <?php endif; ?>
                             <?php echo $v['attr_name']; ?>:
                             <?php if($v['attr_option_values']):
