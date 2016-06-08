@@ -158,14 +158,14 @@
                             <?php endif; ?>
                             <?php echo $v['attr_name']; ?>:
                             <?php if($v['attr_option_values']): $attr = explode(',', $v['attr_option_values']); ?>
-                                <select>
+                                <select name="attr_value[<?php echo $v['attr_id']; ?>][]">
                                     <option value="">请选择</option>
                                     <?php foreach ($attr as $k1 => $v1): if($v1 == $v['attr_value']) $select = 'selected="selected"'; else $select = ''; ?>
                                         <option <?php echo $select; ?> value="<?php echo $v1; ?>"><?php echo $v1; ?></option>
                                     <?php endforeach; ?>    
                                 </select>
                             <?php else: ?>
-                                <input type="text" name="" value="<?php echo $v['attr_value']; ?>" />
+                                <input type="text" name="attr_value[<?php echo $v['attr_id']; ?>]" value="<?php echo $v['attr_value']; ?>" />
                             <?php endif; ?>
                         </li>
                     <?php endforeach; ?>

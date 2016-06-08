@@ -241,9 +241,9 @@ class GoodsModel extends Model{
 		$gaid = I('post.goods_attr_id');
 		$attrValue = I('post.attr_value');
 		$gaModel = D('goods_attr');
-		dump($gaid);
-		dump($attrValue);
-		die;
+		// dump($gaid);
+		// dump($attrValue);
+		// die;
 		$_i = 0; 		//循环次数
 		foreach ($attrValue as $k => $v) {
 			foreach ($v as $k1 => $v1) {
