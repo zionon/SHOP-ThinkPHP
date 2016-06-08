@@ -223,17 +223,39 @@ class GoodsModel extends Model{
 		}
 
 		//处理商品属性
+		// $attrValue = I('post.attr_value');
+		// $gaModel = D('goods_attr');
+		// foreach ($attrValue as $k => $v) {
+		// 	//把属性值的数组去重
+		// 	$v = array_unique($v);
+		// 	foreach ($v as $k1 => $v1) {
+		// 		$gaModel->add(array(
+		// 			'attr_value' => $v1,
+		// 			'attr_id' => $k,
+		// 			'goods_id' => $data['id'],
+		// 		));
+		// 	}
+		// }
+
+		//修改商品属性
+		$gaid = I('post.goods_attr_id');
 		$attrValue = I('post.attr_value');
 		$gaModel = D('goods_attr');
+		$_i = 0; 		//循环次数
 		foreach ($attrValue as $k => $v) {
-			//把属性值的数组去重
-			$v = array_unique($v);
 			foreach ($v as $k1 => $v1) {
-				$gaModel->add(array(
-					'attr_value' => $v1,
-					'attr_id' => $k,
-					'goods_id' => $data['id'],
-				));
+				if ($gaid[$_i] == '') {
+					$gaModel->add(array(
+						'goods_id' => $id,
+						'attr_id' => $k,
+						'attr_value' => $v1,
+					));
+				} else {
+					$gaModel->where(array(
+						'id' => array('eq', $gaid[$_i]),
+					))->setField('attr_value', $v1);
+				}
+				$_i++;
 			}
 		}
 
