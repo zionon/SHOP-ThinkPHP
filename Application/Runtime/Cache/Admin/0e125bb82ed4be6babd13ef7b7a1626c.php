@@ -314,13 +314,32 @@ function addNewAttr(a) {
         var newLi = li.clone();
         //去掉选中状态
         newLi.find("option:selected").removeAttr("selected");
+        //把克隆出来的隐藏域里的ID清空
+        newLi.find("input[name='goods_attr_id[]']").val("");
         //+变-
         newLi.find("a").text('[-]');
         //新的放在li后面
         li.after(newLi);
     } 
-    else
-        li.remove();
+    else{
+        //先获取这个属性值的id
+        var gaid = li.find("input[name='goods_attr_id[]']").val();
+        //如果没用ID就直接删除，如果有ID说明时旧的属性值需要AJAX删除
+        if (gaid == '') {
+            li.remove();
+        } else {
+            if (confirm('如果删除了这个属性，那么相关的库存量数据也会被一起删除，确定要删除吗？')) {
+                $.ajax({
+                    type : 'GET',
+                    url : "<?php echo U('ajaxDelAttr?goods_id='.$data['id'], '', FALSE); ?>/gaid/"+gaid,
+                    success : function($data){
+                        //再把页面中的记录删除
+                        li.remove();
+                    }
+                });
+            }
+        }
+    }
     
 }
 </script>
