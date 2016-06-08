@@ -205,7 +205,7 @@ $("#tabbar-div p span").click(function(){
                         li += '<li>';
                         //如果这个属性类型时可选的就有一个＋
                         if (v.attr_type == '可选') {
-                            li += '<a href="">[+]</a>';
+                            li += '<a onclick="addNewAttr(this);" href="#">[+]</a>';
                         }
                         //属性名称
                         li += v.attr_name + ' : ';
@@ -234,6 +234,22 @@ $("#tabbar-div p span").click(function(){
             $("#attr_list").html("");   //如果选的是情选择，就直接清空
         }
     });
+
+function addNewAttr(a) {
+    //$(a) -->把a转换成jquery中的对象，然后才能调用jquery中的方法
+    //先获取所在的li
+    var li = $(a).parent();
+    if ($(a).text() == '[+]') {
+        var newLi = li.clone();
+        //+变-
+        newLi.find("a").text('[-]');
+        //新的放在li后面
+        li.after(newLi);
+    } 
+    else
+        li.remove();
+    
+}
 </script>
 
 
