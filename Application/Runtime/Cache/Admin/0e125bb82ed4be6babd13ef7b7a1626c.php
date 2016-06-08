@@ -152,6 +152,7 @@
                     <?php
  $attrId = array(); foreach ($attrData as $k => $v): if(in_array($v['attr_id'], $attrId)) $opt = '-'; else { $opt = '+'; $attrId[] = $v['attr_id']; } ?>
                         <li>
+                            <input type="hidden" name="goods_attr_id[]" value="<?php echo $v['id']; ?>" />
                             <?php if($v['attr_type'] == '可选'): ?>
                                 <a onclick="addNewAttr(this)" href="#">[<?php echo $opt; ?>]</a>
                             <?php endif; ?>
@@ -311,6 +312,8 @@ function addNewAttr(a) {
     var li = $(a).parent();
     if ($(a).text() == '[+]') {
         var newLi = li.clone();
+        //去掉选中状态
+        newLi.find("option:selected").removeAttr("selected");
         //+变-
         newLi.find("a").text('[-]');
         //新的放在li后面
