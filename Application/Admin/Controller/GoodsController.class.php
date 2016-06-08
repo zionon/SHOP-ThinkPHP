@@ -41,6 +41,7 @@ class GoodsController extends Controller{
 		//取出所有的分类做下拉框
 		$catModel = new \Admin\Model\CategoryModel();
 		$catData = $catModel->getTree();
+
 		//设置页面信息
 		$this->assign(array(
 			'catData' => $catData,
@@ -122,8 +123,18 @@ class GoodsController extends Controller{
 		$gcData = $gcModel->where(array(
 			'goods_id' => array('eq',$id),
 		))->select();
+
+		//取出这件商品已经设置了的属性值
+		$gaModel = D('goods_attr');
+		$gaData = $gaModel->alias('a')
+		->field('a.*,b.attr_name,b.attr_type,b.attr_option_values')
+		->join('LEFT JOIN __ATTRIBUTE__ b ON a.attr_id=b.id')
+		->where(array(
+			'a.goods_id' => array('eq', $id),
+		))->select();
 		//设置页面信息
 		$this->assign(array(
+			'gaData' => $gaData,
 			'gcData' => $gcData,
 			'catData' => $catData,
 			'mpData' => $_mpData,
