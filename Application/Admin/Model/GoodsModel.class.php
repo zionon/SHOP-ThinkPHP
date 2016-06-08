@@ -108,6 +108,21 @@ class GoodsModel extends Model{
 				));
 			}
 		}
+
+		//处理商品属性
+		$attrValue = I('post.attr_value');
+		$gaModel = D('goods_attr');
+		foreach ($attrValue as $k => $v) {
+			//把属性值的数组去重
+			$v = array_unique($v);
+			foreach ($v as $k1 => $v1) {
+				$gaModel->add(array(
+					'attr_value' => $v1,
+					'attr_id' => $k,
+					'goods_id' => $data['id'],
+				));
+			}
+		}
 	}
 
 	protected function _before_update(&$data, $option) {
@@ -203,6 +218,21 @@ class GoodsModel extends Model{
 				$gcModel->add(array(
 					'cat_id' => $v,
 					'goods_id' => $id,
+				));
+			}
+		}
+
+		//处理商品属性
+		$attrValue = I('post.attr_value');
+		$gaModel = D('goods_attr');
+		foreach ($attrValue as $k => $v) {
+			//把属性值的数组去重
+			$v = array_unique($v);
+			foreach ($v as $k1 => $v1) {
+				$gaModel->add(array(
+					'attr_value' => $v1,
+					'attr_id' => $k,
+					'goods_id' => $data['id'],
 				));
 			}
 		}

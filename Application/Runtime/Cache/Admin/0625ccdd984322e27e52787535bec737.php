@@ -211,9 +211,9 @@ $("#tabbar-div p span").click(function(){
                         li += v.attr_name + ' : ';
                         //如果属性有可选值就做下拉框，否则做文本框
                         if (v.attr_option_values == "") {
-                            li += '<input type="text" />';
+                            li += '<input type="text" name="attr_value['+v.id+'][]" />';
                         } else {
-                            li += '<select><option value="">请选择...</option>';
+                            li += '<select name="attr_value['+v.id+'][]"><option value="">请选择...</option>';
                             //把可选值根据,转化成数组
                             var _attr = v.attr_option_values.split(',');
                             //循环每个值制作option

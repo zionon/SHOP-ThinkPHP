@@ -10,6 +10,7 @@ class GoodsController extends Controller{
 	public function goodsAdd() {
 		//判断用户是否提交了表单
 		if (IS_POST) {
+			// dump($_POST);die;
 			$model = D('Goods');
 			//2.create方法：a.接收数据并保存到模型中，b.根据模型中定义的规则验证表单
 			/**
