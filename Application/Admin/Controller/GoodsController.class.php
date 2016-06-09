@@ -202,6 +202,21 @@ class GoodsController extends Controller{
 		// 	'goods_id' => array('EXP', "=$goodsId or AND FIND_IN_SET($gaid, attr_list)"),
 		// ))->delete();
 	}
+
+	//商品库存量
+	public function goods_number() {
+		header('Content-Type:text/html;charset=utf8');
+		//接收商品ID
+		$id = I('get.id');
+		//根据商品ID取出这件商品所有可选属性的值
+		$gaModel = D('goods_attr');
+		$gaData = $gaModel->alias('a')
+		->join('LEFT JOIN __ATTRIBUTE__ b ON a.attr_id=b.id')
+		->where(array(
+			'a.goods_id' => array('eq', $id),
+			'b.attr_type' => array('eq', '可选'),
+		))->select();
+	}
 }
 
 
