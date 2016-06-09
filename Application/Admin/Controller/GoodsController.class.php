@@ -216,6 +216,13 @@ class GoodsController extends Controller{
 			'a.goods_id' => array('eq', $id),
 			'b.attr_type' => array('eq', '可选'),
 		))->select();
+		//处理这个二维数组：转化成三维：把属性相同的放到一起
+		$_gaData = array();
+		foreach ($gaData as $k => $v) {
+			$_gaData[$v['attr_name']][] = $v;
+		}
+		dump($_gaData);
+		die;
 	}
 }
 
