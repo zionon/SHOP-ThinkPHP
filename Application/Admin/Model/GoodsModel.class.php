@@ -246,7 +246,7 @@ class GoodsModel extends Model{
 		// die;
 		$_i = 0; 		//循环次数
 		foreach ($attrValue as $k => $v) {
-			dump($v);
+			// dump($v);
 			foreach ($v as $k1 => $v1) {
 				dump($v1);
 				// if ($gaid[$_i] == '') {

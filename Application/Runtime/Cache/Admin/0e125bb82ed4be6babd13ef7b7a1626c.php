@@ -165,7 +165,7 @@
                                     <?php endforeach; ?>    
                                 </select>
                             <?php else: ?>
-                                <input type="text" name="attr_value[<?php echo $v['attr_id']; ?>]" value="<?php echo $v['attr_value']; ?>" />
+                                <input type="text" name="attr_value[<?php echo $v['attr_id']; ?>][]" value="<?php echo $v['attr_value']; ?>" />
                             <?php endif; ?>
                         </li>
                     <?php endforeach; ?>
