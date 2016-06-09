@@ -223,6 +223,15 @@ class GoodsController extends Controller{
 		}
 		dump($_gaData);
 		die;
+
+		$this->assign(array(
+			'gaData' => $_gaData,
+			'_page_title' => '库存量',
+			'_page_btn_name' => '返回列表',
+			'_page_btn_link' => U('goodsList'),
+		));
+		//显示表单
+		$this->display();
 	}
 }
 
