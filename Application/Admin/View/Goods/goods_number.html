@@ -4,6 +4,10 @@
 <div class="list-div" id="listDiv">
 	<table cellpadding="3" cellspacing="1">
 		<tr>
+			<!-- 循环输出属性 -->
+			<?php foreach ($gaData as $k => $v): ?>
+				<th><?php echo $k; ?></th>
+			<?php endforeach; ?>
 			<th>库存量</th>
 			<th width="60">操作</th>
 		</tr>
