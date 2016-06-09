@@ -243,24 +243,27 @@ class GoodsModel extends Model{
 		$gaModel = D('goods_attr');
 		dump($gaid);
 		dump($attrValue);
-		die;
+		// die;
 		$_i = 0; 		//循环次数
 		foreach ($attrValue as $k => $v) {
+			dump($v);
 			foreach ($v as $k1 => $v1) {
-				if ($gaid[$_i] == '') {
-					$gaModel->add(array(
-						'goods_id' => $id,
-						'attr_id' => $k,
-						'attr_value' => $v1,
-					));
-				} else {
-					$gaModel->where(array(
-						'id' => array('eq', $gaid[$_i]),
-					))->setField('attr_value', $v1);
-				}
-				$_i++;
+				dump($v1);
+				// if ($gaid[$_i] == '') {
+				// 	$gaModel->add(array(
+				// 		'goods_id' => $id,
+				// 		'attr_id' => $k,
+				// 		'attr_value' => $v1,
+				// 	));
+				// } else {
+				// 	$gaModel->where(array(
+				// 		'id' => array('eq', $gaid[$_i]),
+				// 	))->setField('attr_value', $v1);
+				// }
+				// $_i++;
 			}
 		}
+		die;
 
 		//使用自定义过滤文本
 		$data['goods_desc'] = removeXSS($_POST['goods_desc']);
