@@ -221,8 +221,8 @@ class GoodsController extends Controller{
 		foreach ($gaData as $k => $v) {
 			$_gaData[$v['attr_name']][] = $v;
 		}
-		dump($_gaData);
-		die;
+		// dump($_gaData);
+		// die;
 
 		$this->assign(array(
 			'gaData' => $_gaData,

@@ -1,4 +1,22 @@
-<layout name="layout" />
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心 - 商品列表 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+    <?php if($_page_btn_name): ?>
+    <span class="action-span"><a href="<?php echo $_page_btn_link; ?>"><?php echo $_page_btn_name; ?></a></span>
+    <?php endif; ?>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - <?php echo $_page_title; ?> </span>
+    <div style="clear: both"></div>
+</h1>
+<!-- 内容-->
+
 
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
@@ -13,14 +31,14 @@
 		</tr>
 		<tr>
 			<?php
-			$gaCount = count($gaData);
-			foreach ($gaData as $k => $v): ?>
+ $gaCount = count($gaData); foreach ($gaData as $k => $v): ?>
 				<td>
 					<select>
 						<option value="">请选择</option>
 						<?php foreach ($v as $k1 => $v1): ?>
 							<option value=""><?php echo $v1['attr_value']; ?></option>
-						<?end foreach; ?>
+						<?php echo '<?'; ?>
+end foreach; ?>
 					</select>
 				</td>
 			<?php endforeach; ?>
@@ -49,3 +67,6 @@
 		}
 	}
 </script>
+
+</body>
+</html>
