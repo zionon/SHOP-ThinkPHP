@@ -33,15 +33,15 @@
 			<?php
  $gaCount = count($gaData); foreach ($gaData as $k => $v): ?>
 				<td>
-					<select>
+					<select name="goods_attr_id[]">
 						<option value="">请选择</option>
 						<?php foreach ($v as $k1 => $v1): ?>
-							<option value=""><?php echo $v1['attr_value']; ?></option>
+							<option value="<?php echo $v1['id']; ?>"><?php echo $v1['attr_value']; ?></option>
 						<?php endforeach; ?>
 					</select>
 				</td>
 			<?php endforeach; ?>
-			<td><input type="text" name="" /></td>
+			<td><input type="text" name="goods_number[]" /></td>
 			<td><input type="button" value="+" onclick="addNewTr(this)" /></td>
 		</tr>
 		<tr id="submit">
