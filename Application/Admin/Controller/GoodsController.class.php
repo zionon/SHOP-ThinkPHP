@@ -208,6 +208,12 @@ class GoodsController extends Controller{
 		header('Content-Type:text/html;charset=utf8');
 		//接收商品ID
 		$id = I('get.id');
+
+		//处理表单
+		if (IS_POST) {
+			dump($_POST);die;
+		}
+
 		//根据商品ID取出这件商品所有可选属性的值
 		$gaModel = D('goods_attr');
 		$gaData = $gaModel->alias('a')
