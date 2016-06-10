@@ -37,8 +37,7 @@
 						<option value="">请选择</option>
 						<?php foreach ($v as $k1 => $v1): ?>
 							<option value=""><?php echo $v1['attr_value']; ?></option>
-						<?php echo '<?'; ?>
-end foreach; ?>
+						<?php endforeach; ?>
 					</select>
 				</td>
 			<?php endforeach; ?>
