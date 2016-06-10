@@ -53,7 +53,7 @@
 	
 </div>
 
-
+<script type="text/javascript" src="/Public/umeditor1_2_2-utf8-php/third-party/jquery.min.js"></script>
 <script type="text/javascript">
 	function addNewTr(btn){
 		var tr = $(btn).parent().parent();
