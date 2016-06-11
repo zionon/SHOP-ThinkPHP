@@ -1,0 +1,242 @@
+[ 2016-06-11T14:24:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0102s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-06-11T14:24:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2016-06-11T14:24:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0018s ]
+SQL: SELECT * FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '35' AND b.attr_type = '可选'  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-06-11T14:26:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-06-11T14:35:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT * FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '35' AND b.attr_type = '可选'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-06-11T14:35:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0013s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-06-11T14:35:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT * FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '35' AND b.attr_type = '可选'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2016-06-11T14:35:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0004s ]
+NOTIC: [8] Uninitialized string offset: 0 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/GoodsController.class.php 第 228 行.
+SQL: INSERT INTO `st_goods_number` (`goods_id`,`goods_attr_id`,`goods_number`) VALUES ('35','','100') [ RunTime:0.0084s ]
+NOTIC: [8] Uninitialized string offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/GoodsController.class.php 第 228 行.
+SQL: INSERT INTO `st_goods_number` (`goods_id`,`goods_attr_id`,`goods_number`) VALUES ('35','','200') [ RunTime:0.0006s ]
+
+[ 2016-06-11T14:37:05+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT * FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '35' AND b.attr_type = '可选'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2016-06-11T14:37:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0005s ]
+NOTIC: [8] Uninitialized string offset: 0 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/GoodsController.class.php 第 228 行.
+
+[ 2016-06-11T14:38:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0005s ]
+NOTIC: [8] Uninitialized string offset: 0 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/GoodsController.class.php 第 229 行.
+
+[ 2016-06-11T14:41:08+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0005s ]
+
+[ 2016-06-11T14:42:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_goods_number` (`goods_id`,`goods_attr_id`,`goods_number`) VALUES ('35','4,5,6','100') [ RunTime:0.0083s ]
+SQL: INSERT INTO `st_goods_number` (`goods_id`,`goods_attr_id`,`goods_number`) VALUES ('35','4,5,6','300') [ RunTime:0.0008s ]
+

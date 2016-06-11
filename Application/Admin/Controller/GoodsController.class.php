@@ -211,7 +211,34 @@ class GoodsController extends Controller{
 
 		//处理表单
 		if (IS_POST) {
-			dump($_POST);die;
+			// dump($_POST);
+			$gaid = I('post.goods_attr_id');
+			$gn = I('post.goods_number');
+			$gnModel = D('goods_number');
+			//先计算商品属性ID和库存量的比例
+			$gaidCount = count($gaid);
+			$gnCount = count($gn);
+			$rate = $gaidCount/$gnCount;
+			// dump($rate);
+			//循环库存量
+			$_i = 0;	//取第几个商品属性ID
+			foreach ($gn as $k => $v) {
+				$_goodsAttrId = array();	//把下面取出来的ID放这里
+				//后来从商品属性ID数组中取出$rate个，循环一次取一个
+				for ($i=0; $i < $rate; $i++) { 
+					$_goodsAttrId[] = $gaid[$_i];
+					$_i++;
+				}
+				//把取出来的商品属性ID转化成字符串
+				$_goodsAttrId = (string)implode(',', $_goodsAttrId);
+				// dump($_goodsAttrId);die;
+				$gnModel->add(array(
+					'goods_id' => $id,
+					'goods_attr_id' => $_goodsAttrId,
+					'goods_number' => $v,
+				));
+			}
+			die;
 		}
 
 		//根据商品ID取出这件商品所有可选属性的值

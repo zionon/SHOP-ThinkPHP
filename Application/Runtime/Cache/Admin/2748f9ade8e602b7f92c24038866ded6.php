@@ -20,6 +20,7 @@
 
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
+<form method="POST" action="/index.php/Admin/Goods/goods_number/id/35.html">
 	<table cellpadding="3" cellspacing="1">
 		<tr>
 			<!-- 循环输出属性 -->
@@ -50,7 +51,8 @@
 		</tr>
 
 	</table>
-	
+
+</form>	
 </div>
 
 <script type="text/javascript" src="/Public/umeditor1_2_2-utf8-php/third-party/jquery.min.js"></script>
