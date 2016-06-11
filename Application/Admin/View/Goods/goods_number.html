@@ -34,7 +34,7 @@
 					</td>
 				<?php endforeach; ?>
 				<td><input type="text" name="goods_number[]" value="<?php echo $v0['goods_number']; ?>" /></td>
-				<td><input type="button" value="+" value="<?php echo $k0==0?'+':'-'; ?>" onclick="addNewTr(this)" /></td>
+				<td><input type="button" value="<?php echo $k0==0?'+':'-'; ?>" onclick="addNewTr(this)" /></td>
 			</tr>
 		<?php endforeach; ?>
 	<?php else: ?>

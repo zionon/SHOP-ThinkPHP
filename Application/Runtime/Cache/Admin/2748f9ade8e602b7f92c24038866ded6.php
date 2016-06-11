@@ -20,7 +20,7 @@
 
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
-<form method="POST" action="/index.php/Admin/Goods/goods_number/id/36.html">
+<form method="POST" action="/index.php/Admin/Goods/goods_number/id/27.html">
 	<table cellpadding="3" cellspacing="1">
 		<tr>
 			<!-- 循环输出属性 -->
@@ -45,7 +45,7 @@
 					</td>
 				<?php endforeach; ?>
 				<td><input type="text" name="goods_number[]" value="<?php echo $v0['goods_number']; ?>" /></td>
-				<td><input type="button" value="+" value="<?php echo $k0==0?'+':'-'; ?>" onclick="addNewTr(this)" /></td>
+				<td><input type="button" value="<?php echo $k0==0?'+':'-'; ?>" onclick="addNewTr(this)" /></td>
 			</tr>
 		<?php endforeach; ?>
 	<?php else: ?>

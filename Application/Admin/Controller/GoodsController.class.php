@@ -265,7 +265,6 @@ class GoodsController extends Controller{
 			'goods_id' => $id,
 		))->select();
 		// dump($gnData);die;
-
 		$this->assign(array(
 			'gnData' => $gnData,
 			'gaData' => $_gaData,
