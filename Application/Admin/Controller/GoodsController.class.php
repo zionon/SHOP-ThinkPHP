@@ -229,6 +229,8 @@ class GoodsController extends Controller{
 					$_goodsAttrId[] = $gaid[$_i];
 					$_i++;
 				}
+				//先升序排列
+				sort($_goodsAttrId,SORT_NUMERIC);	//以数字的形势排序
 				//把取出来的商品属性ID转化成字符串
 				$_goodsAttrId = (string)implode(',', $_goodsAttrId);
 				// dump($_goodsAttrId);die;
