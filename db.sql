@@ -133,6 +133,62 @@ create table st_goods_number
 	key goods_id(goods_id)
 )engine=InnoDB default charset=utf8 comment '库存量';
 
+drop table if exists st_privilege;
+create table st_privilege
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	pri_name varchar(30) not null comment '权限名称',
+	module_name varchar(30) not null default '' comment '模块名称',
+	controller_name varchar(30) not null default '' comment '控制器名称',
+	action_name varchar(30) not null default '' comment '方法名称',
+	parent_id mediumint unsigned not null default '0' comment '上级权限ID',
+	primary key(id)
+)engine=InnoDB default charset=utf8 comment '权限';
+
+drop table if exists st_role_pri;
+create table st_role_pri
+(
+	pri_id mediumint unsigned not null comment '权限id',
+	role_id mediumint unsigned not null comment '角色id',
+	key pri_id(pri_id),
+	key role_id(role_id)
+)engine=InnoDB default charset=utf8 comment '角色权限';
+
+drop table if exists st_role;
+create table st_role
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	role_name varchar(30) not null comment '角色名称',
+	primary key(id)
+)engine=InnoDB default charset=utf8 comment '角色';
+
+drop table if exists st_admin_role;
+create table st_admin_role
+(
+	admin_id mediumint unsigned not null comment '管理员id',
+	role_id mediumint unsigned not null comment '角色id',
+	key admin_id(admin_id),
+	key role_id(role_id)
+)engine=InnoDB default charset=utf8 comment '管理员角色';
+
+
+drop table if exists st_admin;
+create table st_admin
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	username varchar(30) not null comment '用户名',
+	password char(32) not null comment '密码',
+	primary key(id)
+)engine=InnoDB default charset=utf8 comment '管理员';
+
+
+
+
+
+
+
+
+
 
 
 
