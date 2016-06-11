@@ -272,6 +272,13 @@ class GoodsModel extends Model{
 	protected function _before_delete($option) {
 		//要删除的商品ID
 		$id = $option['where']['id'];
+
+		//删除商品库存量
+		$gnModel = D('goods_number');
+		$gnModel->where(array(
+			'goods_id' => array('eq', $id),
+		))->delete();
+
 		//删除原来的图片
 		//先查询出原来的图片的路径
 		$oldLogo = $this->field('logo,mbig_logo,big_logo,mid_logo,sm_logo')->find($id);
@@ -310,6 +317,7 @@ class GoodsModel extends Model{
 		$gaModel->where(array(
 			'goods_id'=>array('eq',$id),
 		))->delete();
+
 	}
 
 	/**

@@ -208,13 +208,12 @@ class GoodsController extends Controller{
 		header('Content-Type:text/html;charset=utf8');
 		//接收商品ID
 		$id = I('get.id');
-
+		$gnModel = D('goods_number');
 		//处理表单
 		if (IS_POST) {
 			// dump($_POST);
 			$gaid = I('post.goods_attr_id');
 			$gn = I('post.goods_number');
-			$gnModel = D('goods_number');
 			//先计算商品属性ID和库存量的比例
 			$gaidCount = count($gaid);
 			$gnCount = count($gn);
@@ -258,8 +257,14 @@ class GoodsController extends Controller{
 		}
 		// dump($_gaData);
 		// die;
+		
+		//先取出这件商品已经设置过的库存量
+		$gnData = $gnModel->where(array(
+			'goods_id' => $id,
+		))->select();
 
 		$this->assign(array(
+			'gnData' => $gnData,
 			'gaData' => $_gaData,
 			'_page_title' => '库存量',
 			'_page_btn_name' => '返回列表',
