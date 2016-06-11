@@ -20,7 +20,7 @@
 
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
-<form method="POST" action="/index.php/Admin/Goods/goods_number/id/35.html">
+<form method="POST" action="/index.php/Admin/Goods/goods_number/id/36.html">
 	<table cellpadding="3" cellspacing="1">
 		<tr>
 			<!-- 循环输出属性 -->
@@ -30,23 +30,40 @@
 			<th width="120">库存量</th>
 			<th width="60">操作</th>
 		</tr>
-		<?php foreach ($gnData as $k0 => $v0): ?>
-		<tr>
-			<?php
+		<?php if($gnData): ?>
+			<?php foreach ($gnData as $k0 => $v0): ?>
+			<tr>
+				<?php
  $gaCount = count($gaData); foreach ($gaData as $k => $v): ?>
-				<td>
-					<select name="goods_attr_id[]">
-						<option value="">请选择</option>
-						<?php foreach ($v as $k1 => $v1): $_attr = explode(',', $v0['goods_attr_id']); if(in_array($v1['id'], $_attr)) $select = 'selected="selected"'; else $select = ''; ?>
-							<option <?php echo $select; ?> value="<?php echo $v1['id']; ?>"><?php echo $v1['attr_value']; ?></option>
-						<?php endforeach; ?>
-					</select>
-				</td>
-			<?php endforeach; ?>
-			<td><input type="text" name="goods_number[]" value="<?php echo $v0['goods_number']; ?>" /></td>
-			<td><input type="button" value="+" value="<?php echo $k0==0?'+':'-'; ?>" onclick="addNewTr(this)" /></td>
+					<td>
+						<select name="goods_attr_id[]">
+							<option value="">请选择</option>
+							<?php foreach ($v as $k1 => $v1): $_attr = explode(',', $v0['goods_attr_id']); if(in_array($v1['id'], $_attr)) $select = 'selected="selected"'; else $select = ''; ?>
+								<option <?php echo $select; ?> value="<?php echo $v1['id']; ?>"><?php echo $v1['attr_value']; ?></option>
+							<?php endforeach; ?>
+						</select>
+					</td>
+				<?php endforeach; ?>
+				<td><input type="text" name="goods_number[]" value="<?php echo $v0['goods_number']; ?>" /></td>
+				<td><input type="button" value="+" value="<?php echo $k0==0?'+':'-'; ?>" onclick="addNewTr(this)" /></td>
+			</tr>
+		<?php endforeach; ?>
+	<?php else: ?>
+		<tr>
+			<?php  $gaCount = count($gaData); foreach ($gaData as $k => $v): ?>
+	        	<td>
+	        		<select name="goods_attr_id[]">
+	       				<option value="">请选择</option>
+	       				<?php foreach ($v as $k1 => $v1): ?>
+	       					<option value="<?php echo $v1['id']; ?>"><?php echo $v1['attr_value']; ?></option>
+	       				<?php endforeach; ?>
+	       			</select>
+	       		</td>
+	       	<?php endforeach; ?>
+	       	<td><input type="text" name="goods_number[]" value="" /></td>
+        	<td><input onclick="addNewTr(this);" type="button" value="+" /></td> 
 		</tr>
-	<?php endforeach; ?>
+	<?php endif; ?>
 		<tr id="submit">
 			<td align="center" colspan="<?php echo $gaCount+2; ?>"><input type="submit" value="提交" />
 			</td>

@@ -219,7 +219,8 @@ class GoodsController extends Controller{
 			$gnCount = count($gn);
 			$rate = $gaidCount/$gnCount;
 			// dump($rate);
-			//循环库存量
+			// die;
+			// 循环库存量
 			$_i = 0;	//取第几个商品属性ID
 			foreach ($gn as $k => $v) {
 				$_goodsAttrId = array();	//把下面取出来的ID放这里
@@ -239,12 +240,14 @@ class GoodsController extends Controller{
 					'goods_number' => $v,
 				));
 			}
-			die;
+			$this->success('设置成功!',U('goods_number?id='.I('get.id')));
+			exit;
 		}
 
 		//根据商品ID取出这件商品所有可选属性的值
 		$gaModel = D('goods_attr');
 		$gaData = $gaModel->alias('a')
+		->field('a.*,b.attr_name')
 		->join('LEFT JOIN __ATTRIBUTE__ b ON a.attr_id=b.id')
 		->where(array(
 			'a.goods_id' => array('eq', $id),
@@ -256,12 +259,12 @@ class GoodsController extends Controller{
 			$_gaData[$v['attr_name']][] = $v;
 		}
 		// dump($_gaData);
-		// die;
 		
 		//先取出这件商品已经设置过的库存量
 		$gnData = $gnModel->where(array(
 			'goods_id' => $id,
 		))->select();
+		// dump($gnData);die;
 
 		$this->assign(array(
 			'gnData' => $gnData,
