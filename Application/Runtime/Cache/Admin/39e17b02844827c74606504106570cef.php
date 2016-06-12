@@ -33,7 +33,10 @@
                 <td align="center"><?php echo $v['password']; ?></td>
                 <td align="center">
                     <a href="<?php echo U('adminEdit?id='.$v['id']); ?>">修改</a>
+                    <?php if($v['id'] > 1): ?>
+                        |
                     <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete?id='.$v['id']); ?>">删除</a>
+                    <?php endif; ?>
                 </td>
             </tr>
             <?php endforeach; ?>
