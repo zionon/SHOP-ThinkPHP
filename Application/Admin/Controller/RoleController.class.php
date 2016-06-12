@@ -2,9 +2,9 @@
 //后台角色控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class RoleController extends Controller{
+class RoleController extends BaseController{
 	//角色添加
 	public function roleAdd() {
 		if (IS_POST) {

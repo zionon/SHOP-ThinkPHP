@@ -2,9 +2,9 @@
 //后台商品控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class GoodsController extends Controller{
+class GoodsController extends BaseController{
 
 	//显示和处理表单
 	public function goodsAdd() {

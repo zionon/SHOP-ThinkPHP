@@ -2,9 +2,9 @@
 //后台管理员控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class AdminController extends Controller{
+class AdminController extends BaseController{
 	//添加管理员
 	public function adminAdd() {
 		if (IS_POST) {

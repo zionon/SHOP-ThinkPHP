@@ -2,9 +2,9 @@
 //后台品牌控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class BrandController extends Controller{
+class BrandController extends BaseController{
 
 	//品牌添加
 	public function brandAdd() {

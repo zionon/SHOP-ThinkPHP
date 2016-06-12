@@ -2,9 +2,9 @@
 //后台权限控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class PrivilegeController extends Controller{
+class PrivilegeController extends BaseController{
 	//添加权限
 	public function privilegeAdd() {
 		$model = new \Admin\Model\PrivilegeModel();

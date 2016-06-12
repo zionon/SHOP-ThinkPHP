@@ -2,8 +2,8 @@
 //属性控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
-class AttributeController extends Controller{
+// use Think\Controller;
+class AttributeController extends BaseController{
 	//添加属性
 	public function attributeAdd() {
 		if (IS_POST) {

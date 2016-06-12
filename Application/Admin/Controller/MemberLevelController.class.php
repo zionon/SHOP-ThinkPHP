@@ -2,8 +2,8 @@
 //会员级别控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
-class MemberLevelController extends Controller{
+// use Think\Controller;
+class MemberLevelController extends BaseController{
 	//增加会员级别
 	public function memberLevelAdd() {
 		//两个逻辑，显示和添加

@@ -24,6 +24,12 @@ class LoginController extends Controller {
 		}
 	}
 
+	public function logout() {
+		$model = new \Admin\Model\AdminModel();
+		$model->logout();
+		redirect('login');
+	}
+
 	public function chkcode() {
 		$Verify = new \Think\Verify(array(
 			'fontSize' => 30,		//验证码字体大小

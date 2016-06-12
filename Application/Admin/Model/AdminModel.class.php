@@ -52,6 +52,10 @@ class AdminModel extends Model{
 		}
 	}
 
+	public function logout() {
+		session(null);
+	}
+
 	public function search() {
 		$where = array();
 		//取数据

@@ -2,9 +2,9 @@
 //无限级分类管理器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class CategoryController extends Controller{
+class CategoryController extends BaseController{
 	//列表页
 	public function categoryList() {
 		$model = new \Admin\Model\CategoryModel();

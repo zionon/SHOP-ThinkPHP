@@ -2,9 +2,9 @@
 //类型控制器
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class TypeController extends Controller{
+class TypeController extends BaseController{
 	//显示列表
 	public function typeList() {
 		$model = new \Admin\Model\TypeModel();

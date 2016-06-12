@@ -72,4 +72,39 @@ class PrivilegeModel extends Model{
 		);
 	}
 
+	//检查当前管理员是否有权限访问这个页面
+	public function chkPri() {
+		//获取当前管理员正要访问的模型名称、控制器名称、方法名称
+		//tp中正带三个常量
+		//MODULE_NAME, CONTROLLER_NAME, ACTION_NAME
+		$adminId = session('id');
+		//如果是超级管理员直接返回TRUE
+		if ($adminId == 1) {
+			return TRUE;
+		}
+		$arModel = D('admin_role');
+		$has = $arModel->alias('a')
+		->join('LEFT JOIN __ROLE_PRI__ b ON a.role_id=b.role_id
+				LEFT JOIN __PRIVILEGE__ c ON b.pri_id=c.id')
+		->where(array(
+			'a.admin_id' => array('eq', $adminId),
+			'c.module_name' => array('eq', MODULE_NAME),
+			'c.controller_name' => array('eq',CONTROLLER_NAME),
+			'c.action_name' => array('eq',ACTION_NAME),
+		))->count();
+		return ($has > 0);
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
