@@ -36,7 +36,7 @@
                     <td class="label">权限列表:</td>
                     <td>
                         <?php foreach($priData as $k => $v): ?>
-                            <input type="checkbox" name="pri_id[]" value="<?php echo $v['id']; ?>" />
+                            <input type="checkbox" name="pri_id[]" value="<?php echo $v['id']; ?>" level_id="<?php echo $v['level']; ?>" />
                             <?php echo str_repeat('-',8*$v['level']) . $v['pri_name']; ?>
                             <br />
                         <?php endforeach; ?>
@@ -52,6 +52,55 @@
 </div>
 
 </html>
+
+
+<script type="text/javascript" src="/Public/umeditor1_2_2-utf8-php/third-party/jquery.min.js"></script>
+<script type="text/javascript">
+    $(":checkbox").click(function(){
+        //先获取点击的这个 level_id
+        var tmp_level_id = level_id = $(this).attr("level_id");
+        //判断时选中还是取消
+        if ($(this).prop("checked")) {
+            //所有的子权限也选中
+            $(this).nextAll(":checkbox").each(function(k,v){
+                if ($(v).attr("level_id") > level_id) {
+                    $(v).prop("checked","checked");
+                } else {
+                    return false;
+                }
+            });
+            //所有的上级权限也选中
+            $(this).prevAll(":checkbox").each(function(k,v){
+                if ($(v).attr("level_id") < tmp_level_id) {
+                    $(v).prop("checked", "checked");
+                    tmp_level_id--; //再找更上一级的
+                }
+            });
+        } else {
+            //所有的子权限也取消
+            $(this).nextAll(":checkbox").each(function(k,v){
+                if ($(v).attr("level_id") > level_id) {
+                    $(v).removeAttr("checked");
+                } else {
+                    return false;
+                }
+            });
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
