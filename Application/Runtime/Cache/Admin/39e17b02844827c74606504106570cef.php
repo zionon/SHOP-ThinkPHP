@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ECSHOP 管理中心 - 商品列表 </title>
+<title>ECSHOP 管理中心 - <?php echo $_page_title; ?> </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
@@ -24,13 +24,13 @@
         <table cellpadding="3" cellspacing="1">
             <tr>
                 <th>用户名</th>
-                <th>密码</th>
+                <th>角色列表</th>
                 <th>操作</th>
             </tr>
             <?php foreach($data as $k => $v): ?>
             <tr class="tron">
                 <td align="center"><?php echo $v['username'] ?></td>
-                <td align="center"><?php echo $v['password']; ?></td>
+                <td align="center"><?php echo $v['id']==1?'超级管理员':$v['role_name']; ?></td>
                 <td align="center">
                     <a href="<?php echo U('adminEdit?id='.$v['id']); ?>">修改</a>
                     <?php if($v['id'] > 1): ?>

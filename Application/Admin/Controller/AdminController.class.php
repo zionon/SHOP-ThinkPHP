@@ -18,7 +18,11 @@ class AdminController extends Controller{
 				$error = $this->error($model->getError());
 			}
 		} else {
+			$roleModel = new \Admin\Model\RoleModel();
+			$roleData = $roleModel->select();
+			// dump($roleData);die;
 			$this->assign(array(
+				'roleData' => $roleData,
 				'_page_title' => '添加管理员',
 				'_page_btn_name' => '返回管理员列表',
 				'_page_btn_link' => U('adminList'),
@@ -30,9 +34,10 @@ class AdminController extends Controller{
 	//显示管理员列表
 	public function adminList() {
 		$model = new \Admin\Model\AdminModel();
-		$data = $model->select();
+		$data = $model->search();
+		// dump($data);die;
 		$this->assign(array(
-			'data' => $data,
+			'data' => $data['data'],
 			'_page_title' => '管理员列表',
 			'_page_btn_name' => '添加管理员',
 			'_page_btn_link' => U('adminAdd'),

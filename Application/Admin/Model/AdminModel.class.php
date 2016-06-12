@@ -15,6 +15,19 @@ class AdminModel extends Model{
 		array('password','require','密码不能为空',1,'regex',1),
 	);
 
+	public function search() {
+		$where = array();
+		//取数据
+		$data['data'] = $this->alias('a')
+		->field('a.*,GROUP_CONCAT(c.role_name) role_name')
+		->join('LEFT JOIN __ADMIN_ROLE__ b ON a.id=b.admin_id
+				LEFT JOIN __ROLE__ c ON b.role_id=c.id')
+		->where($where)
+		->group('a.id')
+		->select();
+		return $data;
+	}
+
 	protected function _before_insert(&$data, $option) {
 		// dump($data);die;
 		$data['password'] = md5($data['password']);
@@ -36,4 +49,23 @@ class AdminModel extends Model{
 			unset($data['password']);
 		}
 	}
+
+	protected function _after_insert($data, $option) {
+		$roleId = I('post.role_id');
+		$arModel = D('admin_role');
+		foreach ($roleId as $v) {
+			$arModel->add(array(
+				'admin_id' => $data['id'],
+				'role_id' => $v,
+			));
+		}
+	}
 }
+
+
+
+
+
+
+
+
