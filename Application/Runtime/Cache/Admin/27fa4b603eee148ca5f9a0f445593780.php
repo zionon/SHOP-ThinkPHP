@@ -26,12 +26,12 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Type/typeAdd.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Role/roleEdit/id/1.html" method="post">
+        <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <table width="90%" id="general-table" align="center">
                 <tr>
-                    <td class="label">类型名称：</td>
-                    <td><input type="text" name="type_name" size="30" />
-                    <span class="require-field">*</span></td>
+                    <td class="label">用户名：</td>
+                    <td><input type="text" name="role_name" size="20" value="<?php echo $data['role_name']; ?>" /></td>
                 </tr>
             </table>
             <div class="button-div">
@@ -41,7 +41,6 @@
         </form>
     </div>
 </div>
-
 </html>
 
 </body>

@@ -18,37 +18,24 @@
 <!-- 内容-->
 <!-- 引入布局文件 -->
 
-
 <!-- 商品列表 -->
 <form method="post" action="" name="listForm" onsubmit="">
     <div class="list-div" id="listDiv">
         <table cellpadding="3" cellspacing="1">
             <tr>
-                <th>类型名称</th>
-                <th>操    作</th>
+                <th>用户名</th>
+                <th>操作</th>
             </tr>
             <?php foreach($data as $k => $v): ?>
             <tr class="tron">
-                <td align="center"><?php echo $v['type_name']; ?></td>
+                <td align="center"><?php echo $v['role_name'] ?></td>
                 <td align="center">
-                    <a href="<?php echo U('Attribute/attributeList?type_id='.$v['id']); ?>" title="属性列表">属性列表</a>
-                    <a href="<?php echo U('typeEdit?id='.$v['id']); ?>">修改</a>
+                    <a href="<?php echo U('roleEdit?id='.$v['id']); ?>">修改</a>
                     <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete?id='.$v['id']); ?>">删除</a>
                 </td>
             </tr>
             <?php endforeach; ?>
         </table>
-
-    <!-- 分页开始 -->
-        <table id="page-table" cellspacing="0">
-            <tr>
-                <td width="80%">&nbsp;</td>
-                <td align="center" nowrap="true">
-                    <?php echo $page; ?>
-                </td>
-            </tr>
-        </table>
-    <!-- 分页结束 -->
     </div>
 </form>
 <!-- 引入行高亮显示 -->

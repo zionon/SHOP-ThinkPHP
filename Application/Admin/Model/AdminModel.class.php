@@ -12,4 +12,9 @@ class AdminModel extends Model{
 	protected $_validate = array(
 		array('username','require','用户名不能为空！！',1),
 	);
+
+	protected function _before_insert(&$data, $option) {
+		// dump($data);die;
+		$data['password'] = md5($data['password']);
+	}
 }

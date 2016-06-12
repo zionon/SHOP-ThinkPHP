@@ -45,13 +45,14 @@ class AdminController extends Controller{
 		$id = I('get.id');
 		$model = new \Admin\Model\AdminModel();
 		if (IS_POST) {
-			if($model->create(I('post.'),1)){
+			// dump($_POST);die;
+			if($model->create(I('post.'),2)){
 				if ($model->save()) {
 					$this->success('修改成功',U('adminList'));
 					exit;
-				}
-			} else {
+				} else {
 				$error = $this->error($model->getError());
+					}
 			}
 		} else {
 			$data = $model->find($id);
