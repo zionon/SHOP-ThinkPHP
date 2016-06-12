@@ -20,7 +20,7 @@
 
 <!-- 商品列表 -->
 <div class="main-div">
-<form method="POST" action="/index.php/Admin/Privilege/privilegeEdit/id/2.html" name="main_form">
+<form method="POST" action="/index.php/Admin/Privilege/privilegeEdit/id/19.html" name="main_form">
     <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
         <table cellpadding="3" cellspacing="1">
             <tr>
@@ -29,7 +29,7 @@
                     <select name="parent_id">
                         <option value="0">顶级权限</option>
                         <?php foreach($priData as $k => $v): if($v['id'] == $data['id'] || in_array($v['id'], $children)) continue; if($v['id'] == $data['parent_id']) $select = 'selected="selected"'; else $select = ''; ?>
-                        <option <?php echo $select; ?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['parent_id']) . $v['pri_name']; ?></option>
+                        <option <?php echo $select; ?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['level']) . $v['pri_name']; ?></option>
                         <?php endforeach; ?>
                     </select>
                 </td>

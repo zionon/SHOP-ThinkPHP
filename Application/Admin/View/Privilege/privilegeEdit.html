@@ -18,7 +18,7 @@
                             else
                                 $select = '';
                         ?>
-                        <option <?php echo $select; ?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['parent_id']) . $v['pri_name']; ?></option>
+                        <option <?php echo $select; ?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['level']) . $v['pri_name']; ?></option>
                         <?php endforeach; ?>
                     </select>
                 </td>

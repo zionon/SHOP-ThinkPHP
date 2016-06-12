@@ -34,6 +34,7 @@ class PrivilegeController extends Controller{
 	public function privilegeList() {
 		$model = new \Admin\Model\PrivilegeModel();
 		$data = $model->getTree();
+		// dump($data);die;
 		$this->assign(array(
 			'data' => $data,
 			'_page_title' => '权限列表',

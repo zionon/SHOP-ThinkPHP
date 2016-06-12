@@ -14,6 +14,16 @@
                     <td class="label">用户名字:</td>
                     <td><input type="text" name="role_name" size="30" /></td>
                 </tr>
+                <tr>
+                    <td class="label">权限列表:</td>
+                    <td>
+                        <?php foreach($priData as $k => $v): ?>
+                            <input type="checkbox" name="pri_id[]" value="<?php echo $v['id']; ?>" />
+                            <?php echo str_repeat('-',8*$v['level']) . $v['pri_name']; ?>
+                            <br />
+                        <?php endforeach; ?>
+                    </td>
+                </tr>
             </table>
             <div class="button-div">
                 <input type="submit" value=" 确定 " class="button"/>

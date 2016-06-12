@@ -9,6 +9,7 @@ class RoleController extends Controller{
 	public function roleAdd() {
 		if (IS_POST) {
 			$model = new \Admin\Model\RoleModel();
+			// dump($_POST);die;
 			if ($model->create(I('post.'),1)) {
 				if ($model->add()) {
 					$this->success('添加成功 ！',U('roleList'));
@@ -18,7 +19,11 @@ class RoleController extends Controller{
 				$error = $this->error($model->getError());
 			}
 		} else {
+			//取出所有权限
+			$priModel = new \Admin\Model\PrivilegeModel();
+			$priData = $priModel->getTree();
 			$this->assign(array(
+				'priData' => $priData,
 				'_page_title' => '添加角色',
 				'_page_btn_name' => '角色列表',
 				'_page_btn_link' => U('roleList'),
@@ -30,9 +35,10 @@ class RoleController extends Controller{
 	//角色列表
 	public function roleList() {
 		$model = new \Admin\Model\RoleModel();
-		$data = $model->select();
+		$data = $model->search();
+		// dump($data);die;
 		$this->assign(array(
-			'data' => $data,
+			'data' => $data['data'],
 			'_page_title' => '角色列表',
 			'_page_btn_name' => '添加角色',
 			'_page_btn_link' => U('roleAdd'),

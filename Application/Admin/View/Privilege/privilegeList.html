@@ -14,7 +14,7 @@
             </tr>
             <?php foreach($data as $k => $v): ?>
             <tr class="tron">
-                <td><?php echo str_repeat('-',8*$v['parent_id']) . $v['pri_name']; ?></td>
+                <td><?php echo str_repeat('-',8*$v['level']) . $v['pri_name']; ?></td>
                 <td><?php echo $v['module_name']; ?></td>
                 <td><?php echo $v['controller_name']; ?></td>
                 <td><?php echo $v['action_name']; ?></td>
