@@ -1,0 +1,29 @@
+<!-- 引入布局文件 -->
+<layout name="layout" />
+<!-- 商品列表 -->
+<form method="post" action="" name="listForm" onsubmit="">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>操作</th>
+            </tr>
+            <?php foreach($data as $k => $v): ?>
+            <tr class="tron">
+                <td align="center"><?php echo $v['username'] ?></td>
+                <td align="center"><?php echo $v['password']; ?></td>
+                <td align="center">
+                    <a href="<?php echo U('adminEdit?id='.$v['id']); ?>">修改</a>
+                    <a onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete?id='.$v['id']); ?>">删除</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    </div>
+</form>
+<!-- 引入行高亮显示 -->
+<script type="text/javascript" src="__PUBLIC__/datetimepicker/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/tron.js"></script>
+</body>
+</html>
