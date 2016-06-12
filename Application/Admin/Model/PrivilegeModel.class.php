@@ -95,6 +95,40 @@ class PrivilegeModel extends Model{
 		return ($has > 0);
 	}
 
+	//获取当前管理员所拥有的前两级的权限
+	public function getBtns() {
+		//先取出当前管理员所拥有的所有权限
+		$adminId = session('id');
+		if ($adminId == 1) {
+			$priModel = new \Admin\Model\PrivilegeModel();
+			$priData = $priModel->select();
+		} else {
+			//取出当前管理员所在角色所拥有的权限
+			$arModel = D('admin_role');
+			$priData = $arModel->alias('a')
+			->field('DISTINCT c.id,c.pri_name,c.module_name,c.controller_name,c.action_name,c.parent_id')
+			->join('LEFT JOIN __ROLE_PRI__ b ON a.role_id=b.role_id
+					LEFT JOIN __PRIVILEGE__ c ON b.pri_id=c.id')
+			->where(array(
+				'a.admin_id' => array('eq', $adminId),
+			))->select();
+		}
+		//从所有的权限中跳出前两级
+		$btns = array();	//前两级权限
+		foreach ($priData as $k => $v) {
+			if ($v['parent_id'] == 0) {
+				//再找这个顶的子级
+				foreach ($priData as $k1 => $v1) {
+					if ($v1['parent_id'] == $v['id']) {
+						$v['children'][] = $v1;
+					}
+				}
+				$btns[] = $v;
+			}
+		}
+		return $btns;
+	}
+
 }
 
 
