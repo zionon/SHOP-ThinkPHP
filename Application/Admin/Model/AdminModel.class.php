@@ -33,10 +33,15 @@ class AdminModel extends Model{
 		//从模型中获取用户名和密码
 		$username = $this->username;
 		$password = $this->password;
+		// dump($username);
+		// dump($password);
 		//先查询这个用户名是否存在
 		$user = $this->where(array(
 			'username' => array('eq', $username),
 		))->find();
+		// dump($user['password']);
+		// dump(md5($password));
+		// die;
 		if ($user) {
 			if ($user['password'] == md5($password)) {
 				//登录成功寸session

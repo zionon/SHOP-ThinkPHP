@@ -7,7 +7,7 @@
 <link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="background: #278296;color:white">
-<form method="post" action="/index.php/Admin/Login/login.html"onsubmit="return validate()">
+<form method="post" action="/index.php/Admin/Login/login"onsubmit="return validate()">
     <table cellspacing="0" cellpadding="0" style="margin-top:100px" align="center">
         <tr>
             <td>
