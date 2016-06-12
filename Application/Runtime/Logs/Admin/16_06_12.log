@@ -4974,3 +4974,1263 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
 
+[ 2016-06-12T14:00:20+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-06-12T14:00:24+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-06-12T14:00:49+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2016-06-12T14:00:51+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-12T14:04:28+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-06-12T14:04:29+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-06-12T14:05:02+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2016-06-12T14:05:31+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-06-12T14:05:33+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-06-12T14:12:17+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-06-12T14:12:33+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2016-06-12T14:12:34+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: pri_id /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Controller/RoleController.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/27fa4b603eee148ca5f9a0f445593780.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-06-12T14:14:17+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0005s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-06-12T14:14:32+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2016-06-12T14:16:44+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-06-12T14:17:06+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-12T14:17:24+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-12T14:18:55+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-06-12T14:19:52+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2016-06-12T14:19:53+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2016-06-12T14:19:53+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0006s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2016-06-12T14:19:54+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-06-12T14:19:54+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-06-12T14:19:54+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-06-12T14:21:39+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-06-12T14:21:39+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-06-12T14:21:40+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-06-12T14:21:40+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0005s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-06-12T14:21:58+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2016-06-12T14:21:59+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-06-12T14:26:07+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-06-12T14:26:10+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2016-06-12T14:26:11+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-06-12T14:26:15+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_role_pri` WHERE `role_id` = 2 [ RunTime:0.0046s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('4','2') [ RunTime:0.0056s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('5','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('6','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('7','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('8','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('9','2') [ RunTime:0.0004s ]
+SQL: UPDATE `st_role` SET `role_name`='测试角色' WHERE `id` = 2 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+
+[ 2016-06-12T14:26:49+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-06-12T14:26:50+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-06-12T14:26:53+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0008s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-06-12T14:26:54+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0017s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-06-12T14:26:58+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_role_pri` WHERE `role_id` = 2 [ RunTime:0.0087s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('4','2') [ RunTime:0.0011s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('5','2') [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('6','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('7','2') [ RunTime:0.0006s ]
+SQL: UPDATE `st_role` SET `role_name`='测试角色' WHERE `id` = 2 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+
+[ 2016-06-12T14:27:49+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_role_pri` WHERE `role_id` = 2 [ RunTime:0.0094s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('4','2') [ RunTime:0.0010s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('5','2') [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('6','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('7','2') [ RunTime:0.0006s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('10','2') [ RunTime:0.0005s ]
+SQL: UPDATE `st_role` SET `role_name`='测试角色' WHERE `id` = 2 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+
+[ 2016-06-12T14:27:54+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-06-12T14:28:33+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0008s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-06-12T14:28:34+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-06-12T14:28:37+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_role_pri` WHERE `role_id` = 2 [ RunTime:0.0085s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('4','2') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('5','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('6','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('7','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('8','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('9','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('10','2') [ RunTime:0.0003s ]
+SQL: UPDATE `st_role` SET `role_name`='测试角色' WHERE `id` = 2 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+
+[ 2016-06-12T14:30:49+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0003s ]
+SQL: DELETE FROM `st_role_pri` WHERE `role_id` = 2 [ RunTime:0.0086s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('4','2') [ RunTime:0.0012s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('5','2') [ RunTime:0.0007s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('6','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('7','2') [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('8','2') [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('9','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('10','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('11','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('12','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('13','2') [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('14','2') [ RunTime:0.0004s ]
+SQL: UPDATE `st_role` SET `role_name`='测试角色' WHERE `id` = 2 [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-06-12T14:31:58+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-06-12T14:31:59+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-06-12T14:32:00+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0014s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-06-12T14:32:02+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: SELECT GROUP_CONCAT(pri_id) pri_id FROM `st_role_pri` WHERE `role_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2016-06-12T14:32:06+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+SQL: SHOW COLUMNS FROM `st_role_pri` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_role_pri` WHERE `role_id` = 2 [ RunTime:0.0094s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('4','2') [ RunTime:0.0010s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('5','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('6','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('7','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('8','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('9','2') [ RunTime:0.0005s ]
+SQL: INSERT INTO `st_role_pri` (`pri_id`,`role_id`) VALUES ('10','2') [ RunTime:0.0005s ]
+SQL: UPDATE `st_role` SET `role_name`='测试角色' WHERE `id` = 2 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+
+[ 2016-06-12T14:32:07+08:00 ] 127.0.0.1 /index.php/Admin/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `st_role` [ RunTime:0.0006s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.pri_name) pri_name FROM st_role a LEFT JOIN st_role_pri b ON a.id=b.role_id
+				LEFT JOIN st_privilege c ON b.pri_id=c.id  GROUP BY a.id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+

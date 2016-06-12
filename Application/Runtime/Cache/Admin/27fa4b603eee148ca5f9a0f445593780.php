@@ -26,12 +26,22 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Role/roleEdit/id/1.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Role/roleEdit/id/2.html" method="post">
         <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <table width="90%" id="general-table" align="center">
                 <tr>
                     <td class="label">用户名：</td>
                     <td><input type="text" name="role_name" size="20" value="<?php echo $data['role_name']; ?>" /></td>
+                </tr>
+                <tr>
+                    <td class="label">权限列表:</td>
+                    <td>
+                        <?php foreach ($priData as $k => $v): if(strpos(','.$rpData.',', ','.$v['id'].',') !== FALSE) $check = 'checked="checked"'; else $check = ''; ?>
+                            <input <?php echo $check; ?> type="checkbox" name="pri_id[]" value="<?php echo $v['id']; ?>" level_id="<?php echo $v['level']; ?>" />
+                            <?php echo str_repeat('-',8*$v['level']) . $v['pri_name']; ?>
+                            <br />
+                        <?php endforeach; ?>
+                    </td>
                 </tr>
             </table>
             <div class="button-div">
@@ -42,6 +52,42 @@
     </div>
 </div>
 </html>
+
+
+<script type="text/javascript" src="/Public/umeditor1_2_2-utf8-php/third-party/jquery.min.js"></script>
+<script type="text/javascript">
+    $(":checkbox").click(function(){
+        //先获取点击的这个 level_id
+        var tmp_level_id = level_id = $(this).attr("level_id");
+        //判断时选中还是取消
+        if ($(this).prop("checked")) {
+            //所有的子权限也选中
+            $(this).nextAll(":checkbox").each(function(k,v){
+                if ($(v).attr("level_id") > level_id) {
+                    $(v).prop("checked","checked");
+                } else {
+                    return false;
+                }
+            });
+            //所有的上级权限也选中
+            $(this).prevAll(":checkbox").each(function(k,v){
+                if ($(v).attr("level_id") < tmp_level_id) {
+                    $(v).prop("checked", "checked");
+                    tmp_level_id--; //再找更上一级的
+                }
+            });
+        } else {
+            //所有的子权限也取消
+            $(this).nextAll(":checkbox").each(function(k,v){
+                if ($(v).attr("level_id") > level_id) {
+                    $(v).removeAttr("checked");
+                } else {
+                    return false;
+                }
+            });
+        }
+    });
+</script>
 
 </body>
 </html>

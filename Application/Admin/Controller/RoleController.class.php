@@ -52,16 +52,28 @@ class RoleController extends Controller{
 		$model = new \Admin\Model\RoleModel();
 		if (IS_POST) {
 			if ($model->create(I('post.'),2)) {
-				if ($model->save()) {
-					$this->success('修改成功！！',U('roleEdit?id='.$id));
+				if ($model->save() !== FALSE) {
+					$this->success('修改成功',U('roleList'));
 					exit;
-				} else {
-					$error = $this->error($model->getError());
 				}
+			} else {
+				$error = $this->error($model->getError());
 			}
 		} else {
+			//取出所有的权限
+			$priModel = new \Admin\Model\PrivilegeModel();
+			$priData = $priModel->getTree();
 			$data = $model->find($id);
+			// dump($priData);die;
+			// 取出当前角色已经拥有的权限ID
+			$rpModel = D('role_pri');
+			$rpData = $rpModel->field('GROUP_CONCAT(pri_id) pri_id')->where(array(
+				'role_id' => array('eq',$id),
+				))->find();
+			// dump($rpData['pri_id']);die;
 			$this->assign(array(
+				'rpData' => $rpData['pri_id'],
+				'priData' => $priData,
 				'data' => $data,
 				'_page_title' => '修改角色',
 				'_page_btn_name' => '角色列表',
