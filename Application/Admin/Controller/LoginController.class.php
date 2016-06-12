@@ -6,7 +6,22 @@ use Think\Controller;
 
 class LoginController extends Controller {
 	public function login() {
-		$this->display();
+		if (IS_POST) {
+			// dump($_POST);die;
+			$model = new \Admin\Model\AdminModel();
+			if ($model->validate($model->_login_validate)->create()) {
+				if ($model->login()) {
+					$this->success('登录成功!',U('Index/index'));
+					exit;
+				} else {
+					$this->error($model->getError());
+				}
+			} else {
+				$this->error($model->getError());
+			}
+		} else {
+			$this->display();
+		}
 	}
 
 	public function chkcode() {
