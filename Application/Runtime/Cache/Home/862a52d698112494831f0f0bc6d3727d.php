@@ -814,7 +814,7 @@
 	<?php $config = C('IMAGE_CONFIG'); ?>
 	var viewPath = '<?php echo $config['viewPath']; ?>';
 	//记录浏览历史
-	$a.ajax({
+	$.ajax({
 		type : "GET",
 		url : "<?php echo U('Index/displayHistory?id='.$info['id']); ?>",
 		dataType : 'json',
@@ -823,7 +823,7 @@
 			//先拼HTML字符串
 			var html = "";
 			$(data).each(function(k,v){
-				html += '<dl><dt><a href="<?php echo U('goods','',FALSE); ?>/id/'+v.id+'"><img src="'+viewPath+v.mid_logo+'" /></a></dt><dd><a href="<?php echo U('goods','',FALSE); ?>/id/'+v.id'"></a></dd></dl>';
+				html += '<dl><dt><a href="<?php echo U('goods', '', FALSE); ?>/id/'+v.id+'"><img src="'+viewPath+v.mid_logo+'" /></a></dt><dd><a href="<?php echo U('goods', '', FALSE); ?>/id/'+v.id+'">'+v.goods_name+'</a></dd></dl>';
 			});
 			//放到页面中
 			$("#display_history").html(html);
