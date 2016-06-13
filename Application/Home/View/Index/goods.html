@@ -30,7 +30,15 @@
 <div class="main w1210 mt10 bc">
 		<!-- 面包屑导航 start -->
 		<div class="breadcrumb">
-			<h2>当前位置：<a href="">首页</a> > <a href="">电脑、办公</a> > <a href="">笔记本</a> > ThinkPad X230(23063T4）12.5英寸笔记本</h2>
+			<h2>当前位置：<a href="">首页</a> > 
+			<?php
+			//倒的循环输出
+			$count = count($catPath);
+			for($i = $count-1; $i>=0;$i--): ?>
+				<a href=""><?php echo $catPath[$i]['cat_name']; ?></a> >
+			<?php endfor; ?>
+			<?php echo $info['goods_name']; ?>
+			</h2>
 		</div>
 		<!-- 面包屑导航 end -->
 		

@@ -164,6 +164,18 @@ class CategoryModel extends Model {
 		}
 	}
 
+	//取出一个分类所有上级分类
+	public function parentPath($catId) {
+		static $ret = array();
+		$info = $this->field('id,cat_name,parent_id')->find($catId);
+		$ret[] = $info;
+		//如果还有上级再取上级的信息
+		if ($info['parent_id'] > 0) {
+			$this->parentPath($info['parent_id']);
+		}
+		return $ret;
+	}
+
 }
 
 

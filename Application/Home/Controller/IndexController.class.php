@@ -36,8 +36,19 @@ class IndexController extends NavController {
 
     public function goods() {
 
+    	//接收商品的ID
+    	$id = I('get.id');
+    	//根据ID取出商品的详细信息
+    	$gModel = new \Admin\Model\GoodsModel();
+    	$info = $gModel->find($id);
+    	//再根据主分类ID找出这个分类所有上级分类制作导航
+    	$catModel = new \Admin\Model\CategoryModel();
+    	$catPath = $catModel->parentPath($info['cat_id']);
+
     	//设置页面信息
     	$this->assign(array(
+    		'info' => $info,
+    		'catPath' => $catPath,
     		'_show_nav' => 0,
     		'_page_title' => '商品详情页',
     		'_page_keywords' => '商品详情页',
