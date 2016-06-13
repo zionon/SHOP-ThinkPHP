@@ -138,7 +138,8 @@
 			<!-- 最近浏览 start -->
 			<div class="viewd leftbar mt10">
 				<h2><a href="">清空</a><strong>最近浏览过的商品</strong></h2>
-				<div class="leftbar_wrap">
+				<div class="leftbar_wrap" id="display_history"></div>
+<!-- 				<div class="leftbar_wrap">
 					<dl>
 						<dt><a href=""><img src="__PUBLIC__/Home/images/hpG4.jpg" alt="" /></a></dt>
 						<dd><a href="">惠普G4-1332TX 14英寸笔记...</a></dd>
@@ -148,7 +149,7 @@
 						<dt><a href=""><img src="__PUBLIC__/Home/images/crazy4.jpg" alt="" /></a></dt>
 						<dd><a href="">直降200元！TCL正1.5匹空调</a></dd>
 					</dl>
-				</div>
+				</div> -->
 			</div>
 			<!-- 最近浏览 end -->
 
@@ -569,3 +570,39 @@
 
 
 <include file="Common/help" />
+<!-- 记录浏览历史 -->
+<script type="text/javascript">
+	<?php $config = C('IMAGE_CONFIG'); ?>
+	var viewPath = '<?php echo $config('viewPath'); ?>';
+	//记录浏览历史
+	$a.ajax({
+		type : "GET",
+		url : "<?php echo U('Index/displayHistory?id='.$info['id']); ?>",
+		dataType : 'json',
+		success : function(data){
+			//循环服务器返回的浏览历史数据放到页面中
+			//先拼HTML字符串
+			var html = "";
+			$(data).each(function(k,v){
+				html += '<dl><dt><a href="<?php echo U('goods','',FALSE); ?>/id/'+v.id+'"><img src="'+viewPath+v.mid_logo+'" /></a></dt><dd><a href="<?php echo U('goods','',FALSE); ?>/id/'+v.id'"></a></dd></dl>';
+			});
+			//放到页面中
+			$("#display_history").html(html);
+		}
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
