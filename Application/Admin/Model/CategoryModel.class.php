@@ -67,7 +67,7 @@ class CategoryModel extends Model {
 	//获取导航条上的数据
 	public function getNavData() {
 		//先从缓存中取出数据
-		$catData = $('catData');
+		$catData = S('catData');
 		//判断如果没用缓存或者缓存过期就重新构造数组
 		if (!$catData) {
 			//取出所有的分类
@@ -92,7 +92,7 @@ class CategoryModel extends Model {
 				}
 			}
 			//把数组缓存1天
-			$('catData',$ret,86400);
+			S('catData',$ret,86400);
 			return $ret;
 		} else {
 			//有缓存直接返回数据
