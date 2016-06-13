@@ -7,8 +7,13 @@ class IndexController extends NavController {
 	//显示首页
     public function index() {
 
+    	//取出疯狂抢购的商品
+    	$goodsModel = new \Admin\Model\GoodsModel();
+    	$goods1 = $goodsModel->getPromoteGoods();
+    	// dump($goods1);die;
     	//设置页面信息
   		$this->assign(array(
+  			'goods1' => $goods1,
   			'_show_nav' => 1,
   			'_page_title' => '首页',
   			'_page_keywords' => '首页',

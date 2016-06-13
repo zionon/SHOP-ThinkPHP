@@ -330,41 +330,15 @@
 				<!-- 疯狂抢购 start-->
 				<div class="crazy">
 					<ul>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/Home/images/crazy1.jpg" alt="" /></a></dt>
-								<dd><a href="">惠普G4-1332TX 14英寸</a></dd>
-								<dd><span>售价：</span><strong> ￥2999.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/Home/images/crazy2.jpg" alt="" /></a></dt>
-								<dd><a href="">直降100元！TCL118升冰箱</a></dd>
-								<dd><span>售价：</span><strong> ￥800.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/Home/images/crazy3.jpg" alt="" /></a></dt>
-								<dd><a href="">康佳液晶37寸电视机</a></dd>
-								<dd><span>售价：</span><strong> ￥2799.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/Home/images/crazy4.jpg" alt="" /></a></dt>
-								<dd><a href="">梨子平板电脑7.9寸</a></dd>
-								<dd><span>售价：</span><strong> ￥1999.00</strong></dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><a href=""><img src="/Public/Home/images/crazy5.jpg" alt="" /></a></dt>
-								<dd><a href="">好声音耳机</a></dd>
-								<dd><span>售价：</span><strong> ￥199.00</strong></dd>
-							</dl>
-						</li>
+						<?php foreach($goods1 as $k => $v): ?>
+							<li>
+								<dl>
+									<dt><a href=""><img src="<?php echo $v['mig_logo']; ?>"></a></dt>
+									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dd><span>售价：</span><strong> ¥ <?php echo $v['promote_price']; ?></strong></dd>
+								</dl>
+							</li>
+						<?php endforeach; ?>
 					</ul>	
 				</div>
 				<!-- 疯狂抢购 end-->

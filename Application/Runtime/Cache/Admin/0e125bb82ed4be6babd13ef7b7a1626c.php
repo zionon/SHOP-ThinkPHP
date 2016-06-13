@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ECSHOP 管理中心 - 商品列表 </title>
+<title>ECSHOP 管理中心 - <?php echo $_page_title; ?> </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
@@ -35,7 +35,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsEdit/id/27.html" method="post">
+        <form enctype="multipart/form-data" action="/index.php/Admin/Goods/goodsEdit/id/37.html" method="post">
         <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
             <!-- 基本信息 -->
             <table width="90%" id="general-table" align="center" class="tab_table">
@@ -117,6 +117,35 @@
                     <td>
                         <input type="radio" name="is_on_sale" value="是" <?php if($data['is_on_sale'] == '是') echo "checked='checked'"; ?> /> 是
                         <input type="radio" name="is_on_sale" value="否" <?php if($data['is_on_sale'] == '否') echo "checked='checked'"; ?> /> 否
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">促销价格:</td>
+                    <td>
+                        价格:¥<input type="text" name="promote_price" size="8" value="<?php echo $data['promote_price']; ?>" />元
+                        开始时间:<input type="text" name="promote_start_date" id="promote_start_date" value="<?php echo $data['promote_start_date']; ?>" />
+                        结束时间:<input type="text" name="promote_end_date" id="promote_end_date" value="<?php echo $data['promote_end_date']; ?>" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">是否新品:</td>
+                    <td>
+                        <input type="radio" name="is_new" value="是" <?php if($data['is_new'] == '是') echo "checked='checked'"; ?> />是
+                        <input type="radio" name="is_new" value="否" <?php if($data['is_new'] == '否') echo "checked='checked'"; ?> />否
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">是否精品:</td>
+                    <td>
+                        <input type="radio" name="is_best" value="是" <?php if($data['is_best'] == '是') echo "checked='checked'"; ?> />是
+                        <input type="radio" name="is_best" value="否" <?php if($data['is_best'] == '否') echo "checked='checked'"; ?> />否
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">是否热卖:</td>
+                    <td>
+                        <input type="radio" name="is_hot" value="是" <?php if($data['is_hot'] == '是') echo "checked='checked'"; ?> />是
+                        <input type="radio" name="is_hot" value="否" <?php if($data['is_hot'] == '否') echo "checked='checked'"; ?> />否
                     </td>
                 </tr>
             </table>
@@ -342,6 +371,21 @@ function addNewAttr(a) {
     }
     
 }
+</script>
+
+<!-- 引入时间插件 -->
+<script type="text/javascript" src="/Public/datetimepicker/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/Public/datetimepicker/jquery-ui-1.9.2.custom.min.css" />
+<script type="text/javascript" charset="utf-8" src="/Public/datetimepicker/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/datetimepicker/datepicker-zh_cn.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="/Public/datetimepicker/time/jquery-ui-timepicker-addon.min.css" />
+<script type="text/javascript" src="/Public/datetimepicker/time/jquery-ui-timepicker-addon.min.js"></script>
+<script type="text/javascript" src="/Public/datetimepicker/time/i18n/jquery-ui-timepicker-addon-i18n.min.js"></script>
+<script>
+    //添加时间插件
+    $.timepicker.setDefaults($.timepicker.regional['zh-CN']);   //设置使用中文
+    $("#promote_start_date").datetimepicker();
+    $("#promote_end_date").datetimepicker();
 </script>
 
 
