@@ -131,13 +131,13 @@
 		<!-- 导航条部分 start -->
 		<div class="nav w1210 bc mt10">
 			<!--  商品分类部分 start-->
-			<div class="category fl cat1">
-				<div class="cat_hd off">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，并将cat_bd设置为不显示(加上类none即可)，鼠标滑过时展开菜单则将off类换成on类 -->
+			<div class="category fl <?php if($_show_nav == 0) echo 'cat1'; ?>">
+				<div class="cat_hd <?php if($_show_nav == 0) echo 'on'; ?>">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，并将cat_bd设置为不显示(加上类none即可)，鼠标滑过时展开菜单则将off类换成on类 -->
 					<h2>全部商品分类</h2>
 					<em></em>
 				</div>
 				
-				<div class="cat_bd none"> 
+				<div class="cat_bd <?php if($_show_nav == 0) echo 'none'; ?>"> 
 					
 					<div class="cat item1">
 						<h3><a href="">图像、音像、数字商品</a> <b></b></h3>
