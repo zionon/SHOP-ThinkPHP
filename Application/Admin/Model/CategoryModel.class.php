@@ -64,6 +64,42 @@ class CategoryModel extends Model {
 		);
 	}
 
+	//获取导航条上的数据
+	public function getNavData() {
+		//先从缓存中取出数据
+		$catData = $('catData');
+		//判断如果没用缓存或者缓存过期就重新构造数组
+		if (!$catData) {
+			//取出所有的分类
+			$all = $this->select();
+			$ret = array();
+			//循环所有的分类找出顶级分类 
+			foreach ($all as $k => $v) {
+				if ($v['parent_id'] == 0) {
+					//循环所有的分类找出这个顶级分类的子分类
+					foreach ($all as $k1 => $v1) {
+						if ($v1['parent_id'] == $v['id']) {
+							//循环所有的分类找出这个二级分类的子分类
+							foreach ($all as $k2 => $v2) {
+								if ($v2['parent_id'] == $v1['id']) {
+									$v1['children'][] = $v2;
+								}
+							}
+							$v['children'][] = $v1;
+						}
+					}
+					$ret[] = $v;
+				}
+			}
+			//把数组缓存1天
+			$('catData',$ret,86400);
+			return $ret;
+		} else {
+			//有缓存直接返回数据
+			return $catData;
+		}
+	}
+
 }
 
 

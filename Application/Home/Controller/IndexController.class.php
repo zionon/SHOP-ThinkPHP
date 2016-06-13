@@ -1,10 +1,10 @@
 <?php
+//前台首页控制器
 namespace Home\Controller;
 
-use Think\Controller;
+class IndexController extends NavController {
 
-class IndexController extends Controller {
-
+	//显示首页
     public function index() {
 
     	//设置页面信息
