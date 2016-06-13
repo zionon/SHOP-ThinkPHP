@@ -460,6 +460,17 @@ class GoodsModel extends Model{
 		->limit($limit)
 		->select();
 	}
+
+	//取出三种推荐的数据
+	public function getRecGoods($recType, $limit = 5) {
+		return $this->field('id,goods_name,mid_logo,shop_price')
+		->where(array(
+			'is_on_sale' => array('eq','是'),
+			"$recType" => array('eq','是'),
+		))
+		->limit($limit)
+		->select();
+	}
 }
 
 

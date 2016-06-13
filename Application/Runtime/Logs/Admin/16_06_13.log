@@ -2335,3 +2335,755 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
 
+[ 2016-06-13T12:55:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-06-13T12:55:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_type` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`type_name` FROM `st_type`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-06-13T12:56:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: INSERT INTO `st_goods` (`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`is_on_sale`,`promote_price`,`promote_start_date`,`promote_end_date`,`is_new`,`is_best`,`is_hot`,`goods_desc`,`type_id`,`logo`,`mbig_logo`,`big_logo`,`mid_logo`,`sm_logo`,`addtime`) VALUES ('1','3','商品抢购222','0','0','是','8000','2016-06-08 00:00','2016-06-21 00:00','否','否','否','','0','Goods/2016-06-13/575e3d04629dd.jpg','Goods/2016-06-13/thumb_0_575e3d04629dd.jpg','Goods/2016-06-13/thumb_1_575e3d04629dd.jpg','Goods/2016-06-13/thumb_2_575e3d04629dd.jpg','Goods/2016-06-13/thumb_3_575e3d04629dd.jpg','2016-06-13 12:56:36') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: INSERT INTO `st_goods_cat` (`cat_id`,`goods_id`) VALUES ('22','38') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 115 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+
+[ 2016-06-13T12:56:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-06-13T13:37:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '37' AND b.attr_type = '可选'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_number` WHERE `goods_id` = 37  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-06-13T13:37:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2016-06-13T13:37:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_attribute` [ RunTime:0.0004s ]
+SQL: SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=37)  WHERE a.type_id = '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+SQL: SHOW COLUMNS FROM `st_type` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`type_name` FROM `st_type`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-06-13T13:37:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_attribute` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  WHERE a.type_id = null' at line 1
+ [ SQL语句 ] : SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=)  WHERE a.type_id = null 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  WHERE a.type_id = null' at line 1
+ [ SQL语句 ] : SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=)  WHERE a.type_id = null 
+
+[ 2016-06-13T13:37:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-06-13T13:37:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '37' AND b.attr_type = '可选'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_number` WHERE `goods_id` = 37  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2016-06-13T13:37:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-06-13T13:37:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goods_number/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.attr_name FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '37' AND b.attr_type = '可选'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_number` WHERE `goods_id` = 37  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-06-13T13:37:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-06-13T13:37:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_attribute` [ RunTime:0.0004s ]
+SQL: SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=37)  WHERE a.type_id = '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+SQL: SHOW COLUMNS FROM `st_type` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`type_name` FROM `st_type`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-06-13T13:37:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_attribute` [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  WHERE a.type_id = null' at line 1
+ [ SQL语句 ] : SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=)  WHERE a.type_id = null 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  WHERE a.type_id = null' at line 1
+ [ SQL语句 ] : SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=)  WHERE a.type_id = null 
+
+[ 2016-06-13T13:37:46+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: SELECT `logo`,`mbig_logo`,`big_logo`,`mid_logo`,`sm_logo` FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+NOTIC: [2] unlink(./Public/Uploads/): Operation not permitted /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Common/Common/function.php 第 67 行.
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0007s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 37 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0007s ]
+SQL: DELETE FROM `st_goods_cat` WHERE `goods_id` = 37 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 248 行.
+SQL: UPDATE `st_goods` SET `cat_id`='16',`brand_id`='1',`goods_name`='测试促销',`shop_price`='120.00',`market_price`='110.00',`is_on_sale`='是',`promote_price`='100.00',`promote_start_date`='2016-06-12 00:00:00',`promote_end_date`='2016-06-16 00:00:00',`is_new`='是',`is_best`='是',`is_hot`='是',`goods_desc`='',`type_id`='0',`logo`='Goods/2016-06-13/575e46aa4ad2a.gif',`mbig_logo`='Goods/2016-06-13/thumb_0_575e46aa4ad2a.gif',`big_logo`='Goods/2016-06-13/thumb_1_575e46aa4ad2a.gif',`mid_logo`='Goods/2016-06-13/thumb_2_575e46aa4ad2a.gif',`sm_logo`='Goods/2016-06-13/thumb_3_575e46aa4ad2a.gif' WHERE `id` = 37 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+
+[ 2016-06-13T13:37:47+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-06-13T13:38:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_attribute` [ RunTime:0.0004s ]
+SQL: SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=37)  WHERE a.type_id = '0'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 47 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mid_logo /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 97 行.
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 2 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 3 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+NOTIC: [8] Undefined offset: 4 /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/0e125bb82ed4be6babd13ef7b7a1626c.php 第 167 行.
+SQL: SHOW COLUMNS FROM `st_type` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`type_name` FROM `st_type`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-06-13T13:38:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/%3Cimg%20%20%20src='/Public/Uploads/'%20/%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_member_price` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_pic` FROM `st_goods_pic` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_goods_cat` WHERE `goods_id` = ''  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_attribute` [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  WHERE a.type_id = null' at line 1
+ [ SQL语句 ] : SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=)  WHERE a.type_id = null 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  WHERE a.type_id = null' at line 1
+ [ SQL语句 ] : SELECT a.id attr_id,a.attr_name,a.attr_type,a.attr_option_values,b.attr_value,b.id FROM st_attribute a LEFT JOIN st_goods_attr b ON  (a.id=b.attr_id AND b.goods_id=)  WHERE a.type_id = null 
+
+[ 2016-06-13T13:38:05+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsEdit/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Model.class.php 第 1106 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Upload.class.php 第 182 行.
+SQL: SELECT `logo`,`mbig_logo`,`big_logo`,`mid_logo`,`sm_logo` FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_member_price` WHERE `goods_id` = 37 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: DELETE FROM `st_goods_cat` WHERE `goods_id` = 37 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 248 行.
+SQL: UPDATE `st_goods` SET `cat_id`='16',`brand_id`='1',`goods_name`='测试促销',`shop_price`='120.00',`market_price`='110.00',`is_on_sale`='是',`promote_price`='100.00',`promote_start_date`='2016-06-12 00:00:00',`promote_end_date`='2016-06-16 00:00:00',`is_new`='是',`is_best`='是',`is_hot`='是',`goods_desc`='',`type_id`='0',`logo`='Goods/2016-06-13/575e46bd74f32.jpg',`mbig_logo`='Goods/2016-06-13/thumb_0_575e46bd74f32.jpg',`big_logo`='Goods/2016-06-13/thumb_1_575e46bd74f32.jpg',`mid_logo`='Goods/2016-06-13/thumb_2_575e46bd74f32.jpg',`sm_logo`='Goods/2016-06-13/thumb_3_575e46bd74f32.jpg' WHERE `id` = 37 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-06-13T13:38:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
