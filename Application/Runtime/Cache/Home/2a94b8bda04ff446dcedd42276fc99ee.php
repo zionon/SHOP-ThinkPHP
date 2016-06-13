@@ -449,29 +449,19 @@
 	<!-- 导购区域 end -->
 	
 	<div style="clear:both;"></div>
-
+	<?php foreach($floorData as $k => $v): ?>
 	<!--1F 电脑办公 start -->
 	<div class="floor1 floor w1210 bc mt10">
 		<!-- 1F 左侧 start -->
 		<div class="floor_left fl">
 			<!-- 商品分类信息 start-->
 			<div class="cate fl">
-				<h2>电脑、办公</h2>
+				<h2><?php echo $v['cat_name']; ?></h2>
 				<div class="cate_wrap">
 					<ul>
-						<li><a href=""><b>.</b>外设产品</a></li>
-						<li><a href=""><b>.</b>鼠标</a></li>
-						<li><a href=""><b>.</b>笔记本</a></li>
-						<li><a href=""><b>.</b>超极本</a></li>
-						<li><a href=""><b>.</b>平板电脑</a></li>
-						<li><a href=""><b>.</b>主板</a></li>
-						<li><a href=""><b>.</b>显卡</a></li>
-						<li><a href=""><b>.</b>打印机</a></li>
-						<li><a href=""><b>.</b>一体机</a></li>
-						<li><a href=""><b>.</b>投影机</a></li>
-						<li><a href=""><b>.</b>路由器</a></li>
-						<li><a href=""><b>.</b>网卡</a></li>
-						<li><a href=""><b>.</b>交换机</a></li>
+						<?php foreach($v['subCat'] as $k1 => $v1): ?>
+							<li><a href=""><b>.</b><?php echo $v1['cat_name']; ?></a></li>
+						<?php endforeach; ?>
 					</ul>
 					<p><a href=""><img src="/Public/Home/images/notebook.jpg" alt="" /></a></p>
 				</div>
@@ -483,146 +473,27 @@
 			<!-- 商品列表信息 start-->
 			<div class="goodslist fl">
 				<h2>
-					<span class="on">推荐商品</span>
-					<span>电脑整机</span>
-					<span>电脑配件</span>
-					<span>办公打印</span>
-					<span>网络产品</span>
+					<?php foreach ($v['recSubCat'] as $k1 => $v1): ?>
+						<span <?php if($k1==0) echo 'class="on"'; ?>><?php echo $v1['cat_name']; ?></span>
+					<?php endforeach; ?>
 				</h2>
 				<div class="goodslist_wrap">
-					<div>
-						<ul>
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/hpG4.jpg" alt="" /></a></dt>
-									<dd><a href="">惠普G4-1332TX 14英寸笔</a></dd>
-									<dd><span>售价：</span> <strong>￥2999.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/thinkpad e420.jpg" alt="" /></a></dt>
-									<dd><a href="">ThinkPad E42014英寸笔..</a></dd>
-									<dd><span>售价：</span> <strong>￥4199.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/acer4739.jpg" alt="" /></a></dt>
-									<dd><a href="">宏碁AS4739-382G32Mnk</a></dd>
-									<dd><span>售价：</span> <strong>￥2799.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/samsung6800.jpg" alt="" /></a></dt>
-									<dd><a href="">三星Galaxy Tab P6800.</a></dd>
-									<dd><span>售价：</span> <strong>￥4699.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/lh531.jpg" alt="" /></a></dt>
-									<dd><a href="">富士通LH531 14.1英寸笔记</a></dd>
-									<dd><span>售价：</span> <strong>￥2189.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/qinghuax2.jpg" alt="" /></a></dt>
-									<dd><a href="">清华同方精锐X2笔记本 </a></dd>
-									<dd><span>售价：</span> <strong>￥2499.00</strong></dd>
-								</dl>
-							</li>
-						</ul>
-					</div>
-					
-					<div class="none">
-						<ul>
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/hpG4.jpg" alt="" /></a></dt>
-									<dd><a href="">惠普G4-1332TX 14英寸笔</a></dd>
-									<dd><span>售价：</span> <strong>￥2999.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/qinghuax2.jpg" alt="" /></a></dt>
-									<dd><a href="">清华同方精锐X2笔记本 </a></dd>
-									<dd><span>售价：</span> <strong>￥2499.00</strong></dd>
-								</dl>
-							</li>
-							
-						</ul>
-					</div>
-
-					<div class="none">
-						<ul>
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/thinkpad e420.jpg" alt="" /></a></dt>
-									<dd><a href="">ThinkPad E42014英寸笔..</a></dd>
-									<dd><span>售价：</span> <strong>￥4199.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/acer4739.jpg" alt="" /></a></dt>
-									<dd><a href="">宏碁AS4739-382G32Mnk</a></dd>
-									<dd><span>售价：</span> <strong>￥2799.00</strong></dd>
-								</dl>
-							</li>
-						</ul>
-					</div>
-
-					<div class="none">
-						<ul>
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/acer4739.jpg" alt="" /></a></dt>
-									<dd><a href="">宏碁AS4739-382G32Mnk</a></dd>
-									<dd><span>售价：</span> <strong>￥2799.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/samsung6800.jpg" alt="" /></a></dt>
-									<dd><a href="">三星Galaxy Tab P6800.</a></dd>
-									<dd><span>售价：</span> <strong>￥4699.00</strong></dd>
-								</dl>
-							</li>
-						</ul>
-					</div>
-
-					<div class="none">
-						<ul>
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/samsung6800.jpg" alt="" /></a></dt>
-									<dd><a href="">三星Galaxy Tab P6800.</a></dd>
-									<dd><span>售价：</span> <strong>￥4699.00</strong></dd>
-								</dl>
-							</li>
-
-							<li>
-								<dl>
-									<dt><a href=""><img src="/Public/Home/images/lh531.jpg" alt="" /></a></dt>
-									<dd><a href="">富士通LH531 14.1英寸笔记</a></dd>
-									<dd><span>售价：</span> <strong>￥2189.00</strong></dd>
-								</dl>
-							</li>
-						</ul>
-					</div>
-
+					<!-- 有几个按钮就循环几个放商品的DIV，默认只显示第一个 -->
+					<?php foreach ($v['recSubCat'] as $k1 => $v1): ?>
+						<div <?php if($k1 > 0) echo 'class="none"'; ?>>
+							<ul>
+								<?php foreach ($v1['goods'] as $k2 => $v2): ?>
+									<li>
+										<dl>
+											<dt><a href="<?php echo U('goods?id='.$v2['id']); ?>"><?php showImage($v2['mid_logo']); ?></a></dt>
+											<dd><a href="<?php echo U('goods?id='.$v2['id']); ?>"><?php echo $v2['goods_name']; ?></a></dd>
+											<dd><span>售价:</span><strong>¥ <?php echo $v2['shop_price']; ?></strong></dd>
+										</dl>
+									</li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					<?php endforeach; ?>
 				</div>
 			</div>
 			<!-- 商品列表信息 end-->
@@ -636,15 +507,9 @@
 				<h2><a href="">更多品牌&nbsp;></a><strong>品牌旗舰店</strong></h2>
 				<div class="sidebar_wrap">
 					<ul>
-						<li><a href=""><img src="/Public/Home/images/dell.gif" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/acer.gif" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/fujitsu.jpg" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/hp.jpg" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/lenove.jpg" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/samsung.gif" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/dlink.gif" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/seagate.jpg" alt="" /></a></li>
-						<li><a href=""><img src="/Public/Home/images/intel.jpg" alt="" /></a></li>
+						<?php foreach ($v['brand'] as $k => $v): ?>
+							<li><a href=""><?php showImage($v['logo']); ?></a></li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 			</div>
@@ -674,6 +539,7 @@
 		<!-- 右侧 end -->
 
 	</div>
+	<?php endforeach; ?>
 	<!--1F 电脑办公 start -->
 
 

@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ECSHOP 管理中心 - 商品列表 </title>
+<title>ECSHOP 管理中心 - <?php echo $_page_title; ?> </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
@@ -40,8 +40,15 @@
                 </td>
             </tr>
             <tr>
+                <td class="label">推荐到楼层：</td>
+                <td>
+                    <input type="radio" name="is_floor" value="是">是
+                    <input type="radio" name="is_floor" value="否" checked="checked">否
+                </td>
+            </tr>
+            <tr>
                 <td colspan="99" align="center">
-                    <input type="submit" class="submit" value="确定" />
+                    <input type="submit" class="button" value="确定" />
                     <input type="reset" class="button" value="重置" />
                 </td>
             </tr>

@@ -5,10 +5,10 @@ namespace Admin\Model;
 use Think\Model;
 
 class CategoryModel extends Model {
-	protected $insertFields = array('cat_name','parent_id');
-	protected $updateFields = array('id','cat_name','parent_id');
+	protected $insertFields = 'cat_name,parent_id,is_floor';
+	protected $updateFields = 'id,cat_name,parent_id,is_floor';
 	protected $_validate = array(
-		array('cat_name','require','分类名称不能为空!',1,'regex',3),
+		array('cat_name', 'require', '分类名称不能为空!',1),
 	);
 	//找一个分类所有子分类的ID
 	public function getChildren($catId) {
@@ -97,6 +97,70 @@ class CategoryModel extends Model {
 		} else {
 			//有缓存直接返回数据
 			return $catData;
+		}
+	}
+
+	//获取前台首页楼层中的数据
+	public function floorData() {
+		// $floorData = S('floorData');
+		if ($floorData) {
+			return $floorData;
+		} else {
+			//先取出推荐到楼层的顶级分类
+			$ret = $this->where(array(
+				'parent_id' => array('eq',0),
+				'is_floor' => array('eq', '是'),
+			))->select();
+			// dump($ret);die;
+			$goodsModel = new \Admin\Model\GoodsModel();
+			//循环每个楼层取出楼层中的数据
+			foreach ($ret as $k => $v) {
+				//这个楼层中的品牌数据
+				//先取出这个楼层下所有的商品ID
+				$goodsId = $goodsModel->getGoodsIdByCatId($v['id']);
+				//再取出这些商品所用到的品牌
+				$ret[$k]['brand'] = $goodsModel->alias('a')
+				->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id')
+				->field('DISTINCT brand_id,b.brand_name,b.logo')
+				->where(array(
+					'a.id' => array('in',$goodsId),
+					'a.brand_id' => array('neq',0),
+				))->limit(9)->select();
+
+				//取出未推荐的二级分类并保存到这个顶级分类的subCat字段中
+				$ret[$k]['subCat'] = $this->where(array(
+					'parent_id' => array('eq',$v['id']),
+					'is_floor' => array('eq','否'),
+				))->select();
+
+				//取出推荐的二级分类并保存到这个顶级分类的subCat字段中
+				$ret[$k]['recSubCat'] = $this->where(array(
+					'parent_id' => array('eq',$v['id']),
+					'is_floor' => array('eq','是'),
+					))->select();
+				// dump($ret);die;
+				//循环每个推荐的二级分类取出分类下的8件被推荐到楼层的商品
+				foreach ($ret[$k]['recSubCat'] as $k1 => &$v1) {
+					//取出这个分类下所有商品的ID并返回一维数组
+					$gids = $goodsModel->getGoodsIdByCatId($v1['id']);
+					// dump($gids);die;
+					// dump($v1);dump($gids);
+					//再根据商品ID取出商品的详细信息
+					$v1['goods'] = $goodsModel
+					->field('id,mid_logo,goods_name,shop_price')
+					->where(array(
+						'is_on_sale' => array('eq','是'),
+						'is_floor' => array('eq','是'),
+						'id' => array('in', $gids),
+						))
+					->order('sort_num ASC')
+					->limit(8)
+					->select();
+					// dump($v1['goods']);
+				}
+				// S('floorData',$ret, 86400);
+				return $ret;
+			}
 		}
 	}
 

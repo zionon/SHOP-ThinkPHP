@@ -29,7 +29,10 @@ create table st_goods
 	is_new enum('是','否') not null default '否' comment '是否新品',
 	is_hot enum('是','否') not null default '否' comment '是否热卖',
 	is_best enum('是','否') not null default '否' comment '是否精品', 
+	is_floor enum('是','否') not null default '否' comment '是否推荐楼层',
+	sort_num tinyint unsigned not null default '100' comment '排序的数字',
 	primary key (id),
+	key sort_num(sort_num),
 	key promote_price(promote_price),
 	key promote_start_date(promote_start_date),
 	key promote_end_date(promote_end_date),
@@ -92,6 +95,7 @@ create table st_category
 	id mediumint unsigned not null auto_increment comment 'Id',
 	cat_name varchar(30) not null comment '分类名称',
 	parent_id mediumint unsigned not null default '0' comment '上级分类的Id,0:顶级分类',
+	is_floor enum('是','否') not null default '否' comment '是否推荐楼层',
 	primary key (id)
 )engine=InnoDB default charset=utf8 comment '分类';
 

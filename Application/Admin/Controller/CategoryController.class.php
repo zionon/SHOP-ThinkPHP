@@ -40,6 +40,8 @@ class CategoryController extends BaseController{
 				} else {
 					$this->error($model->getError());
 				}
+			} else {
+				$this->error($model->getError());
 			}
 		} else {
 			//取出所有的分类做下拉框
@@ -62,7 +64,7 @@ class CategoryController extends BaseController{
 		if (IS_POST) {
 			if ($model->create(I('post.'),2)) {
 				if ($model->save()!== FALSE) {
-					$this->success('修改成功!',U('categoryList',array('p' => I('get.p', 1))));
+					$this->success('修改成功!',U('categoryList'));
 					exit;
 				}
 			} else {
