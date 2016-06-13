@@ -17,7 +17,8 @@ class LoginController extends Controller {
 					$this->error($model->getError());
 				}
 			} else {
-				$this->error($model->getError());
+				// $this->error($model->getError());
+				redirect('Login/login');
 			}
 		} else {
 			$this->display();
