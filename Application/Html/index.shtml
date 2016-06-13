@@ -411,15 +411,15 @@
 					<ul>
 													<li>
 								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
-									<dd><a href="">测试促销</a></dd>
+									<dt><a href="/index.php/Home/Index/goods/id/37.html"><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
+									<dd><a href="/index.php/Home/Index/goods/id/37.html">测试促销</a></dd>
 									<dd><span>售价：</span><strong> ¥ 100.00元</strong></dd>
 								</dl>
 							</li>
 													<li>
 								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e3d04629dd.jpg' /></a></dt>
-									<dd><a href="">商品抢购222</a></dd>
+									<dt><a href="/index.php/Home/Index/goods/id/38.html"><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e3d04629dd.jpg' /></a></dt>
+									<dd><a href="/index.php/Home/Index/goods/id/38.html">商品抢购222</a></dd>
 									<dd><span>售价：</span><strong> ¥ 8000.00元</strong></dd>
 								</dl>
 							</li>

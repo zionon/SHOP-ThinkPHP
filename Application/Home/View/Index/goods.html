@@ -166,7 +166,7 @@
 				<div class="preview fl">
 					<div class="midpic">
 						<a href="__PUBLIC__/Home/images/preview_l1.jpg" class="jqzoom" rel="gal1">   <!-- 第一幅图片的大图 class 和 rel属性不能更改 -->
-							<img src="__PUBLIC__/Home/images/preview_m1.jpg" alt="" />               <!-- 第一幅图片的中图 -->
+							<?php showImage($info['big_logo']); ?>                                <!-- 第一幅图片的中图 -->
 						</a>
 					</div>
 	
@@ -573,7 +573,7 @@
 <!-- 记录浏览历史 -->
 <script type="text/javascript">
 	<?php $config = C('IMAGE_CONFIG'); ?>
-	var viewPath = '<?php echo $config('viewPath'); ?>';
+	var viewPath = '<?php echo $config['viewPath']; ?>';
 	//记录浏览历史
 	$a.ajax({
 		type : "GET",

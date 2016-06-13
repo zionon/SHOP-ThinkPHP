@@ -155,8 +155,8 @@
 						<?php foreach($goods1 as $k => $v): ?>
 							<li>
 								<dl>
-									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
-									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dt><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
 									<dd><span>售价：</span><strong> ¥ <?php echo $v['promote_price']; ?>元</strong></dd>
 								</dl>
 							</li>

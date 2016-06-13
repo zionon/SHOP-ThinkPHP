@@ -76,10 +76,11 @@ class IndexController extends NavController {
     	//再根据商品的ID取出商品的详细信息
     	$goodsModel = new \Admin\Model\GoodsModel();
     	$data = implode(',', $data);
+        // dump($data);die;
     	$gData = $goodsModel->field('id,mid_logo,goods_name')->where(array(
-    		'id' => array('in','是'),
+    		'id' => array('in',$data),
     		'is_on_sale' => array('eq','是'),
-    	))->order("FIELD(id,$data)")->select();
+    	))->order(array('id' => $data))->select();
     	echo json_encode($gData);
     }
         
