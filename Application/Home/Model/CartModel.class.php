@@ -34,7 +34,7 @@ class CartModel extends Model{
 		$memberId = session('m_id');
 		//先把商品属性ID升序并转化成字符串
 		sort($this->goods_attr_id, SORT_NUMERIC);
-		$this->goods_attr_id = implode(',' $this->goods_attr_id);
+		$this->goods_attr_id = implode(',', $this->goods_attr_id);
 		//判读有没有登录
 		if ($memberId) {
 			$goodsNumber = $this->goods_number;	//先把表单中的库存量存到这个变量中，否则调用find之后就没了
@@ -69,6 +69,38 @@ class CartModel extends Model{
 			}
 			//把一维数组存回到COOKIE
 			setcookie('cart',serialize($cart), time()+30*86400,'/');
+		}
+	}
+
+	//把cookie中的数据移动到数据库中
+	public function moveDataToDb() {
+		$memberId = session('m_id');
+		if ($memberId) {
+			$cart = isset($_COOKIE['cart']) ? unserialize($_COOKIE['cart']) : array();
+			//循环购物车中每件商品
+			foreach ($cart as $k => $v) {
+				$_k = explode('-', $k);
+				//判读数据库中是否有这件商品
+				$has = $this->field('id')->where(array(
+					'member_id' => $memberId,
+					'goods_id' => $_k[0],
+					'goods_attr_id' => $_k[1],
+					))->find();
+				//如果购物车中已经有这个商品就在原数量上加上这次购买的数量
+				if ($has) {
+					$this->where(array(
+						'id' => array('eq',$has['id']),
+						))->setInc('goods_number', $v);
+				} else {
+					parent::add(array(
+						'member_id' => $memberId,
+						'goods_id' => $_k[0],
+						'goods_attr_id' => $_k[i],
+						'goods_number' => $v,
+						));
+				}
+			}
+			setcookie('cart','',time()-1,'/');
 		}
 	}
 }

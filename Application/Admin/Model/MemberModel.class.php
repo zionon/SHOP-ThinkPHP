@@ -54,6 +54,9 @@ class MemberModel extends Model{
 					'jifen_top' =>array('egt',$user['jifen']),
 					))->find();
 				session('level_id',$levelId['id']);
+				//登录成功，购物车入库
+				$cartModel = new \Home\Model\CartModel();
+				$cartModel->moveDataToDb();
 				return TRUE;
 			} else {
 				$this->error = '密码不正确';
