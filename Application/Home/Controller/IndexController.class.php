@@ -63,6 +63,7 @@ class IndexController extends NavController {
         $id = I('get.id');
         // 先从COOKIE中取出浏览历史的ID数组
         $data = isset($_COOKIE['display_history']) ? unserialize($_COOKIE['display_history']) : array();
+        // dump($data);die;
         // 把最新浏览的这件商品放到数组中的第一个位置上
         array_unshift($data, $id);
         // 去重
@@ -73,14 +74,21 @@ class IndexController extends NavController {
         // 数组存回COOKIE
         setcookie('display_history', serialize($data), time() + 30 * 86400, '/');
         // 再根据商品的ID取出商品的详细信息
-        $goodsModel = D('Goods');
+        $goodsModel = new \Admin\Model\GoodsModel();
+        // dump($_COOKIE);
+        // dump($data);
+        // $data[0] = 12;
         $data = implode(',', $data);
+        // dump($data);
         // $orderString = "FIELD(`id`,$data)";
         // dump($orderString);
         $gData = $goodsModel->field('id,mid_logo,goods_name')->where(array(
             'id' => array('in', $data),
             'is_on_sale' => array('eq', '是'),
-        ))->order(array('id' => $data))->select();
+        ))->order(array("field(id,$data)"))->select();
+        // $sql = "SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ($data) AND `is_on_sale` = '是' ORDER BY field(`id`,'$data')";
+        // $gData = $goodsModel->query($sql);
+        // echo $goodsModel->getLastSql();
         echo json_encode($gData);
     }
         

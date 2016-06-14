@@ -1,0 +1,1283 @@
+[ 2016-06-14T09:21:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T09:21:13+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T09:21:15+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T09:21:17+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-06-14T09:21:17+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('37','38','36','23','26','25') AND `is_on_sale` = '是' ORDER BY `id`  [ RunTime:0.0013s ]
+
+[ 2016-06-14T09:21:44+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY `id`  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:23:14+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0003s ]
+
+[ 2016-06-14T09:23:16+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:23:16+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:23:17+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:23:17+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:23:17+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:24:16+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:24:18+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:24:41+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:24:42+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:24:42+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:24:43+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:24:43+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:02+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:02+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:03+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:03+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:12+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:13+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:25:13+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是' ORDER BY ``,37,38,36,23,26) 
+
+[ 2016-06-14T09:26:17+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:32:11+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN ('','37','38','36','23','26') AND `is_on_sale` = '是'  [ RunTime:0.0003s ]
+
+[ 2016-06-14T09:38:58+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0011s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id`,',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id`,',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id`,',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id`,',37,38,36,23,26')
+
+[ 2016-06-14T09:39:18+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:39:20+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:39:52+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:40:27+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:40:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T09:40:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T09:41:02+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T09:41:04+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2016-06-14T09:41:04+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (37,,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (37,,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')
+
+[ 2016-06-14T09:41:06+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2016-06-14T09:41:07+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (37,,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (37,,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '37,,38,36,23,26')
+
+[ 2016-06-14T09:41:10+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:41:10+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:41:11+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:41:11+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:41:12+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:41:12+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,37,38,36,23,26) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',37,38,36,23,26')
+
+[ 2016-06-14T09:41:40+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 174 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2016-06-14T09:41:40+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '11,,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (11,,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '11,,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '11,,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (11,,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '11,,37,38,36,23')
+
+[ 2016-06-14T09:41:43+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:43:43+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:52+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:52+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:53+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:53+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:53+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:54+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:44:54+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')' at line 1
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` ',11,37,38,36,23')
+
+[ 2016-06-14T09:45:25+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:26+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:26+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:27+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:27+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:27+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:27+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:28+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:29+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:45:44+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (111,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '111,37,38,36,23')
+
+[ 2016-06-14T09:46:14+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (11,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '11,11,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (11,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '11,11,37,38,36,23')
+
+[ 2016-06-14T09:47:04+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (12,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '12,11,37,38,36,23')
+ERR: 1582:Incorrect parameter count in the call to native function 'FIELD'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (12,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY FIELD(`id` '12,11,37,38,36,23')
+
+[ 2016-06-14T09:48:11+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (12,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY field(`id`,'12,11,37,38,36,23') [ RunTime:0.0004s ]
+
+[ 2016-06-14T09:48:26+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name` FROM `st_goods` WHERE `id` IN (12,11,37,38,36,23) AND `is_on_sale` = '是' ORDER BY field(`id`,'12,11,37,38,36,23') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
