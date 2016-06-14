@@ -45,7 +45,7 @@
 	<!-- 页面头部 start -->
 	<div class="header w990 bc mt15">
 		<div class="logo w990">
-			<h2 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
+			<h2 class="fl"><a href="<?php echo U('Index/index'); ?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
 			<div class="flow fr">
 				<ul>
 					<li class="cur">1.我的购物车</li>
@@ -77,8 +77,8 @@
 				<?php
  $tp = 0; foreach ($data as $k => $v): ?>
 				<tr>
-					<td class="col1"><a href=""><?php showImage($v['mid_logo']); ?></a>
-					<strong><a href="<?php U('Index/goods?id='.$v['goods_id']); ?>"><?php echo $v['goods_name']; ?></a></strong></td>
+					<td class="col1"><a href="<?php echo U('Index/goods?id='.$v['goods_id']); ?>"><?php showImage($v['mid_logo']); ?></a>
+					<strong><a href="<?php echo U('Index/goods?id='.$v['goods_id']); ?>"><?php echo $v['goods_name']; ?></a></strong></td>
 					<td class="col2">
 						<?php foreach ($v['gaData'] as $k1 => $v1): ?>
 							<p><?php echo $v1['attr_name']; ?>:<?php echo $v1['attr_value']; ?></p>

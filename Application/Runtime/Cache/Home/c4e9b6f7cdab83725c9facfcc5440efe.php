@@ -43,7 +43,7 @@
 	<!-- 页面头部 start -->
 	<div class="header w990 bc mt15">
 		<div class="logo w990">
-			<h2 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
+			<h2 class="fl"><a href="<?php echo U('Index/index'); ?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
 		</div>
 	</div>
 	<!-- 页面头部 end -->
@@ -56,7 +56,7 @@
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
-				<form action="/index.php/Home/Member/login" method="post">
+				<form action="/index.php/Home/Member/login.html" method="post">
 					<ul>
 						<li>
 							<label for="">用户名：</label>

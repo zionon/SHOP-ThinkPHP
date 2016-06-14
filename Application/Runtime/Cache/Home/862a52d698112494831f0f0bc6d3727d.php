@@ -136,7 +136,7 @@
 			<div class="cart fl">
 				<dl>
 					<dt>
-						<a href="<?php echo U('Cart/lst'); ?>" id="cart_list">去购物车结算</a>
+						<a href="<?php echo U('Cart/cartList'); ?>" id="cart_list">去购物车结算</a>
 						<b></b>
 					</dt>
 					<dd>

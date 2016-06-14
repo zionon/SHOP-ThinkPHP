@@ -160,18 +160,3 @@ class CartModel extends Model{
 		 return $data;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

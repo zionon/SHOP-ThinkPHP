@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>首页</title>
-	<meta name="keywords" content="首页" />
-	<meta name="description" content="首页" />
+	<title><?php echo $_page_title; ?></title>
+	<meta name="keywords" content="<?php echo $_page_keywords; ?>" />
+	<meta name="description" content="<?php echo $_page_description; ?>" />
 	<!-- 引入公共的CSS -->
 	<link rel="stylesheet" href="/Public/Home/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/global.css" type="text/css">
@@ -30,7 +30,7 @@
 					<li class="line">|</li>
 					<li>客户服务</li>
 					<li class="line">|</li>
-					<li><a href="/index.php/Admin/Login/login.html">神秘入口</a></li>
+					<li><a href="<?php echo U('Admin/Login/login'); ?>">神秘入口</a></li>
 				</ul>
 			</div>
 		</div>
@@ -117,7 +117,7 @@
 			<div class="cart fl">
 				<dl>
 					<dt>
-						<a href="/index.php/Home/Cart/cartList.html" id="cart_list">去购物车结算</a>
+						<a href="<?php echo U('Cart/cartList'); ?>" id="cart_list">去购物车结算</a>
 						<b></b>
 					</dt>
 					<dd>
@@ -136,111 +136,32 @@
 		<!-- 导航条部分 start -->
 		<div class="nav w1210 bc mt10">
 			<!--  商品分类部分 start-->
-			<div class="category fl ">
-				<div class="cat_hd ">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，并将cat_bd设置为不显示(加上类none即可)，鼠标滑过时展开菜单则将off类换成on类 -->
+			<div class="category fl <?php if($_show_nav == 0) echo 'cat1'; ?>">
+				<div class="cat_hd <?php if($_show_nav == 0) echo 'on'; ?>">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，并将cat_bd设置为不显示(加上类none即可)，鼠标滑过时展开菜单则将off类换成on类 -->
 					<h2>全部商品分类</h2>
 					<em></em>
 				</div>
 				
-				<div class="cat_bd "> 
+				<div class="cat_bd <?php if($_show_nav == 0) echo 'none'; ?>"> 
 					<!-- 循环输出三层分类数据 -->
-											<div class="cat item1">
-							<h3><a href="">家用电器</a><b></b></h3>
+					<?php foreach ($catData as $k => $v): ?>
+						<div class="cat <?php if($k==0) echo 'item1'; ?>">
+							<h3><a href=""><?php echo $v['cat_name']; ?></a><b></b></h3>
 							<div class="cat_detail none">
-																	<dl class="dl_list">
-										<dt><a href="">大家电</a></dt>
+								<?php foreach ($v['children'] as $k1 => $v1): ?>
+									<dl <?php if($k1==0) echo 'class="dl_list"'; ?>>
+										<dt><a href=""><?php echo $v1['cat_name'];?></a></dt>
 										<dd>
-																							<a href="">冰箱</a>
-																					</dd>
+											<?php foreach ($v1['children'] as $k2 => $v2): ?>
+												<a href=""><?php echo $v2['cat_name']; ?></a>
+											<?php endforeach; ?>
+										</dd>
 									</dl>
-																	<dl >
-										<dt><a href="">生活电器</a></dt>
-										<dd>
-																					</dd>
-									</dl>
-																	<dl >
-										<dt><a href="">厨房电器</a></dt>
-										<dd>
-																					</dd>
-									</dl>
-																	<dl >
-										<dt><a href="">个护健康</a></dt>
-										<dd>
-																					</dd>
-									</dl>
-																	<dl >
-										<dt><a href="">五金家装</a></dt>
-										<dd>
-																					</dd>
-									</dl>
-															</div>
+								<?php endforeach; ?>
+							</div>
 						</div>
-											<div class="cat ">
-							<h3><a href="">手机、数码、京东通信</a><b></b></h3>
-							<div class="cat_detail none">
-																	<dl class="dl_list">
-										<dt><a href="">iphone</a></dt>
-										<dd>
-																					</dd>
-									</dl>
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">电脑、办公</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">家居、家具、家装、厨具</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">男装、女装、内衣、珠宝</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">个护化妆</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">运动户外</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">汽车、汽车用品</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">母婴、玩具乐器</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">食品、酒类、生鲜、特产</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">图书、音像、电子书</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">彩票、旅行、充值、票务</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-											<div class="cat ">
-							<h3><a href="">理财、众筹、白条、保险</a><b></b></h3>
-							<div class="cat_detail none">
-															</div>
-						</div>
-									</div>
+					<?php endforeach; ?>
+				</div>
 
 			</div>
 			<!--  商品分类部分 end--> 
@@ -264,11 +185,12 @@
 
 	<div style="clear:both;"></div>
 <script type="text/javascript">
-		var picView = "/Public/Uploads/";
+	<?php $ic = C('IMAGE_CONFIG'); ?>
+	var picView = "<?php echo $ic['viewPath']; ?>";
 	$("#cart_list").mouseover(function(){
 		$.ajax({
 			type : "GET",
-			url : "/index.php/Home/Cart/ajaxCartList.html",
+			url : "<?php echo U('Cart/ajaxCartList'); ?>",
 			dataType: "json",
 			success : function(data){
 				//拼出HTML放到页面中
@@ -454,119 +376,64 @@
 				<!-- 疯狂抢购 start-->
 				<div class="crazy">
 					<ul>
-													<li>
+						<?php foreach($goods1 as $k => $v): ?>
+							<li>
 								<dl>
-									<dt><a href="/index.php/Home/Index/goods/id/36.html"><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575fbdcd59951.jpg' /></a></dt>
-									<dd><a href="/index.php/Home/Index/goods/id/36.html">测试商品库存量</a></dd>
-									<dd><span>售价：</span><strong> ¥ 80.00元</strong></dd>
+									<dt><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
+									<dd><span>售价：</span><strong> ¥ <?php echo $v['promote_price']; ?>元</strong></dd>
 								</dl>
 							</li>
-													<li>
-								<dl>
-									<dt><a href="/index.php/Home/Index/goods/id/37.html"><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
-									<dd><a href="/index.php/Home/Index/goods/id/37.html">测试促销</a></dd>
-									<dd><span>售价：</span><strong> ¥ 100.00元</strong></dd>
-								</dl>
-							</li>
-													<li>
-								<dl>
-									<dt><a href="/index.php/Home/Index/goods/id/38.html"><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e3d04629dd.jpg' /></a></dt>
-									<dd><a href="/index.php/Home/Index/goods/id/38.html">商品抢购222</a></dd>
-									<dd><span>售价：</span><strong> ¥ 8000.00元</strong></dd>
-								</dl>
-							</li>
-													<li>
-								<dl>
-									<dt><a href="/index.php/Home/Index/goods/id/39.html"><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575f6d370c669.jpg' /></a></dt>
-									<dd><a href="/index.php/Home/Index/goods/id/39.html">苹果飞船</a></dd>
-									<dd><span>售价：</span><strong> ¥ 11000.00元</strong></dd>
-								</dl>
-							</li>
-											</ul>	
+						<?php endforeach; ?>
+					</ul>	
 				</div>
 				<!-- 疯狂抢购 end-->
 
 				<!-- 热卖商品 start -->
 				<div class="hot none">
 					<ul>
-													<li>
+						<?php foreach($goods2 as $k => $v): ?>
+							<li>
 								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575fbdcd59951.jpg' /></a></dt>
-									<dd><a href="">测试商品库存量</a></dd>
-									<dd><span>售价：</span><strong> ¥ 100.00元</strong></dd>
+									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dd><span>售价：</span><strong> ¥ <?php echo $v['shop_price']; ?>元</strong></dd>
 								</dl>
 							</li>
-													<li>
-								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
-									<dd><a href="">测试促销</a></dd>
-									<dd><span>售价：</span><strong> ¥ 120.00元</strong></dd>
-								</dl>
-							</li>
-													<li>
-								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575f6d370c669.jpg' /></a></dt>
-									<dd><a href="">苹果飞船</a></dd>
-									<dd><span>售价：</span><strong> ¥ 12000.00元</strong></dd>
-								</dl>
-							</li>
-											</ul>
+						<?php endforeach; ?>
+					</ul>
 				</div>
 				<!-- 热卖商品 end -->
 
 				<!-- 推荐商品 atart -->
 				<div class="recommend none">
 					<ul>
-													<li>
+						<?php foreach($goods3 as $k => $v): ?>
+							<li>
 								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575fbdcd59951.jpg' /></a></dt>
-									<dd><a href="">测试商品库存量</a></dd>
-									<dd><span>售价：</span><strong> ¥ 100.00元</strong></dd>
+									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dd><span>售价：</span><strong> ¥ <?php echo $v['shop_price']; ?>元</strong></dd>
 								</dl>
 							</li>
-													<li>
-								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
-									<dd><a href="">测试促销</a></dd>
-									<dd><span>售价：</span><strong> ¥ 120.00元</strong></dd>
-								</dl>
-							</li>
-													<li>
-								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575f6d370c669.jpg' /></a></dt>
-									<dd><a href="">苹果飞船</a></dd>
-									<dd><span>售价：</span><strong> ¥ 12000.00元</strong></dd>
-								</dl>
-							</li>
-											</ul>
+						<?php endforeach; ?>
+					</ul>
 				</div>
 				<!-- 推荐商品 end -->
 			
 				<!-- 新品上架 start-->
 				<div class="new none">
 					<ul>
-													<li>
+						<?php foreach($goods4 as $k => $v): ?>
+							<li>
 								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575fbdcd59951.jpg' /></a></dt>
-									<dd><a href="">测试商品库存量</a></dd>
-									<dd><span>售价：</span><strong> ¥ 100.00元</strong></dd>
+									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dd><span>售价：</span><strong> ¥ <?php echo $v['shop_price']; ?>元</strong></dd>
 								</dl>
 							</li>
-													<li>
-								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
-									<dd><a href="">测试促销</a></dd>
-									<dd><span>售价：</span><strong> ¥ 120.00元</strong></dd>
-								</dl>
-							</li>
-													<li>
-								<dl>
-									<dt><a href=""><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575f6d370c669.jpg' /></a></dt>
-									<dd><a href="">苹果飞船</a></dd>
-									<dd><span>售价：</span><strong> ¥ 12000.00元</strong></dd>
-								</dl>
-							</li>
-											</ul>
+						<?php endforeach; ?>
+					</ul>
 				</div>
 				<!-- 新品上架 end-->
 
@@ -628,18 +495,20 @@
 	<!-- 导购区域 end -->
 	
 	<div style="clear:both;"></div>
-		<!--1F 电脑办公 start -->
+	<?php foreach($floorData as $k => $v): ?>
+	<!--1F 电脑办公 start -->
 	<div class="floor1 floor w1210 bc mt10">
 		<!-- 1F 左侧 start -->
 		<div class="floor_left fl">
 			<!-- 商品分类信息 start-->
 			<div class="cate fl">
-				<h2>家用电器</h2>
+				<h2><?php echo $v['cat_name']; ?></h2>
 				<div class="cate_wrap">
 					<ul>
-													<li><a href=""><b>.</b>生活电器</a></li>
-													<li><a href=""><b>.</b>厨房电器</a></li>
-											</ul>
+						<?php foreach($v['subCat'] as $k1 => $v1): ?>
+							<li><a href=""><b>.</b><?php echo $v1['cat_name']; ?></a></li>
+						<?php endforeach; ?>
+					</ul>
 					<p><a href=""><img src="/Public/Home/images/notebook.jpg" alt="" /></a></p>
 				</div>
 				
@@ -650,53 +519,28 @@
 			<!-- 商品列表信息 start-->
 			<div class="goodslist fl">
 				<h2>
-											<span class="on">大家电</span>
-											<span >个护健康</span>
-											<span >五金家装</span>
-									</h2>
+					<?php foreach ($v['recSubCat'] as $k1 => $v1): ?>
+						<span <?php if($k1==0) echo 'class="on"'; ?>><?php echo $v1['cat_name']; ?></span>
+					<?php endforeach; ?>
+				</h2>
 				<div class="goodslist_wrap">
 					<!-- 有几个按钮就循环几个放商品的DIV，默认只显示第一个 -->
-											<div >
+					<?php foreach ($v['recSubCat'] as $k1 => $v1): ?>
+						<div <?php if($k1 > 0) echo 'class="none"'; ?>>
 							<ul>
-																	<li>
+								<?php foreach ($v1['goods'] as $k2 => $v2): ?>
+									<li>
 										<dl>
-											<dt><a href="/index.php/Home/Index/goods/id/23.html"><img   src='/Public/Uploads/' /></a></dt>
-											<dd><a href="/index.php/Home/Index/goods/id/23.html">苹果冰箱</a></dd>
-											<dd><span>售价:</span><strong>¥ 0.00</strong></dd>
+											<dt><a href="<?php echo U('goods?id='.$v2['id']); ?>"><?php showImage($v2['mid_logo']); ?></a></dt>
+											<dd><a href="<?php echo U('goods?id='.$v2['id']); ?>"><?php echo $v2['goods_name']; ?></a></dd>
+											<dd><span>售价:</span><strong>¥ <?php echo $v2['shop_price']; ?></strong></dd>
 										</dl>
 									</li>
-																	<li>
-										<dl>
-											<dt><a href="/index.php/Home/Index/goods/id/37.html"><img   src='/Public/Uploads/Goods/2016-06-13/thumb_2_575e46bd74f32.jpg' /></a></dt>
-											<dd><a href="/index.php/Home/Index/goods/id/37.html">测试促销</a></dd>
-											<dd><span>售价:</span><strong>¥ 120.00</strong></dd>
-										</dl>
-									</li>
-															</ul>
+								<?php endforeach; ?>
+							</ul>
 						</div>
-											<div class="none">
-							<ul>
-																	<li>
-										<dl>
-											<dt><a href="/index.php/Home/Index/goods/id/36.html"><img   src='/Public/Uploads/Goods/2016-06-14/thumb_2_575fbdcd59951.jpg' /></a></dt>
-											<dd><a href="/index.php/Home/Index/goods/id/36.html">测试商品库存量</a></dd>
-											<dd><span>售价:</span><strong>¥ 100.00</strong></dd>
-										</dl>
-									</li>
-															</ul>
-						</div>
-											<div class="none">
-							<ul>
-																	<li>
-										<dl>
-											<dt><a href="/index.php/Home/Index/goods/id/27.html"><img   src='/Public/Uploads/' /></a></dt>
-											<dd><a href="/index.php/Home/Index/goods/id/27.html">333</a></dd>
-											<dd><span>售价:</span><strong>¥ 0.00</strong></dd>
-										</dl>
-									</li>
-															</ul>
-						</div>
-									</div>
+					<?php endforeach; ?>
+				</div>
 			</div>
 			<!-- 商品列表信息 end-->
 		</div>
@@ -709,8 +553,10 @@
 				<h2><a href="">更多品牌&nbsp;></a><strong>品牌旗舰店</strong></h2>
 				<div class="sidebar_wrap">
 					<ul>
-													<li><a href=""><img   src='/Public/Uploads/' /></a></li>
-											</ul>
+						<?php foreach ($v['brand'] as $k => $v): ?>
+							<li><a href=""><?php showImage($v['logo']); ?></a></li>
+						<?php endforeach; ?>
+					</ul>
 				</div>
 			</div>
 			<!-- 品牌旗舰店 end -->
@@ -739,7 +585,8 @@
 		<!-- 右侧 end -->
 
 	</div>
-		<!--1F 电脑办公 start -->
+	<?php endforeach; ?>
+	<!--1F 电脑办公 start -->
 
 
 <!-- 引入帮助文件 -->
@@ -842,13 +689,13 @@
 	//判断登录状态
 	$.ajax({
 		type : "GET",
-		url : "/index.php/Home/Member/ajaxChkLogin.html",
+		url : "<?php echo U('Member/ajaxChkLogin'); ?>",
 		dataType : "json",
 		success : function(data){
 			if (data.login == 1) {
-				var li = '你好, ' +data.username+ '[<a href="/index.php/Home/Member/logout.html">登出</a>]';
+				var li = '你好, ' +data.username+ '[<a href="<?php echo U('Member/logout'); ?>">登出</a>]';
 			} else {
-				var li = '您好，欢迎来到京西！[<a href="/index.php/Home/Member/login.html">登录</a>] [<a href="/index.php/Home/Member/regist.html">免费注册</a>]';
+				var li = '您好，欢迎来到京西！[<a href="<?php echo U('Member/login'); ?>">登录</a>] [<a href="<?php echo U('Member/regist'); ?>">免费注册</a>]';
 			}
 			$("#logInfo").html(li);
 		}
