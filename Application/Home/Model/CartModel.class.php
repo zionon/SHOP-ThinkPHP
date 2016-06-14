@@ -103,6 +103,54 @@ class CartModel extends Model{
 			setcookie('cart','',time()-1,'/');
 		}
 	}
+
+	//获取购物车中商品的详细信息
+	public function cartList(){
+		//先从购物车中取出商品的ID
+		$memberId = session('m_id');
+		if ($memberId) {
+			$data = $this->where(array(
+				'member_id' => array('eq', $memberId),
+				))->select();
+		} else {
+			$_data = isset($_COOKIE['cart']) ? unserialize($_COOKIE['cart']) : array();
+			//把一维转成和上面一样的二维
+			$data = array();
+			foreach ($_data as $k => $v) {
+				//从下标中取出商品ID和商品属性ID
+				$_k = explode('-', $k);
+				$data[] = array(
+					'goods_id' => $_k[0],
+					'goods_goods_id' => $_k[1],
+					'goods_number' => $v,
+					);
+			}
+		}
+
+		//再根据ID取出商品的详细信息
+		$gModel = new \Admin\Model\GoodsModel();
+		$gaModel = D('goods_attr');
+		//循环取出每件商品的详细信息
+		foreach ($data as $k => $v) {
+		 	//取出商品名称和LOGO
+		 	$info = $gModel->field('goods_name,mid_logo')->find($v['goods_id']);
+		 	//再存回到这个二维数组中
+		 	$v['goods_name'] = $info['goods_name'];	//$data[$k]['goods_name'] = $info['goods_name'];
+		 	$v['mid_logo'] = $Info['mid_logo'];
+		 	//计算世纪的购买价格
+		 	$v['price'] = $gModel->getMemberPrice($v['goods_id']);
+		 	//根据商品属性ID计算出商品属性名称和属性值: 属性名称:属性值
+		 	if ($v['goods_attr_id']) {
+		 		$v['gaData'] = $gaModel->alias('a')
+		 							   ->field('a.attr_value,b.attr_name')
+		 							   ->join('__ATTRIBUTE__ b ON a.attr_id=b.id')
+		 							   ->where(array(
+		 							   	'a.id' => array('in', $v['goods_attr_id']),
+		 							   	))->select();
+		 	}
+		 	return $data;
+		 } 
+	}
 }
 
 

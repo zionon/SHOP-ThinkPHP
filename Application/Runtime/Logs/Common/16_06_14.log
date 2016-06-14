@@ -1,0 +1,15 @@
+[ 2016-06-14T15:27:25+08:00 ] 127.0.0.1 /index.php/Home/Cart/images/cart_goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-06-14T15:27:25+08:00 ] 127.0.0.1 /index.php/Home/Cart/images/cart_goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-06-14T15:27:25+08:00 ] 127.0.0.1 /index.php/Home/Cart/images/cart_goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
