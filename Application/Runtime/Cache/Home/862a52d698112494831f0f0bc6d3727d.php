@@ -353,47 +353,16 @@
 						<a href="javascript:;" id="forward" class="on"></a>
 						<div class="smallpic_wrap">
 							<ul>
+								<!-- 第一个是logo小图 -->
 								<li class="cur">
-									<a class="zoomThumbActive" href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m1.jpg',largeimage: '/Public/Home/images/preview_l1.jpg'}"><img src="/Public/Home/images/preview_s1.jpg"></a>
+									<a class="zoomThumbActive" href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '<?php echo $viewPath.$info['big_logo']; ?>',largeimage: '<?php echo $viewPath.$info['mbig_logo']; ?>'}"><?php echo showImage($info['sm_logo']); ?></a>
 								</li>
-								<li>
-									<a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m2.jpg',largeimage: '/Public/Home/images/preview_l2.jpg'}"><img src="/Public/Home/images/preview_s2.jpg"></a>
+								<!-- 循环相册中的图片 -->
+								<?php foreach ($gpData as $k => $v): ?>
+								<li>	
+									<a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '<?php echo $viewPath.$v['mid_pic']; ?>',largeimage: '<?php echo $viewPath.$v['big_pic']; ?>'}"><?php showImage($v['sm_pic']); ?></a>
 								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m3.jpg',largeimage: '/Public/Home/images/preview_l3.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s3.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m4.jpg',largeimage: '/Public/Home/images/preview_l4.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s4.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m5.jpg',largeimage: '/Public/Home/images/preview_l5.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s5.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m6.jpg',largeimage: '/Public/Home/images/preview_l6.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s6.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m7.jpg',largeimage: '/Public/Home/images/preview_l7.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s7.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m8.jpg',largeimage: '/Public/Home/images/preview_l8.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s8.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" 
-									rel="{gallery: 'gal1', smallimage: '/Public/Home/images/preview_m9.jpg',largeimage: '/Public/Home/images/preview_l9.jpg'}">  
-	    							<img src="/Public/Home/images/preview_s9.jpg"></a>
-								</li>
+								<?php endforeach; ?>
 							</ul>
 						</div>
 						
@@ -404,39 +373,40 @@
 				<!-- 商品基本信息区域 start -->
 				<div class="goodsinfo fl ml10">
 					<ul>
-						<li><span>商品编号： </span>971344</li>
-						<li class="market_price"><span>定价：</span><em>￥6399.00</em></li>
-						<li class="shop_price"><span>本店价：</span> <strong>￥6299.00</strong> <a href="">(降价通知)</a></li>
+						<li><span>商品编号： </span><?php echo $info['id']; ?></li>
+						<li class="market_price"><span>定价：</span><em>￥<?php echo $info['market_price']; ?></em></li>
+						<li class="shop_price"><span>本店价：</span> <strong>￥<?php echo $info['shop_price']; ?></strong> <a href="">(降价通知)</a></li>
+						<li class="shop_price"><span>会员价格：</span>
+							<p>
+								<table border="1" cellpadding="5" cellspacing="5" width="30%">
+									<?php foreach ($mpData as $k => $v): ?>
+										<tr>
+											<td><?php echo $v['level_name']; ?></td>
+											<td>¥<?php echo $v['price']; ?></td>
+										</tr>
+									<?php endforeach; ?>
+								</table>
+							</p>
+						</li>
 						<li><span>上架时间：</span>2012-09-12</li>
 						<li class="star"><span>商品评分：</span> <strong></strong><a href="">(已有21人评价)</a></li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
 					</ul>
 					<form action="" method="post" class="choose">
 						<ul>
-							<li class="product">
-								<dl>
-									<dt>颜色：</dt>
-									<dd>
-										<a class="selected" href="javascript:;">黑色 <input type="radio" name="color" value="黑色" checked="checked" /></a>
-										<a href="javascript:;">白色 <input type="radio" name="color" value="白色" /></a>
-										<a href="javascript:;">蓝色 <input type="radio" name="color" value="蓝色" /></a>
-										<input type="hidden" name="" value="" />
-									</dd>
-								</dl>
-							</li>
-
-							<li class="product">
-								<dl>
-									<dt>版本：</dt>
-									<dd>
-										<a href="javascript:;">i3 4G内存版 <input type="radio" name="ver" value="" /></a>
-										<a href="javascript:;">i5 4G内存版 <input type="radio" name="ver" value=""  /></a>
-										<a class="selected" href="javascript:;">i5 8G内存版<input type="radio" name="ver" value="" checked="checked" /></a>
-										<a href="javascript:;">SSD超极本 <input type="radio" name="ver" value="" /></a>
-										<input type="hidden" name="" value="" />
-									</dd>
-								</dl>
-							</li>
-							
+							<?php foreach ($mulArr as $k => $v): ?>
+								<li class="product">
+									<dl>
+										<dt><?php echo $k; ?></dt>
+										<dd>
+											<?php foreach ($v as $k1 => $v1): ?>
+												<a href="javascript:;" <?php if($k1==0) echo 'class="selected"'; ?>><?php echo $v1['attr_value']; ?>
+													<input type="radio" name="color" <?php if($k1==0) echo 'checked="checked"'; ?> value="<?php echo $v1['attr_value']; ?>" />
+												</a>
+											<?php endforeach; ?>
+										</dd>
+									</dl>
+								</li>
+							<?php endforeach; ?>
 							<li>
 								<dl>
 									<dt>购买数量：</dt>
@@ -480,39 +450,15 @@
 					<div class="introduce detail_div none">
 						<div class="attr mt15">
 							<ul>
-								<li><span>商品名称：</span>ThinkPadX230(2306 3T4）</li>
-								<li><span>商品编号：</span>979631</li>
-								<li><span>品牌：</span>联想（Thinkpad）</li>
-								<li><span>上架时间：</span>2013-09-18 17:58:12</li>
-								<li><span>商品毛重：</span>2.47kg</li>
-								<li><span>商品产地：</span>中国大陆</li>
-								<li><span>显卡：</span>集成显卡</li>
-								<li><span>触控：</span>非触控</li>
-								<li><span>厚度：</span>正常厚度（>25mm）</li>
-								<li><span>处理器：</span>Intel i5</li>
-								<li><span>尺寸：</span>12英寸</li>
+								<?php foreach ($uniArr as $k => $v): ?>
+									<li><span><?php echo $v['attr_name']; ?>: </span><?php echo $v['attr_value']; ?></li>
+								<?php endforeach; ?>
 							</ul>
 						</div>
 
 						<div class="desc mt10">
 							<!-- 此处的内容 一般是通过在线编辑器添加保存到数据库，然后直接从数据库中读出 -->
-							<img src="/Public/Home/images/desc1.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc2.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc3.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc4.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc5.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc6.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc7.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc8.jpg" alt="" />
-							<p style="height:10px;"></p>
-							<img src="/Public/Home/images/desc9.jpg" alt="" />
+							<?php echo $info['goods_desc']; ?>
 						</div>
 					</div>
 					<!-- 商品介绍 end -->

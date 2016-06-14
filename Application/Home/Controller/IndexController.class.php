@@ -63,12 +63,13 @@ class IndexController extends NavController {
         $mulArr = array();  //可选属性
         foreach ($gaData as $k => $v) {
             if ($v['attr_type'] == '唯一') {
-                $uniArr = $v;
+                $uniArr[] = $v;
             } else {
                 //把同一个属性放到一起-->三维属性
                 $mulArr[$v['attr_name']][] = $v;
             }
         }
+        // dump($uniArr);die;
         // 取出这件商品所有的会员价格
         $mpModel = D('member_price');
         $mpData = $mpModel->alias('a')
