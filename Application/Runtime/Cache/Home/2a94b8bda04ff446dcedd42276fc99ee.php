@@ -44,11 +44,12 @@
 <link rel="stylesheet" href="/Public/Home/style/index.css" type="text/css">
 <script type="text/javascript" src="/Public/Home/js/index.js"></script>
 <!-- 头部导航条 -->
+<link rel="stylesheet" type="text/css" href="/Public/Home/style/cart.css">
 <!-- 头部 start -->
 	<div class="header w1210 bc mt15">
 		<!-- 头部上半部分 start 包括 logo、搜索、用户中心和购物车结算 -->
 		<div class="logo w1210">
-			<h1 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h1>
+			<h1 class="fl"><a href="<?php echo U('Index/index'); ?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h1>
 			<!-- 头部搜索 start -->
 			<div class="search fl">
 				<div class="search_form">
@@ -197,8 +198,8 @@
 				var html = "<table>";
 				$(data).each(function(k,v){
 					html += "<tr>";
-					html += '<td><img width="50" src="'+picView+v.mid_logo+'" /></td>';
-					html += '<td>'+v.goods_name+'</td>';
+					html += '<td><a href="/index.php/Home/Index/goods/id/'+v.goods_id+'"><img width="50" src="'+picView+v.mid_logo+'" /></a></td>';
+					html += '<td><a href="/index.php/Home/Index/goods/id/'+v.goods_id+'">'+v.goods_name+'</a></td>';
 					html += '</tr>';
 				});
 				html += "</table>";
@@ -395,8 +396,8 @@
 						<?php foreach($goods2 as $k => $v): ?>
 							<li>
 								<dl>
-									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
-									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dt><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
 									<dd><span>售价：</span><strong> ¥ <?php echo $v['shop_price']; ?>元</strong></dd>
 								</dl>
 							</li>
@@ -411,8 +412,8 @@
 						<?php foreach($goods3 as $k => $v): ?>
 							<li>
 								<dl>
-									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
-									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dt><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
 									<dd><span>售价：</span><strong> ¥ <?php echo $v['shop_price']; ?>元</strong></dd>
 								</dl>
 							</li>
@@ -427,8 +428,8 @@
 						<?php foreach($goods4 as $k => $v): ?>
 							<li>
 								<dl>
-									<dt><a href=""><?php showImage($v['mid_logo']); ?></a></dt>
-									<dd><a href=""><?php echo $v['goods_name']; ?></a></dd>
+									<dt><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+									<dd><a href="<?php echo U('goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
 									<dd><span>售价：</span><strong> ¥ <?php echo $v['shop_price']; ?>元</strong></dd>
 								</dl>
 							</li>

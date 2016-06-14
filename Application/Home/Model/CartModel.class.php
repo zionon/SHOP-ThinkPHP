@@ -33,7 +33,7 @@ class CartModel extends Model{
 		return ($gn['goods_number'] >= $goodsNumber);
 	}
 
-	//重写父类的add方法:判断如果没用登录是存COOKIE,否则存数据库
+	//重写父类的add方法:判断如果没有登录是存COOKIE,否则存数据库
 	public function add() {
 		$memberId = session('m_id');
 		//先把商品属性ID升序并转化成字符串
@@ -84,9 +84,11 @@ class CartModel extends Model{
 		$memberId = session('m_id');
 		if ($memberId) {
 			$cart = isset($_COOKIE['cart']) ? unserialize($_COOKIE['cart']) : array();
+			// dump($cart);
 			//循环购物车中每件商品
 			foreach ($cart as $k => $v) {
 				$_k = explode('-', $k);
+				// dump($_k);
 				//判读数据库中是否有这件商品
 				$has = $this->field('id')->where(array(
 					'member_id' => $memberId,
@@ -102,7 +104,7 @@ class CartModel extends Model{
 					parent::add(array(
 						'member_id' => $memberId,
 						'goods_id' => $_k[0],
-						'goods_attr_id' => $_k[i],
+						'goods_attr_id' => $_k[1],
 						'goods_number' => $v,
 						));
 				}
@@ -129,7 +131,7 @@ class CartModel extends Model{
 				$_k = explode('-', $k);
 				$data[] = array(
 					'goods_id' => $_k[0],
-					'goods_goods_id' => $_k[1],
+					'goods_attr_id' => $_k[1],
 					'goods_number' => $v,
 					);
 			}

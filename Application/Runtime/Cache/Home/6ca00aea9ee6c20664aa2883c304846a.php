@@ -29,7 +29,8 @@
 					<li>我的订单</li>
 					<li class="line">|</li>
 					<li>客户服务</li>
-
+					<li class="line">|</li>
+					<li><a href="<?php echo U('Admin/Login/login'); ?>">神秘入口</a></li>
 				</ul>
 			</div>
 		</div>

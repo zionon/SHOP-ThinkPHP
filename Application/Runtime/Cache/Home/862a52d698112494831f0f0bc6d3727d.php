@@ -29,7 +29,8 @@
 					<li>我的订单</li>
 					<li class="line">|</li>
 					<li>客户服务</li>
-
+					<li class="line">|</li>
+					<li><a href="<?php echo U('Admin/Login/login'); ?>">神秘入口</a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,11 +64,12 @@
 	})
 </script>
 
+<link rel="stylesheet" type="text/css" href="/Public/Home/style/cart.css">
 <!-- 头部 start -->
 	<div class="header w1210 bc mt15">
 		<!-- 头部上半部分 start 包括 logo、搜索、用户中心和购物车结算 -->
 		<div class="logo w1210">
-			<h1 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h1>
+			<h1 class="fl"><a href="<?php echo U('Index/index'); ?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h1>
 			<!-- 头部搜索 start -->
 			<div class="search fl">
 				<div class="search_form">
@@ -216,8 +218,8 @@
 				var html = "<table>";
 				$(data).each(function(k,v){
 					html += "<tr>";
-					html += '<td><img width="50" src="'+picView+v.mid_logo+'" /></td>';
-					html += '<td>'+v.goods_name+'</td>';
+					html += '<td><a href="/index.php/Home/Index/goods/id/'+v.goods_id+'"><img width="50" src="'+picView+v.mid_logo+'" /></a></td>';
+					html += '<td><a href="/index.php/Home/Index/goods/id/'+v.goods_id+'">'+v.goods_name+'</a></td>';
 					html += '</tr>';
 				});
 				html += "</table>";
