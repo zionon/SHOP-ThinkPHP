@@ -119,6 +119,7 @@ class CartModel extends Model{
 			$data = $this->where(array(
 				'member_id' => array('eq', $memberId),
 				))->select();
+			// dump($data);die;
 		} else {
 			$_data = isset($_COOKIE['cart']) ? unserialize($_COOKIE['cart']) : array();
 			//把一维转成和上面一样的二维
@@ -138,12 +139,12 @@ class CartModel extends Model{
 		$gModel = new \Admin\Model\GoodsModel();
 		$gaModel = D('goods_attr');
 		//循环取出每件商品的详细信息
-		foreach ($data as $k => $v) {
+		foreach ($data as $k => &$v) {
 		 	//取出商品名称和LOGO
 		 	$info = $gModel->field('goods_name,mid_logo')->find($v['goods_id']);
 		 	//再存回到这个二维数组中
 		 	$v['goods_name'] = $info['goods_name'];	//$data[$k]['goods_name'] = $info['goods_name'];
-		 	$v['mid_logo'] = $Info['mid_logo'];
+		 	$v['mid_logo'] = $info['mid_logo'];
 		 	//计算世纪的购买价格
 		 	$v['price'] = $gModel->getMemberPrice($v['goods_id']);
 		 	//根据商品属性ID计算出商品属性名称和属性值: 属性名称:属性值
@@ -155,8 +156,8 @@ class CartModel extends Model{
 		 							   	'a.id' => array('in', $v['goods_attr_id']),
 		 							   	))->select();
 		 	}
-		 	return $data;
-		 } 
+		 }
+		 return $data;
 	}
 }
 

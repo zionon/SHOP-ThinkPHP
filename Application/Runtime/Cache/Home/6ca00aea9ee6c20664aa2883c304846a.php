@@ -84,11 +84,11 @@
 							<p><?php echo $v1['attr_name']; ?>:<?php echo $v1['attr_value']; ?></p>
 						<?php endforeach; ?>
 					</td>
-					<td class="col3">¥ <span><?php $v['price']; ?>元</span></td>
+					<td class="col3">¥ <span><?php echo $v['price']; ?>元</span></td>
 					<td class="col4">
 						<a href="javascript:;" class="reduce_num"></a>
 						<input type="text" name="amount" value="<?php echo $v['goods_number']; ?>" class="amount" />
-						<a href="javascript:;" class="add_"></a>
+						<a href="javascript:;" class="add_num"></a>
 					</td>
 					<td class="col5">¥ <span><?php $xj = $v['price'] * $v['goods_number']; $tp+=$xj;echo $xj; ?></span></td>
 					<td class="col6"><a href="">删除</a></td>

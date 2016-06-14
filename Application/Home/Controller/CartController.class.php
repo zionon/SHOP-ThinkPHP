@@ -30,6 +30,7 @@ class CartController extends Controller {
 		header('Content-Type:text/html;charset=utf-8');
 		$cartModel = new \Home\Model\CartModel();
 		$data = $cartModel->cartList();
+		// dump($data);die;
 		//设置页面信息
 		$this->assign(array(
 			'data' => $data,
