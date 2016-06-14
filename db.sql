@@ -208,6 +208,18 @@ create table st_member
 	primary key (id)
 )engine=InnoDB default charset=utf8 comment '会员';
 
+drop table if exists st_cart;
+create table st_cart
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	goods_id mediumint unsigned not null comment '商品Id',
+	goods_attr_id varchar(150) not null default '' comment '商品属性',
+	goods_number mediumint unsigned not null comment '购买的数量',
+	member_id mediumint unsigned not null comment '会员Id',
+	primary key (id),
+	key member_id(member_id)
+)engine=InnoDB default charset=utf8 comment '购物车';
+
 
 
 
