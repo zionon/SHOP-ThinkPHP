@@ -197,6 +197,17 @@ create table st_admin
 	primary key(id)
 )engine=InnoDB default charset=utf8 comment '管理员';
 
+drop table if exists st_member;
+create table st_member
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	username varchar(30) not null comment '用户名',
+	password char(32) not null comment '密码',
+	face varchar(150) not null default '' comment '头像',
+	jifen mediumint unsigned not null default '0' comment '积分',
+	primary key (id)
+)engine=InnoDB default charset=utf8 comment '会员';
+
 
 
 
