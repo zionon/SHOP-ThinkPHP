@@ -47,6 +47,13 @@ class MemberModel extends Model{
 				//登录成功寸session
 				session('m_id',$user['id']);
 				session('m_username',$user['username']);
+				//计算当前会员级别ID并存session
+				$mlModel = D('member_level');
+				$levelId = $mlModel->field('id')->where(array(
+					'jifen_bottom' => array('elt',$user['jifen']),
+					'jifen_top' =>array('egt',$user['jifen']),
+					))->find();
+				session('level_id',$levelId['id']);
 				return TRUE;
 			} else {
 				$this->error = '密码不正确';

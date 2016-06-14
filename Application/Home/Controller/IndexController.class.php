@@ -132,6 +132,13 @@ class IndexController extends NavController {
         // echo $goodsModel->getLastSql();
         echo json_encode($gData);
     }
+
+    //AJAX获取会员价格
+    public function ajaxGetMemberPrice() {
+        $goodsId = I('get.goods_id');
+        $gModel = new \Admin\Model\GoodsModel();
+        echo $gModel->getMemberPrice($goodsId);
+    }
         
 }
 
