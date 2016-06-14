@@ -144,7 +144,7 @@
 	$("#cart_list").mouseover(function(){
 		$.ajax({
 			type : "GET",
-			url : "<?php echu U('Cart/ajaxCartList'); ?>",
+			url : "<?php echo U('Cart/ajaxCartList'); ?>",
 			dataType: "json",
 			success : function(data){
 				//拼出HTML放到页面中

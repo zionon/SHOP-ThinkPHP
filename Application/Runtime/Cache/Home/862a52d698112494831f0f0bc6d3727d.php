@@ -136,12 +136,12 @@
 			<div class="cart fl">
 				<dl>
 					<dt>
-						<a href="">去购物车结算</a>
+						<a href="<?php echo U('Cart/lst'); ?>" id="cart_list">去购物车结算</a>
 						<b></b>
 					</dt>
 					<dd>
-						<div class="prompt">
-							购物车中还没有商品，赶紧选购吧！
+						<div class="prompt" id="cart_div_list">
+							<img src="/Public/Home/images/loading.gif" />
 						</div>
 					</dd>
 				</dl>
@@ -203,6 +203,51 @@
 	<!-- 头部 end-->
 
 	<div style="clear:both;"></div>
+<script type="text/javascript">
+	<?php $ic = C('IMAGE_CONFIG'); ?>
+	var picView = "<?php echo $ic['viewPath']; ?>";
+	$("#cart_list").mouseover(function(){
+		$.ajax({
+			type : "GET",
+			url : "<?php echo U('Cart/ajaxCartList'); ?>",
+			dataType: "json",
+			success : function(data){
+				//拼出HTML放到页面中
+				var html = "<table>";
+				$(data).each(function(k,v){
+					html += "<tr>";
+					html += '<td><img width="50" src="'+picView+v.mid_logo+'" /></td>';
+					html += '<td>'+v.goods_name+'</td>';
+					html += '</tr>';
+				});
+				html += "</table>";
+				$("#cart_div_list").html(html);
+			}
+		});
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="main w1210 mt10 bc">
@@ -392,7 +437,9 @@
 						<li><span>上架时间：</span>2012-09-12</li>
 						<li class="star"><span>商品评分：</span> <strong></strong><a href="">(已有21人评价)</a></li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
 					</ul>
-					<form action="" method="post" class="choose">
+					<!-- 加入购物车表单 -->
+					<form action="<?php echo U('Cart/add'); ?>" method="post" class="choose">
+						<input type="hidden" name="goods_id" value="<?php echo $info['id']; ?>">
 						<ul>
 							<?php foreach ($mulArr as $k => $v): ?>
 								<li class="product">
@@ -401,7 +448,7 @@
 										<dd>
 											<?php foreach ($v as $k1 => $v1): ?>
 												<a href="javascript:;" <?php if($k1==0) echo 'class="selected"'; ?>><?php echo $v1['attr_value']; ?>
-													<input type="radio" name="color" <?php if($k1==0) echo 'checked="checked"'; ?> value="<?php echo $v1['attr_value']; ?>" />
+													<input type="radio" name="goods_attr_id[<?php echo $v1['attr_id']; ?>]" <?php if($k1==0) echo 'checked="checked"'; ?> value="<?php echo $v1['id']; ?>" />
 												</a>
 											<?php endforeach; ?>
 										</dd>
@@ -413,7 +460,7 @@
 									<dt>购买数量：</dt>
 									<dd>
 										<a href="javascript:;" id="reduce_num"></a>
-										<input type="text" name="amount" value="1" class="amount"/>
+										<input type="text" name="goods_number" value="1" class="amount"/>
 										<a href="javascript:;" id="add_num"></a>
 									</dd>
 								</dl>
@@ -427,7 +474,6 @@
 									</dd>
 								</dl>
 							</li>
-
 						</ul>
 					</form>
 				</div>

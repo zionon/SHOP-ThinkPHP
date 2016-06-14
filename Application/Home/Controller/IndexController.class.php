@@ -70,6 +70,7 @@ class IndexController extends NavController {
             }
         }
         // dump($uniArr);die;
+        // dump($mulArr);die;
         // 取出这件商品所有的会员价格
         $mpModel = D('member_price');
         $mpData = $mpModel->alias('a')

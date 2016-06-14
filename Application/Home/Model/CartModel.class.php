@@ -15,21 +15,25 @@ class CartModel extends Model{
 
 	//检查库存量
 	public function chkGoodsNumber($goodsNumber) {
+		// dump($goodsNumber);
 		//选择的商品属性id
 		$gaid = I('post.goods_attr_id');
 		sort($gaid, SORT_NUMERIC);
 		$gaid = implode(',', $gaid);
+		// dump($gaid);
 		//取出库存量
 		$gnModel = D('goods_number');
 		$gn = $gnModel->field('goods_number')->where(array(
 			'goods_id' => I('post.goods_id'),
 			'goods_attr_id' => $gaid,
 			))->find();
-		//返回库存量是否狗
+		// dump($gnModel->getLastSql());
+		// dump($gn);die;
+		//返回库存量是否够
 		return ($gn['goods_number'] >= $goodsNumber);
 	}
 
-	//重写父类的add方法:判断如果没用登录是存COOKIE,否则村数据库
+	//重写父类的add方法:判断如果没用登录是存COOKIE,否则存数据库
 	public function add() {
 		$memberId = session('m_id');
 		//先把商品属性ID升序并转化成字符串
@@ -42,7 +46,9 @@ class CartModel extends Model{
 			$has = $this->field('id')->where(array(
 				'member_id' => $memberId,
 				'goods_id' => $this->goods_id,
-				'goods_attr_id' => $this->goods_attr_id,))->find();
+				'goods_attr_id' => $this->goods_attr_id,
+				))->find();
+			// dump($has);die;
 			//如果购物车中已经有这个商品就在原数量上加上这次购买的数量
 			if ($has) {
 				$this->where(array(
@@ -70,6 +76,7 @@ class CartModel extends Model{
 			//把一维数组存回到COOKIE
 			setcookie('cart',serialize($cart), time()+30*86400,'/');
 		}
+		return TRUE;
 	}
 
 	//把cookie中的数据移动到数据库中

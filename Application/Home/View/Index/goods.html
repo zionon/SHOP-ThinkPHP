@@ -227,7 +227,7 @@
 										<dd>
 											<?php foreach ($v as $k1 => $v1): ?>
 												<a href="javascript:;" <?php if($k1==0) echo 'class="selected"'; ?>><?php echo $v1['attr_value']; ?>
-													<input type="radio" name="goods_attr_id[<?php echo $v1['attr_id']; ?>]" <?php if($k1==0) echo 'checked="checked"'; ?> value="<?php echo $v1['attr_value']; ?>" />
+													<input type="radio" name="goods_attr_id[<?php echo $v1['attr_id']; ?>]" <?php if($k1==0) echo 'checked="checked"'; ?> value="<?php echo $v1['id']; ?>" />
 												</a>
 											<?php endforeach; ?>
 										</dd>

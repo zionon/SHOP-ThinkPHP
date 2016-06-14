@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/umeditor1_2_2-utf8-php/third-party/jquery.min.js"></script>
 </head>
 <body>
 <h1>
@@ -20,7 +21,7 @@
 
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
-<form method="POST" action="/index.php/Admin/Goods/goods_number/id/35.html">
+<form method="POST" action="/index.php/Admin/Goods/goods_number/id/37.html">
 	<table cellpadding="3" cellspacing="1">
 		<tr>
 			<!-- 循环输出属性 -->

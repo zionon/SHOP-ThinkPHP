@@ -74,46 +74,30 @@
 				</tr>
 			</thead>
 			<tbody>
+				<?php
+ $tp = 0; foreach ($data as $k => $v): ?>
 				<tr>
-					<td class="col1"><a href=""><img src="images/cart_goods1.jpg" alt="" /></a>  <strong><a href="">【1111购物狂欢节】惠JackJones杰克琼斯纯羊毛菱形格</a></strong></td>
-					<td class="col2"> <p>颜色：073深红</p> <p>尺码：170/92A/S</p> </td>
-					<td class="col3">￥<span>499.00</span></td>
-					<td class="col4"> 
-						<a href="javascript:;" class="reduce_num"></a>
-						<input type="text" name="amount" value="1" class="amount"/>
-						<a href="javascript:;" class="add_num"></a>
+					<td class="col1"><a href=""><?php showImage($v['mid_logo']); ?></a>
+					<strong><a href="<?php U('Index/goods?id='.$v['goods_id']); ?>"><?php echo $v['goods_name']; ?></a></strong></td>
+					<td class="col2">
+						<?php foreach ($v['gaData'] as $k1 => $v1): ?>
+							<p><?php echo $v1['attr_name']; ?>:<?php echo $v1['attr_value']; ?></p>
+						<?php endforeach; ?>
 					</td>
-					<td class="col5">￥<span>499.00</span></td>
+					<td class="col3">¥ <span><?php $v['price']; ?>元</span></td>
+					<td class="col4">
+						<a href="javascript:;" class="reduce_num"></a>
+						<input type="text" name="amount" value="<?php echo $v['goods_number']; ?>" class="amount" />
+						<a href="javascript:;" class="add_"></a>
+					</td>
+					<td class="col5">¥ <span><?php $xj = $v['price'] * $v['goods_number']; $tp+=$xj;echo $xj; ?></span></td>
 					<td class="col6"><a href="">删除</a></td>
 				</tr>
-				<tr>
-					<td class="col1"><a href=""><img src="images/cart_goods2.jpg" alt="" /></a> <strong><a href="">九牧王王正品新款时尚休闲中长款茄克EK01357200</a></strong></td>
-					<td class="col2"> <p>颜色：淡蓝色</p> <p>尺码：165/88</p></td>
-					<td class="col3">￥<span>1102.00</span></td>
-					<td class="col4"> 
-						<a href="javascript:;" class="reduce_num"></a>
-						<input type="text" name="amount" value="1" class="amount"/>
-						<a href="javascript:;" class="add_num"></a>
-					</td>
-					<td class="col5">￥<span>1102.00</span></td>
-					<td class="col6"><a href="">删除</a></td>
-				</tr>
-				<tr>
-					<td class="col1"><a href=""><img src="images/cart_goods3.jpg" alt="" /></a> <strong><a href="">【1111购物狂欢节】捷王纯手工缝制休闲男鞋大头皮鞋 头层牛</a></strong></td>
-					<td class="col2"> <p>颜色：0922红棕现货</p> <p>尺码：40现货</p></td>
-					<td class="col3">￥<span>269.00</span></td>
-					<td class="col4"> 
-						<a href="javascript:;" class="reduce_num"></a>
-						<input type="text" name="amount" value="1" class="amount"/>
-						<a href="javascript:;" class="add_num"></a>
-					</td>
-					<td class="col5">￥<span>269.00</span></td>
-					<td class="col6"><a href="">删除</a></td>
-				</tr>
+				<?php endforeach; ?>
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="6">购物金额总计： <strong>￥ <span id="total">1870.00</span></strong></td>
+					<td colspan="6">购物金额总计： <strong>￥ <span id="total"><?php echo $tp; ?></span></strong></td>
 				</tr>
 			</tfoot>
 		</table>
