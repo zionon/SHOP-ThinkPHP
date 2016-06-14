@@ -360,7 +360,7 @@
 
 			<!-- 最近浏览 start -->
 			<div class="viewd leftbar mt10">
-				<h2><a href="">清空</a><strong>最近浏览过的商品</strong></h2>
+				<h2><a href="<?php echo U('clearDisplayHisttory'); ?>">清空</a><strong>最近浏览过的商品</strong></h2>
 				<div class="leftbar_wrap" id="display_history"></div>
 <!-- 				<div class="leftbar_wrap">
 					<dl>
@@ -832,7 +832,7 @@
 		success : function(data){
 			$("#member_price").html("¥ "+data+"元");
 		}
-	})
+	});
 </script>
 
 

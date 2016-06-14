@@ -103,6 +103,7 @@ class IndexController extends NavController {
     //处理浏览历史
     public function displayHistory() {
         $id = I('get.id');
+        // $_COOKIE['display_history'] = null;
         // 先从COOKIE中取出浏览历史的ID数组
         $data = isset($_COOKIE['display_history']) ? unserialize($_COOKIE['display_history']) : array();
         // dump($data);die;
@@ -110,6 +111,7 @@ class IndexController extends NavController {
         array_unshift($data, $id);
         // 去重
         $data = array_unique($data);
+        // dump($data);die;
         // 只取数组中前6个
         if(count($data) > 6)
             $data = array_slice($data, 0, 6);
@@ -139,6 +141,12 @@ class IndexController extends NavController {
         $goodsId = I('get.goods_id');
         $gModel = new \Admin\Model\GoodsModel();
         echo $gModel->getMemberPrice($goodsId);
+    }
+
+    //
+    public function clearDisplayHisttory() {
+        $_COOKIE['display_history'] = null;
+        $this->displayHistory();
     }
         
 }
