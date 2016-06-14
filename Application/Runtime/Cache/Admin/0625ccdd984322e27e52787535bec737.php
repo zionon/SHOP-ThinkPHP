@@ -198,8 +198,8 @@
 <script type="text/javascript" src="/Public/umeditor1_2_2-utf8-php/lang/zh-cn/zh-cn.js"></script>
 <script>
 UM.getEditor('goods_desc', {
-    initialFrameWidth:"90%",
-    initialFrameHeight:350
+    initialFrameWidth : "100%",
+    initialFrameHeight : 350
 });
 </script>
 
@@ -294,8 +294,8 @@ function addNewAttr(a) {
 }
 </script>
 
-<!-- 引入时间插件 -->
-<script type="text/javascript" src="/Public/datetimepicker/jquery-1.7.2.min.js"></script>
+<!-- 引入时间插件 --><!-- 
+<script type="text/javascript" src="/Public/datetimepicker/jquery-1.7.2.min.js"></script> -->
 <link rel="stylesheet" type="text/css" href="/Public/datetimepicker/jquery-ui-1.9.2.custom.min.css" />
 <script type="text/javascript" charset="utf-8" src="/Public/datetimepicker/jquery-ui-1.9.2.custom.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="/Public/datetimepicker/datepicker-zh_cn.js"></script>
