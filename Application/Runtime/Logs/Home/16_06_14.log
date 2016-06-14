@@ -4059,3 +4059,465 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
 
+[ 2016-06-14T13:03:02+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2016-06-14T13:03:02+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-06-14T13:03:03+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-06-14T13:07:34+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2016-06-14T13:07:34+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-06-14T13:07:34+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-06-14T13:07:34+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-06-14T13:07:35+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-06-14T13:07:35+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-06-14T13:07:35+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-06-14T13:07:35+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-06-14T13:07:35+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-06-14T13:07:35+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-06-14T13:07:41+08:00 ] 127.0.0.1 /index.php/Home/Member/regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-06-14T13:07:41+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-06-14T13:07:42+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-06-14T13:07:44+08:00 ] 127.0.0.1 /index.php/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-06-14T13:07:44+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-06-14T13:07:46+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-06-14T13:07:47+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-06-14T13:07:48+08:00 ] 127.0.0.1 /index.php/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-06-14T13:07:48+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001492s ]
+
+[ 2016-06-14T13:07:49+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-06-14T13:07:50+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-06-14T13:07:50+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-06-14T13:07:51+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-06-14T13:07:51+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-06-14T13:07:51+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2016-06-14T13:07:54+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-06-14T13:07:57+08:00 ] 127.0.0.1 /index.php/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [2] fopen(./read_html_cache_lock): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 36 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 37 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+ERR: 非法操作:index
+

@@ -38,51 +38,44 @@
 	<div style="clear:both;"></div>
 	
 	
-<link rel="stylesheet" type="text/css" href="/Public/Home/Style/login.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/style/login.css">
 <body>
-
 	<!-- 页面头部 start -->
 	<div class="header w990 bc mt15">
 		<div class="logo w990">
-			<h2 class="fl"><a href="<?php echo U('Index/index'); ?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
+			<h2 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
 		</div>
 	</div>
 	<!-- 页面头部 end -->
 	
 	<!-- 登录主体部分start -->
-	<div class="login w990 bc mt10 regist">
+	<div class="login w990 bc mt10">
 		<div class="login_hd">
-			<h2>用户注册</h2>
+			<h2>用户登录</h2>
 			<b></b>
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
-				<form action="/index.php/Home/Member/regist" method="post">
+				<form action="/index.php/Home/Member/login" method="post">
 					<ul>
 						<li>
 							<label for="">用户名：</label>
 							<input type="text" class="txt" name="username" />
-							<p>3-20位字符，可由中文、字母、数字和下划线组成</p>
 						</li>
 						<li>
 							<label for="">密码：</label>
 							<input type="password" class="txt" name="password" />
-							<p>6-20位字符，可使用字母、数字和符号的组合，不建议使用纯数字、纯字母、纯符号</p>
-						</li>
-						<li>
-							<label for="">确认密码：</label>
-							<input type="password" class="txt" name="cpassword" />
-							<p> <span>请再次输入密码</p>
+							<a href="">忘记密码?</a>
 						</li>
 						<li class="checkcode">
 							<label for="">验证码：</label>
 							<input type="text"  name="chkcode" />
-							<img style="cursor: pointer;" onclick="this.src='<?php echo U('chkcode'); ?>#'+Math.random();" src="<?php echo U('chkcode'); ?>" />
+							<img style="cursor: pointer;" onclick = "this.src='<?php echo U('chkcode'); ?>#'+Math.random();" src="<?php echo U('chkcode'); ?>" alt="" />
 							<span>看不清？<a href="">换一张</a></span>
 						</li>
 						<li>
 							<label for="">&nbsp;</label>
-							<input type="checkbox" name="must_click" value="1" class="chb" checked="checked" /> 我已阅读并同意《用户注册协议》
+							<input type="checkbox" class="chb"  /> 保存登录信息
 						</li>
 						<li>
 							<label for="">&nbsp;</label>
@@ -91,19 +84,30 @@
 					</ul>
 				</form>
 
-				
+				<div class="coagent mt15">
+					<dl>
+						<dt>使用合作网站登录商城：</dt>
+						<dd class="qq"><a href=""><span></span>QQ</a></dd>
+						<dd class="weibo"><a href=""><span></span>新浪微博</a></dd>
+						<dd class="yi"><a href=""><span></span>网易</a></dd>
+						<dd class="renren"><a href=""><span></span>人人</a></dd>
+						<dd class="qihu"><a href=""><span></span>奇虎360</a></dd>
+						<dd class=""><a href=""><span></span>百度</a></dd>
+						<dd class="douban"><a href=""><span></span>豆瓣</a></dd>
+					</dl>
+				</div>
 			</div>
 			
-			<div class="mobile fl">
-				<h3>手机快速注册</h3>			
-				<p>中国大陆手机用户，编辑短信 “<strong>XX</strong>”发送到：</p>
-				<p><strong>1069099988</strong></p>
+			<div class="guide fl">
+				<h3>还不是商城用户</h3>
+				<p>现在免费注册成为商城用户，便能立刻享受便宜又放心的购物乐趣，心动不如行动，赶紧加入吧!</p>
+
+				<a href="regist.html" class="reg_btn">免费注册 >></a>
 			</div>
 
 		</div>
 	</div>
 	<!-- 登录主体部分end -->
-
 </body>
 </html>
 	
