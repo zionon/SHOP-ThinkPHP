@@ -22,7 +22,8 @@ class OrderController extends BaseController{
 
 	}
 
-	// public function orderDelete() {
-		
-	// }
+	public function orderDelete() {
+		$orderModel = new \Admin\Model\OrderModel();
+		$orderModel->delete();
+	}
 }
