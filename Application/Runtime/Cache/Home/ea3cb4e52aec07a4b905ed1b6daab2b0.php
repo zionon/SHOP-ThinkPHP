@@ -322,6 +322,7 @@
 						<?php endforeach; ?>
 					</tbody> 
 				</table>
+				<p><?php echo $data['page']; ?></p>
 			</div>
 		</div>
 		<!-- 右侧内容区域 end -->

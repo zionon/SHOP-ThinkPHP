@@ -141,6 +141,8 @@ class OrderModel extends Model{
 		//配置翻页的样式
 		$page->setConfig('prev','上一页');
 		$page->setConfig('next','下一页');
+		$page->setConfig('last','末页');
+		$page->setConfig('first','首页');
 		$data['page'] = $page->show();
 		//取数据
 		$data['data'] = $this->alias('a')
