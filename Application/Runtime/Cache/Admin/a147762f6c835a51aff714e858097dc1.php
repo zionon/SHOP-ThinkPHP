@@ -66,14 +66,14 @@
 					</tbody> 
 				</table>
 <!-- 				<p><?php echo $data['page']; ?></p> -->
-				        <table id="page-table" cellspacing="0">
-            <tr>
-                <td width="80%">&nbsp;</td>
-                <td align="center" nowrap="true">
-                    <?php echo $data['page']; ?>
-                </td>
-            </tr>
-        </table>
+				<table id="page-table" cellspacing="0">
+					<tr>
+						<td width="80%">&nbsp;</td>
+						<td align="center" nowrap="true">
+						<?php echo $data['page']; ?>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<!-- 右侧内容区域 end -->

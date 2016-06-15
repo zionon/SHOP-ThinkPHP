@@ -237,7 +237,7 @@
 	<!-- 页面主体 start -->
 	<div class="main w1210 bc mt10">
 		<div class="crumb w1210">
-			<h2><strong><?php echo $data['data'][10]['username']; ?></strong><span>> 我的订单</span></h2>
+			<h2><strong><?php echo $data['username']; ?></strong><span>> 我的订单</span></h2>
 		</div>
 
 		<!-- 左侧导航菜单 start -->

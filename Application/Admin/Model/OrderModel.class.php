@@ -134,6 +134,9 @@ class OrderModel extends Model{
 			'member_id' => array('eq',$memberId),
 			'pay_status' => array('eq','否'),
 			))->count();
+		//获得用户名
+		$name = new \Admin\Model\MemberModel();
+		$data = $name->field('username')->find($memberId);
 
 		//翻页
 		$count = $this->alias('a')->where($where)->count();
@@ -144,9 +147,7 @@ class OrderModel extends Model{
 		$page->setConfig('last','末页');
 		$page->setConfig('first','首页');
 		$data['page'] = $page->show();
-		//获得用户名
-		$name = new \Admin\Model\MemberModel();
-		$data['username'] = $name->field('username')->find($memberId);
+
 		//取数据
 		$data['data'] = $this->alias('a')
 		->field('a.id,a.member_id,a.shr_name,a.total_price,a.addtime,a.pay_status,GROUP_CONCAT(DISTINCT c.sm_logo) logo')
