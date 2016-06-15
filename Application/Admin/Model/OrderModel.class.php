@@ -136,7 +136,7 @@ class OrderModel extends Model{
 			))->count();
 
 		//翻页
-		$count = $this->alias('a')->where($where)->count;
+		$count = $this->alias('a')->where($where)->count();
 		$page = new \Think\Page($count, $pageSize);
 		//配置翻页的样式
 		$page->setConfig('prev','上一页');
@@ -148,6 +148,7 @@ class OrderModel extends Model{
 		->join('LEFT JOIN __ORDER_GOODS__ b ON a.id=b.order_id
 				LEFT JOIN __GOODS__ c ON b.goods_id=c.id')
 		->where($where)
+		->group('a.id')
 		->limit($page->firstRow.','.$page->listRows)
 		->select();
 		$data['noPayCount'] = $noPayCount;
