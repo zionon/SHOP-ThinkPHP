@@ -234,7 +234,7 @@ create table st_order
 	shr_province varchar(30) not null comment '收货人省',
 	shr_city varchar(30) not null comment '收货人城市',
 	shr_area varchar(30) not null comment '收货人地区',
-	shr_addredd varchar(30) not null comment '收货人详细地址',
+	shr_address varchar(30) not null comment '收货人详细地址',
 	post_status tinyint unsigned not null default '0' comment '发货状态,0:未发货,1:已发货2:已收到货',
 	post_number varchar(30) not null default '' comment '快递号',
 	primary key (id),

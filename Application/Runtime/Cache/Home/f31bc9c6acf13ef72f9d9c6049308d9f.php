@@ -1,12 +1,52 @@
-<layout name="Common/layout" />
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/style/fillin.css">
-<script type="text/javascript" src="__PUBLIC__/Home/js/cart2.js"></script>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title><?php echo $_page_title; ?></title>
+	<meta name="keywords" content="<?php echo $_page_keywords; ?>" />
+	<meta name="description" content="<?php echo $_page_description; ?>" />
+	<!-- 引入公共的CSS -->
+	<link rel="stylesheet" href="/Public/Home/style/base.css" type="text/css">
+	<link rel="stylesheet" href="/Public/Home/style/global.css" type="text/css">
+	<link rel="stylesheet" href="/Public/Home/style/header.css" type="text/css">
+	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
+	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
+	<!-- 引入公共的JS -->
+	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<div class="topnav">
+		<div class="topnav_bd w990 bc">
+			<div class="topnav_left">
+				
+			</div>
+			<div class="topnav_right fr">
+				<ul>
+					<li id="logInfo"></li>
+					<li class="line">|</li>
+					<li>我的订单</li>
+					<li class="line">|</li>
+					<li>客户服务</li>
+					<li class="line">|</li>
+					<li><a href="<?php echo U('Admin/Login/login'); ?>">神秘入口</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部导航 end -->
+	<div style="clear:both;"></div>
+	
+	
+<link rel="stylesheet" type="text/css" href="/Public/Home/style/fillin.css">
+<script type="text/javascript" src="/Public/Home/js/cart2.js"></script>
 
 <body>
 	<!-- 页面头部 start -->
 	<div class="header w990 bc mt15">
 		<div class="logo w990">
-			<h2 class="fl"><a href="index.html"><img src="__PUBLIC__/Home/images/logo.png" alt="京西商城"></a></h2>
+			<h2 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
 			<div class="flow fr flow2">
 				<ul>
 					<li>1.我的购物车</li>
@@ -51,7 +91,7 @@
 						</li>
 						<li><input type="radio" name="address" class="new_address"  />使用新地址</li>
 					</ul>	
-					<form action="__SELF__" class="none" name="address_form" method="POST">
+					<form action="/index.php/Home/Order/orderAdd.html" class="none" name="address_form" method="POST">
 						<ul>
 							<li>
 								<label for=""><span>*</span>收 货 人：</label>
@@ -231,8 +271,7 @@
 					</thead>
 					<tbody>
 						<?php
-						$tp = 0;		//总价
-						foreach ($data as $k => $v): ?>
+ $tp = 0; foreach ($data as $k => $v): ?>
 						<tr>
 							<td class="col1"><a href="<?php echo U('Index/goods?id='.$v['goods_id']); ?>"><?php showImage($v['mid_logo']); ?></a>
 							<strong><a href="<?php echo U('Index/goods?id='.$v['goods_id']); ?>"><?php echo $v['goods_name']; ?></a></strong></td>
@@ -266,3 +305,50 @@
 	</div>
 	<!-- 主体部分 end -->
 </body>
+	
+	<div style="clear:both;"></div>
+	<!-- 底部版权 start -->
+	<div class="footer w1210 bc mt15">
+		<p class="links">
+			<a href="">关于我们</a> |
+			<a href="">联系我们</a> |
+			<a href="">人才招聘</a> |
+			<a href="">商家入驻</a> |
+			<a href="">千寻网</a> |
+			<a href="">奢侈品网</a> |
+			<a href="">广告服务</a> |
+			<a href="">移动终端</a> |
+			<a href="">友情链接</a> |
+			<a href="">销售联盟</a> |
+			<a href="">京西论坛</a>
+		</p>
+		<p class="copyright">
+			 © 2005-2013 京东网上商城 版权所有，并保留所有权利。  ICP备案证书号:京ICP证070359号 
+		</p>
+		<p class="auth">
+			<a href=""><img src="/Public/Home/images/xin.png" alt="" /></a>
+			<a href=""><img src="/Public/Home/images/kexin.jpg" alt="" /></a>
+			<a href=""><img src="/Public/Home/images/police.jpg" alt="" /></a>
+			<a href=""><img src="/Public/Home/images/beian.gif" alt="" /></a>
+		</p>
+	</div>
+	<!-- 底部版权 end -->
+
+</body>
+</html>
+<script type="text/javascript">
+	//判断登录状态
+	$.ajax({
+		type : "GET",
+		url : "<?php echo U('Member/ajaxChkLogin'); ?>",
+		dataType : "json",
+		success : function(data){
+			if (data.login == 1) {
+				var li = '你好, ' +data.username+ '[<a href="<?php echo U('Member/logout'); ?>">登出</a>]';
+			} else {
+				var li = '您好，欢迎来到京西！[<a href="<?php echo U('Member/login'); ?>">登录</a>] [<a href="<?php echo U('Member/regist'); ?>">免费注册</a>]';
+			}
+			$("#logInfo").html(li);
+		}
+	});
+</script>

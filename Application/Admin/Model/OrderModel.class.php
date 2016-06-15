@@ -32,6 +32,8 @@ class OrderModel extends Model{
 			$this->error = '购物车中没有商品，无法下单!';
 			return FALSE;
 		}
+
+		// dump($goods);die;
 		//读库存之前加锁，注意:把锁赋给这个模型，这样这个锁可以一直保存到下单结束，否则如果是局部变量这个锁在_before_insert函数执行完成之后就释放了
 		$this->fp = fopen('./order.lock');
 		flock($this->fp,LOCK_EX);

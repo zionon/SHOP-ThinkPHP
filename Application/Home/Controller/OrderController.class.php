@@ -12,14 +12,17 @@ class OrderController extends Controller{
 		if (!$memberId) {
 			//先把登录成功之后要跳回的地址存到SESSION
 			session('returnUrl', U('Order/orderAdd'));
-			redirect('请先登录!',U('Member/login'));
+			$this->error('请先登录!',U('Member/login'));
 		}
 		if (IS_POST) {
+			// dump($_POST);die;
 			$orderModel = new \Admin\Model\OrderModel();
 			if ($orderModel->create(I('post.'), 1)) {
 				if ($orderId = $orderModel->add()) {
-					$this->success('下单成功!',U('order_success?order_id='.$orderId));
+					$this->success('下单成功!',U('orderSuccess?order_id='.$orderId));
 					exit;
+				} else {
+					$this->error($orderModel->getError());
 				}
 			} else {
 				$this->error($orderModel->getError());
@@ -38,6 +41,10 @@ class OrderController extends Controller{
 				));
 			$this->display();
 		}
+	}
+
+	public function orderSuccess() {
+		dump('get.order_id');
 	}
 }
 
