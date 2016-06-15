@@ -17,4 +17,12 @@ class OrderController extends BaseController{
 			));
 		$this->display();
 	}
+
+	public function orderDetail() {
+
+	}
+
+	// public function orderDelete() {
+		
+	// }
 }
