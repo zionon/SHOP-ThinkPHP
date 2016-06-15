@@ -44,7 +44,12 @@ class OrderController extends Controller{
 	}
 
 	public function orderSuccess() {
-		dump('get.order_id');
+		$this->assign(array(
+			'_page_title' => '下单成功',
+			'_page_keywords' => '下单成功',
+			'_page_description' => '下单成功',
+			));
+		$this->display();
 	}
 }
 

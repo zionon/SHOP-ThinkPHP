@@ -104,8 +104,8 @@ class OrderModel extends Model{
 		fclose($this->fp);
 
 		//清空购物车
-		$cartModel = new \Home\Model\CartModel();
-		$cartModel->clear();
+		// $cartModel = new \Home\Model\CartModel();
+		// $cartModel->clear();
 	}
 }
 
