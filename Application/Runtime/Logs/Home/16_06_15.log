@@ -4210,3 +4210,974 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
 NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
 SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
 
+[ 2016-06-15T11:26:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `promote_price` > 0 AND `promote_start_date` <= '2016-06-15 11:26' AND `promote_end_date` >= '2016-06-15 11:26' LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_new` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_hot` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_best` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: floorData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 106 行.
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = 0 AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('1')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('1')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT brand_id,b.brand_name,b.logo FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  WHERE a.id IN ('38') AND a.brand_id <> 0 LIMIT 9   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '否'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('23','37') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('19')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('19')  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('36') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('20')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('27') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001643s ]
+
+[ 2016-06-15T11:26:59+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-06-15T11:27:01+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2016-06-15T11:27:01+08:00 ] 127.0.0.1 /index.php/Home/Cart/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-06-15T11:27:01+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-06-15T11:27:04+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-06-15T11:27:04+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2016-06-15T11:27:04+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-06-15T11:27:18+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `st_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `st_member` WHERE `username` = 'testuser' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_member_level` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `st_member_level` WHERE `jifen_bottom` <= '100000' AND `jifen_top` >= '100000' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 164 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+
+[ 2016-06-15T11:27:19+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `promote_price` > 0 AND `promote_start_date` <= '2016-06-15 11:27' AND `promote_end_date` >= '2016-06-15 11:27' LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_new` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_hot` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_best` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: floorData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 106 行.
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = 0 AND `is_floor` = '是'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('1')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('1')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT brand_id,b.brand_name,b.logo FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  WHERE a.id IN ('38') AND a.brand_id <> 0 LIMIT 9   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '否'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '是'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('16')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('23','37') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('19')  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('19')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('36') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('27') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-06-15T11:27:19+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002641s ]
+
+[ 2016-06-15T11:27:21+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-06-15T11:27:22+08:00 ] 127.0.0.1 /index.php/Home/Cart/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2016-06-15T11:27:22+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-06-15T11:27:46+08:00 ] 127.0.0.1 /index.php/Home/Cart/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-06-15T11:27:46+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-06-15T11:31:23+08:00 ] 127.0.0.1 /index.php/Home/Member/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `st_member` [ RunTime:0.0005s ]
+
+[ 2016-06-15T11:31:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `promote_price` > 0 AND `promote_start_date` <= '2016-06-15 11:31' AND `promote_end_date` >= '2016-06-15 11:31' LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_new` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_hot` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_best` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: floorData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 106 行.
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = 0 AND `is_floor` = '是'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('1')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0015s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('1')  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT brand_id,b.brand_name,b.logo FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  WHERE a.id IN ('38') AND a.brand_id <> 0 LIMIT 9   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '否'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('23','37') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('19')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('19')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('36') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('20')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('27') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-06-15T11:31:23+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-06-15T11:31:24+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-06-15T11:31:24+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-06-15T11:31:24+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-06-15T11:46:01+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `promote_price` > 0 AND `promote_start_date` <= '2016-06-15 11:46' AND `promote_end_date` >= '2016-06-15 11:46' LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_new` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_hot` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_best` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: floorData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 106 行.
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = 0 AND `is_floor` = '是'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('1')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('1')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT brand_id,b.brand_name,b.logo FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  WHERE a.id IN ('38') AND a.brand_id <> 0 LIMIT 9   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '否'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('16')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('23','37') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('19')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('19')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('36') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('20')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('27') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-06-15T11:46:01+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2016-06-15T11:46:02+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2016-06-15T11:46:04+08:00 ] 127.0.0.1 /index.php/Home/Cart/ajaxCartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-06-15T11:46:05+08:00 ] 127.0.0.1 /index.php/Home/Cart/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-06-15T11:46:05+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2016-06-15T11:46:07+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `promote_price` > 0 AND `promote_start_date` <= '2016-06-15 11:46' AND `promote_end_date` >= '2016-06-15 11:46' LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_new` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_hot` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_best` = '是' ORDER BY `sort_num` ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: floorData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 106 行.
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = 0 AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('1')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods_cat` [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('1')  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT brand_id,b.brand_name,b.logo FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  WHERE a.id IN ('38') AND a.brand_id <> 0 LIMIT 9   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '否'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `st_category` WHERE `parent_id` = '1' AND `is_floor` = '是'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('16')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('16')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('23','37') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('19')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('19')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('36') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_category`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `st_goods` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT goods_id id FROM `st_goods_cat` WHERE `cat_id` IN ('20')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`mid_logo`,`goods_name`,`shop_price` FROM `st_goods` WHERE `is_on_sale` = '是' AND `is_floor` = '是' AND `id` IN ('27') ORDER BY `sort_num` ASC LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2016-06-15T11:46:07+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2016-06-15T11:46:09+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cat_name`,`parent_id` FROM `st_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_pic` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_goods_pic` WHERE `goods_id` = '37'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id = '37'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT a.price,b.level_name FROM st_member_price a LEFT JOIN st_member_level b ON a.level_id=b.id  WHERE a.goods_id = '37'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 176 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/862a52d698112494831f0f0bc6d3727d.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-06-15T11:46:09+08:00 ] 127.0.0.1 /index.php/Home/Index/displayHistory/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0011s ]
+
+[ 2016-06-15T11:46:09+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetMemberPrice/goods_id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0011s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2016-06-15T11:46:09+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-06-15T11:46:11+08:00 ] 127.0.0.1 /index.php/Home/Cart/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0014s ]
+NOTIC: [2] sort() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 21 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0017s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 37 AND `goods_attr_id` = null LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+
