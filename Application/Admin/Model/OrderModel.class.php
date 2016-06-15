@@ -125,6 +125,34 @@ class OrderModel extends Model{
 			'id' => array('eq', $tp['member_id']),
 			))->setInc('jifen',$tp['total_price']);
 	}
+
+	public function search($pageSize = 20) {
+		//检索
+		$memberId = session('m_id');
+		$where['member_id'] = array('eq',$memberId);
+		$noPayCount = $this->where(array(
+			'member_id' => array('eq',$memberId),
+			'pay_status' => array('eq','否'),
+			))->count();
+
+		//翻页
+		$count = $this->alias('a')->where($where)->count;
+		$page = new \Think\Page($count, $pageSize);
+		//配置翻页的样式
+		$page->setConfig('prev','上一页');
+		$page->setConfig('next','下一页');
+		$data['page'] = $page->show();
+		//取数据
+		$data['data'] = $this->alias('a')
+		->field('a.id,a.shr_name,a.total_price,a.addtime,a.pay_status,GROUP_CONCAT(DISTINCT c.sm_logo) logo')
+		->join('LEFT JOIN __ORDER_GOODS__ b ON a.id=b.order_id
+				LEFT JOIN __GOODS__ c ON b.goods_id=c.id')
+		->where($where)
+		->limit($page->firstRow.','.$page->listRows)
+		->select();
+		$data['noPayCount'] = $noPayCount;
+		return $data;
+	}
 }
 
 

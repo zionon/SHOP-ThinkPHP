@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="__PUBLIC__/Home/style/home.css" type="text/css">
 <link rel="stylesheet" href="__PUBLIC__/Home/style/order.css" type="text/css">
 <script type="text/javascript" src="__PUBLIC__/Home/js/home.js"></script>
+
+<include file="Common/nav" />
 <body>
 	<!-- 页面主体 start -->
 	<div class="main w1210 bc mt10">
@@ -9,13 +11,15 @@
 			<h2><strong>我的XX </strong><span>> 我的订单</span></h2>
 		</div>
 
+		<include file="My/menu" />
+
 		<!-- 右侧内容区域 start -->
 		<div class="content fl ml10">
 			<div class="order_hd">
 				<h3>我的订单</h3>
 				<dl>
 					<dt>便利提醒：</dt>
-					<dd>待付款（0）</dd>
+					<dd>待付款（<?php echo $data['noPayCount']; ?>）</dd>
 					<dd>待确认收货（0）</dd>
 					<dd>待自提（0）</dd>
 				</dl>
@@ -41,33 +45,27 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td><a href="">852592106</a></td>
-							<td><a href=""><img src="images/order1.jpg" alt="" /></a></td>
-							<td>王超平</td>
-							<td>￥35.00 货到付款</td>
-							<td>2013-11-12 16:28:14</td>
-							<td>已取消</td>
-							<td><a href="">查看</a> | <a href="">删除</a></td>
-						</tr>
-						<tr>
-							<td><a href="">852571653</a></td>
-							<td><a href=""><img src="images/order2.jpg" alt="" /></a></td>
-							<td>王超平</td>
-							<td>￥35.00 在线支付</td>
-							<td>2013-11-13 19:28:14</td>
-							<td>已完成</td>
-							<td><a href="">查看</a> | <a href="">删除</a></td>
-						</tr>
-						<tr>
-							<td><a href="">471196680</a></td>
-							<td><a href=""><img src="images/order2.jpg" alt="" /></a></td>
-							<td>王超平</td>
-							<td>￥169.00 货到付款</td>
-							<td>2013-02-20 23:00:00</td>
-							<td>已完成</td>
-							<td><a href="">查看</a> | <a href="">删除</a></td>
-						</tr>
+						<?php foreach ($data['data'] as $k => $v): ?>
+							<tr>
+								<td><?php echo $v['id']; ?></td>
+								<td><a href=""><?php $_arr = explode(',',$v['logo']); foreach($_arr as $k1 => $v1) showImage($v1); ?></a></td>
+								<td><?php echo $v['shr_name']; ?></td>
+								<td>¥<?php echo $v['total_price']; ?></td>
+								<td><?php echo date(Y-m-d H:i:s, $v['addtime']); ?></td>
+								<td>
+									<?php if($v['pay_status'] == '是'): ?>
+										已支付
+									<?php else: ?>
+										<?php echo makeAlipayBtn($v['id']); ?>
+									<?php endif; ?>
+								</td>
+								<td>
+									<?php if($['pay_status'] == '否'): ?>
+										<a href="">查看</a> | <a href="">取消定单</a>
+									<?php endif; ?>
+								</td>
+							</tr>
+						<?php endforeach; ?>
 					</tbody> 
 				</table>
 			</div>
@@ -75,4 +73,5 @@
 		<!-- 右侧内容区域 end -->
 	</div>
 	<!-- 页面主体 end-->
-</body>
+
+<include file="Common/help" />

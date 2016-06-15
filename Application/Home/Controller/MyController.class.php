@@ -15,7 +15,11 @@ class MyController extends Controller{
 	}
 
 	public function order() {
+		$orderModel = new \Admin\Model\OrderModel();
+		$data = $orderModel->search();
+
 		$this->assign(array(
+			'data' => $data,
 			'_page_title' => '个人中心-我的定单',
 			));
 		$this->display();
