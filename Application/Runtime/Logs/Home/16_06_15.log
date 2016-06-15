@@ -8395,3 +8395,315 @@ SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:
 SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
 SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0006s ]
 
+[ 2016-06-15T12:47:21+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with Think\Model::_before_insert(&$data, $options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_order` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 164 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 38 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0004s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 36 AND `goods_attr_id` = '44,46,47' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '55,57,60' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '56,57,61' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-15T12:49:24+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with Think\Model::_before_insert(&$data, $options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_order` [ RunTime:0.0006s ]
+
+[ 2016-06-15T12:50:07+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-06-15T12:50:10+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-06-15T12:50:32+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-06-15T12:50:43+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-06-15T12:50:43+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2016-06-15T12:50:58+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2016-06-15T12:50:58+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2016-06-15T12:51:00+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-06-15T12:52:13+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-06-15T12:52:26+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with Think\Model::_before_insert(&$data, $options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_order` [ RunTime:0.0005s ]
+
+[ 2016-06-15T12:52:45+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with Think\Model::_before_insert(&$data, $options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_order` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 164 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0005s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 39 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0005s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 36 AND `goods_attr_id` = '44,46,47' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '55,57,60' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '56,57,61' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-15T12:56:18+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with Think\Model::_before_insert(&$data, $options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_order` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 164 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0003s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 39 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0004s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 36 AND `goods_attr_id` = '44,46,47' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '55,57,60' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '56,57,61' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-06-15T13:09:25+08:00 ] 127.0.0.1 /index.php/Home/Order/orderAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [2048] Declaration of Admin\Model\OrderModel::_before_insert() should be compatible with Think\Model::_before_insert(&$data, $options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_order` [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Home\Model\CartModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Home/Model/CartModel.class.php 第 164 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_cart` WHERE `member_id` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `st_member_price` [ RunTime:0.0004s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '36' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shop_price` FROM `st_goods` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('44','46','47')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('55','57','60')  [ RunTime:0.0003s ]
+SQL: SELECT `goods_name`,`mid_logo` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `promote_price` FROM `st_goods` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `st_member_price` WHERE `goods_id` = '39' AND `level_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.attr_value,b.attr_name FROM st_goods_attr a INNER JOIN st_attribute b ON a.attr_id=b.id  WHERE a.id IN ('56','57','61')  [ RunTime:0.0003s ]
+NOTIC: [2] fopen() expects at least 2 parameters, 1 given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 39 行.
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `st_goods_number` [ RunTime:0.0005s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 36 AND `goods_attr_id` = '44,46,47' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '55,57,60' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goods_number` FROM `st_goods_number` WHERE `goods_id` = 39 AND `goods_attr_id` = '56,57,61' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `st_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`total_price`,`member_id`,`addtime`) VALUES ('测试下单11','北京','朝阳区','西二旗','长安街','13888888888','17520','1','1465967365') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_order_goods` [ RunTime:0.0009s ]
+SQL: INSERT INTO `st_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('2','36','44,46,47','19','80.00') [ RunTime:0.0009s ]
+SQL: UPDATE `st_goods_number` SET `goods_number`=goods_number-19 WHERE `goods_id` = 36 AND `goods_attr_id` = '44,46,47' [ RunTime:0.0008s ]
+SQL: INSERT INTO `st_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('2','39','55,57,60','1','8000.00') [ RunTime:0.0005s ]
+SQL: UPDATE `st_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 39 AND `goods_attr_id` = '55,57,60' [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_order_goods` (`order_id`,`goods_id`,`goods_attr_id`,`goods_number`,`price`) VALUES ('2','39','56,57,61','1','8000.00') [ RunTime:0.0004s ]
+SQL: UPDATE `st_goods_number` SET `goods_number`=goods_number-1 WHERE `goods_id` = 39 AND `goods_attr_id` = '56,57,61' [ RunTime:0.0004s ]
+NOTIC: [2] flock() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 103 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/OrderModel.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `st_cart` [ RunTime:0.0005s ]
+ERR: Think\Model:clear方法不存在！
+

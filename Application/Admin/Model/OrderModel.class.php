@@ -18,6 +18,7 @@ class OrderModel extends Model{
 		);
 
 	protected function _before_insert(&$data,&$option) {
+		// dump($data);die;
 		$memberId = session('m_id');
 		//下单前的检查
 		//是否登录
@@ -59,6 +60,9 @@ class OrderModel extends Model{
 		$data['member_id'] = $memberId;
 		$data['addtime'] = time();
 
+		// dump($option);
+		// dump($data);die;
+
 		//为了确定三张表的操作都能成功:定单基本信息表，定单商品表，库存量表
 		$this->startTrans();
 	}
@@ -86,7 +90,7 @@ class OrderModel extends Model{
 				'goods_id' => $v['goods_id'],
 				'goods_attr_id' => $v['goods_attr_id'],
 				))->setDec('goods_number', $v['goods_number']);
-			if (FALSE !== $ret) {
+			if (FALSE === $ret) {
 				$this->rollback();
 				return FALSE;
 			}
