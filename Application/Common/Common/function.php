@@ -86,6 +86,11 @@ function buildSelect($tableName, $selectName, $valueFieldName, $textFieldName, $
 	echo $select;
 }
 
+//为一个订单生成支付宝支付按钮
+function makeAlipayBtn ($orderId, $btnName='去支付宝支付'){
+	return require ('./alipay/alipayapi.php');
+}
+
 
 
 

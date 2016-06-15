@@ -104,8 +104,26 @@ class OrderModel extends Model{
 		fclose($this->fp);
 
 		//清空购物车
-		// $cartModel = new \Home\Model\CartModel();
-		// $cartModel->clear();
+		$cartModel = new \Home\Model\CartModel();
+		$cartModel->clear();
+	}
+
+	//设置为已支付的状态
+	public function setPaid($orderId){
+		//更新定单的支付状态
+		$this->where(array(
+			'id' => array('eq',$orderId),
+			))->save(array(
+			'pay_status' => '是',
+			'pay_time' => time(),
+			));
+
+		//更新会员积分
+		$tp = $this->field('total_price,member_id')->find($orderId);
+		$memberModel = M('member');	//因为如果用D生成模型，那么在修改字段时会调用这个模型的_before_update方法,但现在这个功能不需要调用这个方法,所以这里使用M生成父类模型这样就不会调用_before_update了
+		$memberModel->where(array(
+			'id' => array('eq', $tp['member_id']),
+			))->setInc('jifen',$tp['total_price']);
 	}
 }
 

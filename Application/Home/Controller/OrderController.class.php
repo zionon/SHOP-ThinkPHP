@@ -44,12 +44,19 @@ class OrderController extends Controller{
 	}
 
 	public function orderSuccess() {
+		$btn = makeAlipayBtn(I('get.order_id'));
 		$this->assign(array(
+			'btn' => $btn,
 			'_page_title' => '下单成功',
 			'_page_keywords' => '下单成功',
 			'_page_description' => '下单成功',
 			));
 		$this->display();
+	}
+
+	//接收支付宝发来的支付成功的消息
+	public function orderReceive() {
+		require ('./alipay/notify_url.php');
 	}
 }
 

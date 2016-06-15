@@ -41,13 +41,12 @@
 	
 <link rel="stylesheet" href="/Public/Home/style/success.css" type="text/css">
 
-<body>
 	<div style="clear:both;"></div>
 	
 	<!-- 页面头部 start -->
 	<div class="header w990 bc mt15">
 		<div class="logo w990">
-			<h2 class="fl"><a href="index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
+			<h2 class="fl"><a href="<?php echo U('Index/index'); ?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h2>
 			<div class="flow fr flow3">
 				<ul>
 					<li>1.我的购物车</li>
@@ -58,7 +57,10 @@
 		</div>
 	</div>
 	<!-- 页面头部 end -->
-	
+	<style type="text/css">
+		#alipaysubmit{margin: 10px auto;width: 150px;}
+		#alipaysubmit input{cursor: pointer;padding: 5px;background: #F00;color: #FFF;font-weight: bold;font-size: 20px;border: 0;}
+	</style>
 	<div style="clear:both;"></div>	
 	<!-- 主体部分 start -->
 	<div class="success w990 bc mt15">
@@ -67,12 +69,11 @@
 		</div>
 		<div class="success_bd">
 			<p><span></span>订单提交成功，我们将及时为您处理</p>
-			
+			<p><?php echo $btn; ?></p>
 			<p class="message">完成支付后，你可以 <a href="">查看订单状态</a>  <a href="">继续购物</a> <a href="">问题反馈</a></p>
 		</div>
 	</div>
 	<!-- 主体部分 end -->
-</body>
 	
 	<div style="clear:both;"></div>
 	<!-- 底部版权 start -->
