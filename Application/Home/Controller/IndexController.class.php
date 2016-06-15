@@ -105,6 +105,7 @@ class IndexController extends NavController {
         $id = I('get.id');
         // $_COOKIE['display_history'] = null;
         // 先从COOKIE中取出浏览历史的ID数组
+        dump($_COOKIE);die;
         $data = isset($_COOKIE['display_history']) ? unserialize($_COOKIE['display_history']) : array();
         // dump($data);die;
         // 把最新浏览的这件商品放到数组中的第一个位置上
@@ -144,9 +145,13 @@ class IndexController extends NavController {
     }
 
     //
-    public function clearDisplayHisttory() {
-        $_COOKIE['display_history'] = null;
-        $this->displayHistory();
+    public function ajaxClearDisplayHistory() {
+        dump($_COOKIE['display_history']);die;
+        if ($_COOKIE['display_history'] !== TRUE) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
     }
         
 }

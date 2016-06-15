@@ -137,7 +137,7 @@
 
 			<!-- 最近浏览 start -->
 			<div class="viewd leftbar mt10">
-				<h2><a href="<?php echo U('clearDisplayHisttory'); ?>">清空</a><strong>最近浏览过的商品</strong></h2>
+				<h2><a onclick="clearDisplayHistory()">清空</a><strong>最近浏览过的商品</strong></h2>
 				<div class="leftbar_wrap" id="display_history"></div>
 <!-- 				<div class="leftbar_wrap">
 					<dl>
@@ -547,6 +547,19 @@
 			$("#member_price").html("¥ "+data+"元");
 		}
 	});
+
+	//清空最近浏览历史
+	function clearDisplayHistory(){
+		// $("#display_history").empty();
+		//AJAX清空$_COOKIE['display_history']
+		$.ajax({
+			type : "GET",
+			url : "<?php echo U('ajaxClearDisplayHistory'); ?>",
+			success : function(data){
+				$("#display_history").empty();
+			}
+		})
+	}
 </script>
 
 

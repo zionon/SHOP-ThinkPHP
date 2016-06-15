@@ -220,7 +220,41 @@ create table st_cart
 	key member_id(member_id)
 )engine=InnoDB default charset=utf8 comment '购物车';
 
+drop table if exists st_order;
+create table st_order
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	member_id mediumint unsigned not null comment '会员Id',
+	addtime int unsigned not null comment '下单时间',
+	pay_status enum('是','否') not null default '否' comment '支付状态',
+	pay_time int unsigned not null default '0' comment '支付时间',
+	total_price decimal (10,2) not null comment '定单总价',
+	shr_name varchar(30) not null comment '收货人姓名',
+	shr_tel varchar(30) not null comment '收货人电话',
+	shr_province varchar(30) not null comment '收货人省',
+	shr_city varchar(30) not null comment '收货人城市',
+	shr_area varchar(30) not null comment '收货人地区',
+	shr_addredd varchar(30) not null comment '收货人详细地址',
+	post_status tinyint unsigned not null default '0' comment '发货状态,0:未发货,1:已发货2:已收到货',
+	post_number varchar(30) not null default '' comment '快递号',
+	primary key (id),
+	key member_id(member_id),
+	key addtime(addtime)
+)engine=InnoDB default charset=utf8 comment '定单基本信息';
 
+drop table if exists st_order_goods;
+create table st_order_goods
+(
+	id mediumint unsigned not null auto_increment comment 'Id',
+	order_id mediumint unsigned not null comment '定单Id',
+	goods_id mediumint unsigned not null comment '商品Id',
+	goods_attr_id varchar(150) not null default '' comment '商品属性Id',
+	goods_number mediumint unsigned not null comment '购买的数量',
+	price decimal(10,2) not null comment '购买的价格',
+	primary key (id),
+	key order_id(order_id),
+	key goods_id(goods_id)
+)engine=InnoDB default charset=utf8 comment '定单商品表';
 
 
 
