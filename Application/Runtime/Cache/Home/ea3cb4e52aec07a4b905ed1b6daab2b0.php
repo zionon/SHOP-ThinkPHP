@@ -42,6 +42,10 @@
 <link rel="stylesheet" href="/Public/Home/style/home.css" type="text/css">
 <link rel="stylesheet" href="/Public/Home/style/order.css" type="text/css">
 <script type="text/javascript" src="/Public/Home/js/home.js"></script>
+<style type="text/css">
+	#page-table a{padding:5px;border: 1px solid #F00;margin: 5px;}
+	#page-table span.current{padding: 5px;background: #F00;margin: 5px;color: #FFF;font-weight: bold;}
+</style>
 
 <link rel="stylesheet" type="text/css" href="/Public/Home/style/cart.css">
 <!-- 头部 start -->
@@ -233,7 +237,7 @@
 	<!-- 页面主体 start -->
 	<div class="main w1210 bc mt10">
 		<div class="crumb w1210">
-			<h2><strong>我的XX </strong><span>> 我的订单</span></h2>
+			<h2><strong><?php echo $data['data'][10]['username']; ?></strong><span>> 我的订单</span></h2>
 		</div>
 
 		<!-- 左侧导航菜单 start -->
@@ -316,13 +320,22 @@
 								<td>
 									<?php if($v['pay_status'] == '否'): ?>
 										<a href="">查看</a> | <a href="">取消定单</a>
+									<?php else: ?>
+										<a href="">查看</a>
 									<?php endif; ?>
 								</td>
 							</tr>
 						<?php endforeach; ?>
 					</tbody> 
 				</table>
-				<p><?php echo $data['page']; ?></p>
+				<table id="page-table" cellspacing="0">
+					<tr>
+						<td width="80%">&nbsp;</td>
+						<td align="center" nowrap="true">
+						<?php echo $data['page']; ?>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<!-- 右侧内容区域 end -->

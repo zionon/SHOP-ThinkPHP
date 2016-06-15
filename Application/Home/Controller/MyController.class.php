@@ -18,7 +18,7 @@ class MyController extends Controller{
 		$orderModel = new \Admin\Model\OrderModel();
 		$data = $orderModel->search();
 		// echo $orderModel->getLastSql();
-		// dump($data);die;
+		dump($data);die;
 		$this->assign(array(
 			'data' => $data,
 			'_page_title' => '个人中心-我的定单',

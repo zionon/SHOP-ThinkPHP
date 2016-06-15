@@ -144,9 +144,12 @@ class OrderModel extends Model{
 		$page->setConfig('last','末页');
 		$page->setConfig('first','首页');
 		$data['page'] = $page->show();
+		//获得用户名
+		$name = new \Admin\Model\MemberModel();
+		$data['username'] = $name->field('username')->find($memberId);
 		//取数据
 		$data['data'] = $this->alias('a')
-		->field('a.id,a.shr_name,a.total_price,a.addtime,a.pay_status,GROUP_CONCAT(DISTINCT c.sm_logo) logo')
+		->field('a.id,a.member_id,a.shr_name,a.total_price,a.addtime,a.pay_status,GROUP_CONCAT(DISTINCT c.sm_logo) logo')
 		->join('LEFT JOIN __ORDER_GOODS__ b ON a.id=b.order_id
 				LEFT JOIN __GOODS__ c ON b.goods_id=c.id')
 		->where($where)
@@ -154,6 +157,28 @@ class OrderModel extends Model{
 		->limit($page->firstRow.','.$page->listRows)
 		->select();
 		$data['noPayCount'] = $noPayCount;
+		return $data;
+	}
+
+	public function getAllOrder($pageSize = 20) {
+		//翻页
+		$count = $this->alias('a')->count();
+		$page = new \Think\Page($count, $pageSize);
+		//配置翻页的样式
+		$page->setConfig('prev','上一页');
+		$page->setConfig('next','下一页');
+		$page->setConfig('last','末页');
+		$page->setConfig('first','首页');
+		$data['page'] = $page->show();
+		//取所有的订单数据
+		$data['data'] = $this->alias('a')
+		->field('a.id,a.member_id,a.total_price,a.addtime,a.pay_status,GROUP_CONCAT(DISTINCT c.sm_logo) logo')
+		->join('LEFT JOIN __ORDER_GOODS__ b ON a.id=b.order_id
+				LEFT JOIN __GOODS__ c ON b.goods_id=c.id')
+		->order('a.id')
+		->group('a.id')
+		->limit($page->firstRow.','.$page->listRows)
+		->select();
 		return $data;
 	}
 }
