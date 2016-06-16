@@ -36,7 +36,7 @@ class SearchController extends NavController{
 		//取出商品和翻页
 		$goodsModel = new \Admin\Model\GoodsModel();
 		$data = $goodsModel->keySearch($key);
-
+		// dump($data);die;
 		//根据上面搜索出来的商品计算筛选条件
 		$catModel = new \Admin\Model\CategoryModel();
 		$searchFilter = $catModel->getSearchConditionByGoodsId($data['goods_id']);

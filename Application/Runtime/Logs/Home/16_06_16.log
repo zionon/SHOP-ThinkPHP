@@ -14253,3 +14253,156 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
 
+[ 2016-06-16T14:49:31+08:00 ] 127.0.0.1 /index.php/Home/Search/keySearch/key/%E8%8B%B9%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: like /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 634 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT a.id) gids FROM st_goods a LEFT JOIN st_goods_attr b ON a.id=b.goods_id  WHERE a.is_on_sale = '是' AND a.goods_name LIKE '%苹果%' OR a.goods_desc LIKE '%%' OR attr_value LIKE '%苹果%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM st_goods a WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pageSize /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 704 行.
+NOTIC: [2] Division by zero /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Page.class.php 第 90 行.
+SQL: SELECT a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl FROM st_goods a LEFT JOIN st_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM st_order WHERE pay_status="是"))  WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') GROUP BY a.id ORDER BY `xl` desc  [ RunTime:0.0013s ]
+
+[ 2016-06-16T15:08:33+08:00 ] 127.0.0.1 /index.php/Home/Search/keySearch/key/%E8%8B%B9%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: like /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 634 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT a.id) gids FROM st_goods a LEFT JOIN st_goods_attr b ON a.id=b.goods_id  WHERE a.is_on_sale = '是' AND a.goods_name LIKE '%苹果%' OR a.goods_desc LIKE '%%' OR attr_value LIKE '%苹果%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM st_goods a WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pageSize /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 704 行.
+NOTIC: [2] Division by zero /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Page.class.php 第 90 行.
+SQL: SELECT a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl FROM st_goods a LEFT JOIN st_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM st_order WHERE pay_status="是"))  WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') GROUP BY a.id ORDER BY `xl` desc  [ RunTime:0.0013s ]
+
+[ 2016-06-16T15:08:34+08:00 ] 127.0.0.1 /index.php/Home/Search/keySearch/key/%E8%8B%B9%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: like /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 634 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT a.id) gids FROM st_goods a LEFT JOIN st_goods_attr b ON a.id=b.goods_id  WHERE a.is_on_sale = '是' AND a.goods_name LIKE '%苹果%' OR a.goods_desc LIKE '%%' OR attr_value LIKE '%苹果%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM st_goods a WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pageSize /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 704 行.
+NOTIC: [2] Division by zero /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Page.class.php 第 90 行.
+SQL: SELECT a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl FROM st_goods a LEFT JOIN st_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM st_order WHERE pay_status="是"))  WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') GROUP BY a.id ORDER BY `xl` desc  [ RunTime:0.0014s ]
+
+[ 2016-06-16T15:08:37+08:00 ] 127.0.0.1 /index.php/Home/Search/keySearch/key/%E8%8B%B9%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: like /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 634 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT a.id) gids FROM st_goods a LEFT JOIN st_goods_attr b ON a.id=b.goods_id  WHERE a.is_on_sale = '是' AND a.goods_name LIKE '%苹果%' OR a.goods_desc LIKE '%%' OR attr_value LIKE '%苹果%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM st_goods a WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pageSize /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 704 行.
+NOTIC: [2] Division by zero /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Page.class.php 第 90 行.
+SQL: SELECT a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl FROM st_goods a LEFT JOIN st_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM st_order WHERE pay_status="是"))  WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') GROUP BY a.id ORDER BY `xl` desc  [ RunTime:0.0013s ]
+
+[ 2016-06-16T15:08:42+08:00 ] 127.0.0.1 /index.php/Home/Search/keySearch/key/%E8%8B%B9%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/CategoryModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: like /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 634 行.
+SQL: SELECT GROUP_CONCAT(DISTINCT a.id) gids FROM st_goods a LEFT JOIN st_goods_attr b ON a.id=b.goods_id  WHERE a.is_on_sale = '是' AND a.goods_name LIKE '%苹果%' OR a.goods_desc LIKE '%%' OR attr_value LIKE '%苹果%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods_attr` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM st_goods a WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pageSize /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/GoodsModel.class.php 第 704 行.
+NOTIC: [2] Division by zero /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/ThinkPHP/Library/Think/Page.class.php 第 90 行.
+SQL: SELECT a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl FROM st_goods a LEFT JOIN st_order_goods b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM st_order WHERE pay_status="是"))  WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') GROUP BY a.id ORDER BY `xl` desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `st_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT brand_id,b.brand_name,b.logo FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id  WHERE a.id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') AND a.brand_id <> 0  [ RunTime:0.0004s ]
+SQL: SELECT MAX(shop_price) max_price,MIN(shop_price) min_price FROM `st_goods` WHERE `id` IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT a.attr_id,a.attr_value,b.attr_name FROM st_goods_attr a LEFT JOIN st_attribute b ON a.attr_id=b.id  WHERE a.goods_id IN ('1','2','3','8','11','12','13','14','15','16','17','20','22','23','25','26','27','36','37','38','39')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: _show_nav /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 140 行.
+NOTIC: [8] Undefined variable: _show_nav /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 141 行.
+NOTIC: [8] Undefined variable: _show_nav /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 146 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 156 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Home/c7306742e13a7a44096f7da510c5ca57.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002038s ]
+
+[ 2016-06-16T15:08:42+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
