@@ -270,13 +270,20 @@
 			<div style="clear:both;"></div>
 
 			<!-- 排序 start -->
+			<?php $odby = I('get.odby','xl'); ?>
 			<div class="sort mt10">
 				<dl>
 					<dt>排序：</dt>
-					<dd class="cur"><a href="">销量</a></dd>
-					<dd><a href="">价格</a></dd>
-					<dd><a href="">评论数</a></dd>
-					<dd><a href="">上架时间</a></dd>
+					<dd <?php if($odby=='xl') echo 'class="cur"'; ?>><a href="<?php echo filterUrl('odby'); ?>/odby/xl">销量</a></dd>
+					<dd <?php if(strpos($odby, 'price_') === 0) echo 'class="cur"'; ?>>
+						<a href="<?php echo filterUrl('odby'); ?>/odby/<?php echo $odby=='price_desc'?'price_asc':'price_desc'; ?>">
+							价格
+							<?php if(strpos($odby, 'price') === 0): ?>
+								<?php echo $odby == 'price_desc' ? '↓':'↑'; ?>
+							<?php endif; ?>
+						</a>
+					</dd>
+					<dd <?php if($odby == 'addtiom') echo 'class="cur"'; ?>><a href="<?php echo filterUrl('odby'); ?>/odby/addtime">上架时间</a></dd>
 				</dl>
 			</div>
 			<!-- 排序 end -->

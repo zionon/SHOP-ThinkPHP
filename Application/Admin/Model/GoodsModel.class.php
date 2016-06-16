@@ -592,6 +592,22 @@ class GoodsModel extends Model{
 		$page->setConfig('first','首页');
 		$page->setConfig('last','末页');
 		$data['page'] = $page->show();
+
+		//排序
+		$oderby = 'xl';		//默认
+		$oderway = 'desc';	//默认
+		$odby = I('get.odby');
+		if ($odby) {
+			if ($odby == 'addtime') {
+				$oderby = 'a.addtime';
+			}
+			if (strpos($odby, 'price_') === 0) {
+				$oderby = 'a.shop_price';
+				if ($odby == 'price_asc') {
+					$oderway = 'asc';
+				}
+			}
+		}
 		//取数据
 		$data['data'] = $this->alias('a')
 		->field('a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl')
@@ -599,7 +615,7 @@ class GoodsModel extends Model{
 		->where($where)
 		->group('a.id')
 		->limit($page->firstRow.','.$page->listRows)
-		->order("xl DESC")
+		->order("$oderby $oderway")
 		->select();
 		// dump($this->getLastSql());die;
 		return $data;
