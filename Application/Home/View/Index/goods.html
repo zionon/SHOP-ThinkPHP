@@ -323,114 +323,8 @@
 							</div>
 						</div>
 
-						<div class="comment_items mt10">
-							<div class="user_pic">
-								<dl>
-									<dt><a href=""><img src="__PUBLIC__/Home/images/user1.gif" alt="" /></a></dt>
-									<dd><a href="">乖乖</a></dd>
-								</dl>
-							</div>
-							<div class="item">
-								<div class="title">
-									<span>2013-03-11 22:18</span>
-									<strong class="star star5"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 -->
-								</div>
-								<div class="comment_content">
-									<dl>
-										<dt>心得：</dt>
-										<dd>东西挺好，挺满意的！</dd>
-									</dl>
-									<dl>
-										<dt>优点：</dt>
-										<dd>反应速度开，散热性能好</dd>
-									</dl>
-									<dl>
-										<dt>不足：</dt>
-										<dd>暂时还没发现缺点哦！</dd>
-									</dl>
-									<dl>
-										<dt>购买日期：</dt>
-										<dd>2013-11-24</dd>
-									</dl>
-								</div>
-								<div class="btns">
-									<a href="" class="reply">回复(0)</a>
-									<a href="" class="useful">有用(0)</a>
-								</div>
-							</div>
-							<div class="cornor"></div>
-						</div>
+						<div id="comment_container">
 
-						<div class="comment_items mt10">
-							<div class="user_pic">
-								<dl>
-									<dt><a href=""><img src="__PUBLIC__/Home/images/user2.jpg" alt="" /></a></dt>
-									<dd><a href="">小宝贝</a></dd>
-								</dl>
-							</div>
-							<div class="item">
-								<div class="title">
-									<span>2013-10-01 14:10</span>
-									<strong class="star star4"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 -->
-								</div>
-								<div class="comment_content">
-									<dl>
-										<dt>心得：</dt>
-										<dd>外观漂亮同，还在使用过程中。</dd>
-									</dl>
-									<dl>
-										<dt>型号：</dt>
-										<dd>i5 8G内存版</dd>
-									</dl>
-									<dl>
-										<dt>购买日期：</dt>
-										<dd>2013-11-20</dd>
-									</dl>
-								</div>
-								<div class="btns">
-									<a href="" class="reply">回复(0)</a>
-									<a href="" class="useful">有用(0)</a>
-								</div>
-							</div>
-							<div class="cornor"></div>
-						</div>
-
-						<div class="comment_items mt10">
-							<div class="user_pic">
-								<dl>
-									<dt><a href=""><img src="__PUBLIC__/Home/images/user3.jpg" alt="" /></a></dt>
-									<dd><a href="">天使</a></dd>
-								</dl>
-							</div>
-							<div class="item">
-								<div class="title">
-									<span>2013-03-11 22:18</span>
-									<strong class="star star5"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 -->
-								</div>
-								<div class="comment_content">
-									<dl>
-										<dt>心得：</dt>
-										<dd>挺好的，物超所值，速度挺好，WIN8用起来也不错。</dd>
-									</dl>
-									<dl>
-										<dt>优点：</dt>
-										<dd>散热很好，配置不错</dd>
-									</dl>
-									<dl>
-										<dt>不足：</dt>
-										<dd>暂时还没发现缺点哦！</dd>
-									</dl>
-									<dl>
-										<dt>购买日期：</dt>
-										<dd>2013-11-24</dd>
-									</dl>
-								</div>
-								<div class="btns">
-									<a href="" class="reply">回复(0)</a>
-									<a href="" class="useful">有用(0)</a>
-								</div>
-							</div>
-							<div class="cornor"></div>
 						</div>
 
 						<!-- 分页信息 start -->
@@ -449,24 +343,25 @@
 
 						<!--  评论表单 start-->
 						<div class="comment_form mt20">
-							<form action="">
+							<form id="comment_form">
+								<input type="hidden" name="goods_id" value="<?php echo $info['id']; ?>">
 								<ul>
 									<li>
 										<label for=""> 评分：</label>
-										<input type="radio" name="grade"/> <strong class="star star5"></strong>
-										<input type="radio" name="grade"/> <strong class="star star4"></strong>
-										<input type="radio" name="grade"/> <strong class="star star3"></strong>
-										<input type="radio" name="grade"/> <strong class="star star2"></strong>
-										<input type="radio" name="grade"/> <strong class="star star1"></strong>
+										<input type="radio" name="star" value="5" checked="checked" /> <strong class="star star5"></strong>
+										<input type="radio" name="star" value="4" /> <strong class="star star4"></strong>
+										<input type="radio" name="star" value="3" /> <strong class="star star3"></strong>
+										<input type="radio" name="star" value="2" /> <strong class="star star2"></strong>
+										<input type="radio" name="star" value="1" /> <strong class="star star1"></strong>
 									</li>
 
 									<li>
 										<label for="">评价内容：</label>
-										<textarea name="" id="" cols="" rows=""></textarea>
+										<textarea name="content" id="" cols="" rows=""></textarea>
 									</li>
 									<li>
 										<label for="">&nbsp;</label>
-										<input type="submit" value="提交评论"  class="comment_btn"/>										
+										<input type="button" value="提交评论"  class="comment_btn" />										
 									</li>
 								</ul>
 							</form>
@@ -560,6 +455,39 @@
 			}
 		})
 	}
+
+	//AJAX发表评论
+	$(".comment_btn").click(function(){
+		//先接收表单中的数据，并拼成这样格式的字符串:name=tom&age=231
+		var form = $("#comment_form");
+		var formData = form.serialize();
+		$.ajax({
+			type : "POST",
+			url : "<?php echo U('Comment/addComment'); ?>",
+			data : formData,	//表单中要提交的数据
+			dataType : "json",	//服务器返回的数据格式
+			success : function(data){
+				if (data.status == 0) {
+					alert(data.info)
+				} else {
+					//清空表单
+					form.trigger("reset");	//触发表单的reset事件
+					var html = '<div class="comment_items mt10 none"><div class="user_pic"><dl><dt><a href=""><img src="'+data.info.face+'" alt="" /></a></dt><dd><a href="">'+data.info.username+'</a></dd></dl></div><div class="item"><div class="title"><span>'+data.info.addtime+'</span><strong class="star star'+data.info.star+'"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 --></div><div class="comment_content">'+data.info.content+'</div><div class="btns"><a href="" class="reply">回复(0)</a><a href="" class="useful">有用(0)</a></div></div><div class="cornor"></div></div>';
+					//把整个评论的字符串转化成jq的对象
+					html = $(html);
+					//把拼好的评论放到页面中
+					$("#comment_container").prepend(html);
+					//让导航条直接滚动到第一个评论处
+					$("body").animate({
+						"scrollTop" : "750px"
+					},1000,function(){
+						html.fadeIn(2000);
+					} );
+								
+				}
+			}
+		});
+	});
 </script>
 
 

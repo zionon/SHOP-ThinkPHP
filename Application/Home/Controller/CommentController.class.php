@@ -11,7 +11,13 @@ class CommentController extends Controller{
 			$model = new \Admin\Model\CommentModel();
 			if ($model->create(I('post.'),1)) {
 				if ($model->add()) {
-					$this->success('添加成功','',TRUE);
+					$this->success(array(
+						'face' => session('face'),
+						'username' => session('m_username'),
+						'addtime' => date('Y-m-d H:i:s'),
+						'content' => I('post.content'),
+						'star' => I('post.star'),
+						),'',TRUE);
 					exit;
 				} else {
 					$this->error($model->getError(),'',TRUE);
