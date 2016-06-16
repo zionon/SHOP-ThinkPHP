@@ -28,4 +28,36 @@ class SearchController extends NavController{
 			));
 		$this->display();
 	}
+
+	//关键字搜索
+	public function keySearch() {
+		$key = I('get.key');
+
+		//取出商品和翻页
+		$goodsModel = new \Admin\Model\GoodsModel();
+		$data = $goodsModel->keySearch($key);
+
+		//根据上面搜索出来的商品计算筛选条件
+		$catModel = new \Admin\Model\CategoryModel();
+		$searchFilter = $catModel->getSearchConditionByGoodsId($data['goods_id']);
+
+		//设置页面信息
+		$this->assign(array(
+			'data' => $data['data'],
+			'page' => $data['page'],
+			'searchFilter' => $searchFilter,
+			'_page_title' => '分类搜索页',
+			'_page_keywords' => '分类搜索页',
+			'_page_description' => '分类搜索页',
+		));
+		$this->display();
+	}
+
 }
+
+
+
+
+
+
+
