@@ -516,6 +516,95 @@ class GoodsModel extends Model{
 			}
 		}
 	}
+
+	//获取某个分类下某一页的商品
+	public function catSearch($catId, $pageSize = 60) {
+		//搜索
+		//根据分类ID搜索出这个分类下商品的ID
+		$goodsId = $this->getGoodsIdByCatId($catId);
+		$where['a.id'] = array('in', $goodsId);
+		//品牌
+		$brandId = I('get.brand_id');
+		if ($brandId) {
+			$where['a.brand_id'] = array('eq',(int)$brandId);
+		}
+		//价格
+		$price = I('get.price');
+		if ($price) {
+			$price = explode('-', $price);
+			$where['a.shop_price'] = array('between',$price);
+		}
+
+		//商品搜索开始
+		$gaModel = D('goods_attr');
+		$attrGoodsId = NULL;	//根据每个属性搜索出来的商品的ID
+		//根据属性搜索:循环所有的参数找出属性的参数进行查询
+		foreach ($_GET as $k => $v) {
+			//如果变量是以attr_开头的说明就是一个属性的查询，格式:attr_1/黑色-颜色
+			if (strpos($k, 'attr_') == 0) {
+				//先解析出属性ID和属性值
+				$attrId = str_replace('attr_','',$k);	//属性id
+				//先取出最后一个-往后的字符串
+				$attrName = strrchr($v,'-');
+				$attrValue = str_replace($attrName,'',$k);
+				//根据属性ID和属性值搜索出这个属性值下的商品id,并返回一个字符串格式:1,2,3,4,5,6,7
+				$gids = $gaModel->field('GROUP_CONCAT(goods_Id) gids')->where(array(
+					'attr_id' => array('eq', $attrId),
+					'attr_value' => array('eq', $attrValue),
+				))->find();
+				//判断是否有商品
+				if ($gids['gids']) {
+					$gids['gids'] = explode(',', $gids['gids']);
+					//说明是搜索的第一个属性
+					if ($attrGoodsId === NULL) {
+						$attrGoodsId = $gids['gids'];	//先暂存起来
+					} else {
+						//和上一个属性搜索出来的结果求集
+						$attrGoodsId = array_intersect($attrGoodsId, $gids['gids']);
+						//如果已经没有商品满足条件就不用再考虑下一个属性了
+						if (empty($attrGoodsId)) {
+							$where['a.id'] = array('eq',0);
+							break;
+						}
+					}
+				} else {
+					//前几次的交集结果清空
+					$attrGoodsId = array();
+					//如果这个属性下没有商品就应该向where中添加一个不可能满足的条件，这样后面取商品时就取不出来了
+					$where['a.id'] = array('eq',0);
+					//跳出循环，不用再查询下一个属性了
+					break;
+				}
+			}
+		}
+		//判断如果循环求次之后这个数组还不为空说明这些就是满足所有条件的商品id
+		if ($attrGoodsId) {
+			$where['a.id'] = array('IN',$attrGoodsId);
+		}
+		//商品搜索结束
+		
+		//翻页
+		$count = $this->alias('a')->where($where)->count();
+		$page = new \Think\Page($count, $pageSize);
+		//设置翻页样式
+		$page->setConfig('prev','上一页');
+		$page->setConfig('next','下一页');
+		$page->setConfig('first','首页');
+		$page->setConfig('last','末页');
+		$data['page'] = $page->show();
+
+		//取数据
+		$data['data'] = $this->alias('a')
+		->field('a.id,a.goods_name,a.min_logo,a.shop_price,SUM(b.goods_number) x1')
+		->join('LEFT JOIN __ORDER_GOODS__ b ON(a.id=b.goods_id AND b.order_id IN(SELECT if FROM __ORDER__ WHERE pay_status="是"))')
+		->where($where)
+		->group('a.id')
+		->limit($page->firstRow.','.$page->listRows)
+		->order('xa DESC')
+		->select();
+
+		return $data;
+	}
 }
 
 

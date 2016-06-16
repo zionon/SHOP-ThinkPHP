@@ -450,7 +450,7 @@
 					<dl>
 						<dt>品牌：</dt>
 						<?php foreach ($searchFilter['brand'] as $k => $v): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/attr_4/4gb-%E5%86%85%E5%AD%98/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endif; ?>
@@ -459,7 +459,7 @@
 					<dl>
 						<dt>价格：</dt>
 						<?php foreach ($searchFilter['price'] as $k => $v): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/attr_4/4gb-%E5%86%85%E5%AD%98/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endif; ?>
@@ -469,7 +469,7 @@
 					<dl>
 						<dt><?php echo $k; ?>:</dt>
 						<?php foreach ($v as $k1 => $v1): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/attr_4/4gb-%E5%86%85%E5%AD%98/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endforeach; ?>
