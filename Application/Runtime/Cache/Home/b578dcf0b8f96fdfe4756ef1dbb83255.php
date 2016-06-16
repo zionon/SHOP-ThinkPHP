@@ -146,14 +146,14 @@
 					<!-- 循环输出三层分类数据 -->
 					<?php foreach ($catData as $k => $v): ?>
 						<div class="cat <?php if($k==0) echo 'item1'; ?>">
-							<h3><a href="<?php echo U('Search/catSearch?catId='.$v['id']); ?>"><?php echo $v['cat_name']; ?></a><b></b></h3>
+							<h3><a href="<?php echo U('Search/catSearch?catId='.$v['id'], '', FALSE); ?>"><?php echo $v['cat_name']; ?></a><b></b></h3>
 							<div class="cat_detail none">
 								<?php foreach ($v['children'] as $k1 => $v1): ?>
 									<dl <?php if($k1==0) echo 'class="dl_list"'; ?>>
-										<dt><a href="<?php echo U('Search/catSearch?catId='.$v1['id']); ?>"><?php echo $v1['cat_name'];?></a></dt>
+										<dt><a href="<?php echo U('Search/catSearch?catId='.$v1['id'], '', FALSE); ?>"><?php echo $v1['cat_name'];?></a></dt>
 										<dd>
 											<?php foreach ($v1['children'] as $k2 => $v2): ?>
-												<a href="<?php echo U('Search/catSearch?catId='.$v2['id']); ?>"><?php echo $v2['cat_name']; ?></a>
+												<a href="<?php echo U('Search/catSearch?catId='.$v2['id'], '', FALSE); ?>"><?php echo $v2['cat_name']; ?></a>
 											<?php endforeach; ?>
 										</dd>
 									</dl>
@@ -419,29 +419,57 @@
 			<div style="clear:both;"></div>
 			
 			<!-- 商品筛选 start -->
+			<div id="search_condition">
+				当前搜索条件:
+				<?php
+ $brandId = I('get.brand_id'); if($brandId): ?>
+					<span>
+						品牌：<?php echo ltrim(strstr($brandId,'-'),'-'); ?>
+						<a href="<?php echo filterUrl('brand_id'); ?>">X</a>
+					</span>
+				<?php endif; ?>
+				<?php  $price = I('get.price'); if($price): ?>
+					<span>
+						价格：<?php echo $price; ?>
+						<a href="<?php echo filterUrl('price'); ?>">X</a>
+					</span>
+				<?php endif; ?>
+				<?php
+ foreach($_GET as $k => $v): if(strpos($k, 'attr_') === 0): $_attrName = strrchr($v,'-'); ?>
+					<span>
+						<?php echo ltrim($_attrName,'-'); ?>:<?php echo str_replace($_attrName,'',$v); ?>
+						<a href="<?php echo filterUrl($k); ?>">X</a>
+					</span>
+				<?php endif;endforeach; ?>
+
+			</div>
 			<div class="filter mt10">
 				<h2><a href="">重置筛选条件</a> <strong>商品筛选</strong></h2>
 				<div class="filter_wrap">
+					<?php if(!I('get.brand_id')): ?>
 					<dl>
 						<dt>品牌：</dt>
 						<?php foreach ($searchFilter['brand'] as $k => $v): ?>
-							<dd><a href=""><?php echo $v['brand_name']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/attr_4/4gb-%E5%86%85%E5%AD%98/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
-
+					<?php endif; ?>
+					
+					<?php if(!I('get.price')): ?>
 					<dl>
 						<dt>价格：</dt>
 						<?php foreach ($searchFilter['price'] as $k => $v): ?>
-							<dd><a href=""><?php echo $v; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/attr_4/4gb-%E5%86%85%E5%AD%98/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
+					<?php endif; ?>
 
 					<!-- 筛选属性 -->
-					<?php foreach ($searchFilter['gaData'] as $k => $v): ?>
+					<?php foreach ($searchFilter['gaData'] as $k => $v): $attrUrlName = 'attr_'.$v[0]['attr_id']; if(isset($_GET[$attrUrlName])) continue ?>
 					<dl>
 						<dt><?php echo $k; ?>:</dt>
 						<?php foreach ($v as $k1 => $v1): ?>
-							<dd><a href=""><?php echo $v1['attr_value']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/attr_4/4gb-%E5%86%85%E5%AD%98/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endforeach; ?>

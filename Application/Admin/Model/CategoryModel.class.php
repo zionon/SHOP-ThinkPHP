@@ -194,7 +194,6 @@ class CategoryModel extends Model {
 			'a.id' => array('in',$goodsId),
 			'a.brand_id' => array('neq',0),
 		))->select();
-		dump($this->getLastSql());
 		// dump($ret['brand']);die;
 
 		//价格区间段

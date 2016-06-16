@@ -91,6 +91,15 @@ function makeAlipayBtn ($orderId, $btnName='去支付宝支付'){
 	return require ('./alipay/alipayapi.php');
 }
 
+//在页面上面显示当前搜索的品牌
+function filterUrl($param) {
+	//先取出当前的URL地址
+	$url = $_SERVER['PHP_SELF'];
+	//正则去掉某个参数
+	$re = "/\/$param\/[^\/]+/";
+	return preg_replace($re, '', $url);
+}
+
 
 
 
