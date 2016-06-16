@@ -450,7 +450,7 @@
 					<dl>
 						<dt>品牌：</dt>
 						<?php foreach ($searchFilter['brand'] as $k => $v): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/1-%E8%8B%B9%E6%9E%9C/attr_4/8gb-%E5%86%85%E5%AD%98/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endif; ?>
@@ -459,7 +459,7 @@
 					<dl>
 						<dt>价格：</dt>
 						<?php foreach ($searchFilter['price'] as $k => $v): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/1-%E8%8B%B9%E6%9E%9C/attr_4/8gb-%E5%86%85%E5%AD%98/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endif; ?>
@@ -469,7 +469,7 @@
 					<dl>
 						<dt><?php echo $k; ?>:</dt>
 						<?php foreach ($v as $k1 => $v1): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/attr_5/IOS-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/1-%E8%8B%B9%E6%9E%9C/attr_4/8gb-%E5%86%85%E5%AD%98/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endforeach; ?>
@@ -496,59 +496,19 @@
 			<!-- 商品列表 start-->
 			<div class="goodslist mt10">
 				<ul>
-					<li>
-						<dl>
-							<dt><a href=""><img src="/Public/Home/images/goods1.jpg" alt="" /></a></dt>
-							<dd><a href="">清华同方精锐X2 台式电脑（双核E3500 2G 500G DVD 键鼠）带20英寸显示器</a></dt>
-							<dd><strong>￥2399.00</strong></dt>
-							<dd><a href=""><em>已有10人评价</em></a></dt>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="/Public/Home/images/goods2.jpg" alt="" /></a></dt>
-							<dd><a href="">富士通LH531 14.1英寸笔记本电脑（i3-2350M 2G 320G 第二代核芯显卡 D刻</a></dd>
-							<dd><strong>￥2999.00</strong></dd>
-							<dd><a href=""><em>已有5人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="/Public/Home/images/goods3.jpg" alt="" /></a></dt>
-							<dd><a href="">三星Galaxy Tab P6800 7.7英寸 3G手机版 蓝牙3.0 魔丽屏 金属银</a></dd>
-							<dd><strong>￥4699.00</strong></dd>
-							<dd><a href=""><em>已有34人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="/Public/Home/images/goods4.jpg" alt="" /></a></dt>
-							<dd><a href="">宏碁AS4739-382G32Mnkk 14英寸笔记本电脑（i3-380M 2G 320G D刻 LED背</a></dd>
-							<dd><strong>￥2799.00</strong></dd>
-							<dd><a href=""><em>已有17人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="/Public/Home/images/goods5.jpg" alt="" /></a></dt>
-							<dd><a href="">ThinkPad E42014英寸笔记本电脑（i5-2450M 2G 320G 蓝牙 摄像头）</a></dd>
-							<dd><strong>￥4199.00</strong></dd>
-							<dd><a href=""><em>已有8人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="/Public/Home/images/goods6.jpg" alt="" /></a></dt>
-							<dd><a href="">惠普G4-1332TX 14英寸笔记本电脑 （i5-2450M 2G 500G 7450M 1G独显 D刻</a></dd>
-							<dd><strong>￥2999.00</strong></dd>
-							<dd><a href=""><em>已有22人评价</em></a></dd>
-						</dl>
-					</li>
+					<?php foreach ($data as $k => $v): ?>
+						<li>
+							<dl>
+								<dt><a href="<?php echo U('Index/goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+								<dd><a href="<?php echo U('Index/goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
+								<dd><strong>¥ <?php echo $v['shop_price']; ?>元</strong></dd>
+								<dd>
+									<a href=""><em>已有10人评价</em></a>
+									<a href=""><em>已有<?php echo (int)$v['xl']; ?>销量</em></a>
+								</dd>
+							</dl>
+						</li>
+					<?php endforeach; ?>
 				</ul>
 			</div>
 			<!-- 商品列表 end-->

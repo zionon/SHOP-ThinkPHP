@@ -286,59 +286,19 @@
 			<!-- 商品列表 start-->
 			<div class="goodslist mt10">
 				<ul>
-					<li>
-						<dl>
-							<dt><a href=""><img src="__PUBLIC__/Home/images/goods1.jpg" alt="" /></a></dt>
-							<dd><a href="">清华同方精锐X2 台式电脑（双核E3500 2G 500G DVD 键鼠）带20英寸显示器</a></dt>
-							<dd><strong>￥2399.00</strong></dt>
-							<dd><a href=""><em>已有10人评价</em></a></dt>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="__PUBLIC__/Home/images/goods2.jpg" alt="" /></a></dt>
-							<dd><a href="">富士通LH531 14.1英寸笔记本电脑（i3-2350M 2G 320G 第二代核芯显卡 D刻</a></dd>
-							<dd><strong>￥2999.00</strong></dd>
-							<dd><a href=""><em>已有5人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="__PUBLIC__/Home/images/goods3.jpg" alt="" /></a></dt>
-							<dd><a href="">三星Galaxy Tab P6800 7.7英寸 3G手机版 蓝牙3.0 魔丽屏 金属银</a></dd>
-							<dd><strong>￥4699.00</strong></dd>
-							<dd><a href=""><em>已有34人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="__PUBLIC__/Home/images/goods4.jpg" alt="" /></a></dt>
-							<dd><a href="">宏碁AS4739-382G32Mnkk 14英寸笔记本电脑（i3-380M 2G 320G D刻 LED背</a></dd>
-							<dd><strong>￥2799.00</strong></dd>
-							<dd><a href=""><em>已有17人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="__PUBLIC__/Home/images/goods5.jpg" alt="" /></a></dt>
-							<dd><a href="">ThinkPad E42014英寸笔记本电脑（i5-2450M 2G 320G 蓝牙 摄像头）</a></dd>
-							<dd><strong>￥4199.00</strong></dd>
-							<dd><a href=""><em>已有8人评价</em></a></dd>
-						</dl>
-					</li>
-
-					<li>
-						<dl>
-							<dt><a href=""><img src="__PUBLIC__/Home/images/goods6.jpg" alt="" /></a></dt>
-							<dd><a href="">惠普G4-1332TX 14英寸笔记本电脑 （i5-2450M 2G 500G 7450M 1G独显 D刻</a></dd>
-							<dd><strong>￥2999.00</strong></dd>
-							<dd><a href=""><em>已有22人评价</em></a></dd>
-						</dl>
-					</li>
+					<?php foreach ($data as $k => $v): ?>
+						<li>
+							<dl>
+								<dt><a href="<?php echo U('Index/goods?id='.$v['id']); ?>"><?php showImage($v['mid_logo']); ?></a></dt>
+								<dd><a href="<?php echo U('Index/goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
+								<dd><strong>¥ <?php echo $v['shop_price']; ?>元</strong></dd>
+								<dd>
+									<a href=""><em>已有10人评价</em></a>
+									<a href=""><em>已有<?php echo (int)$v['xl']; ?>销量</em></a>
+								</dd>
+							</dl>
+						</li>
+					<?php endforeach; ?>
 				</ul>
 			</div>
 			<!-- 商品列表 end-->

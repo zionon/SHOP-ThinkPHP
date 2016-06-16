@@ -528,25 +528,26 @@ class GoodsModel extends Model{
 		if ($brandId) {
 			$where['a.brand_id'] = array('eq',(int)$brandId);
 		}
+		// dump($where);
 		//价格
 		$price = I('get.price');
 		if ($price) {
 			$price = explode('-', $price);
 			$where['a.shop_price'] = array('between',$price);
 		}
-
+		// dump($_GET);
 		//商品搜索开始
 		$gaModel = D('goods_attr');
 		$attrGoodsId = NULL;	//根据每个属性搜索出来的商品的ID
 		//根据属性搜索:循环所有的参数找出属性的参数进行查询
 		foreach ($_GET as $k => $v) {
 			//如果变量是以attr_开头的说明就是一个属性的查询，格式:attr_1/黑色-颜色
-			if (strpos($k, 'attr_') == 0) {
+			if (strpos($k, 'attr_') === 0) {
 				//先解析出属性ID和属性值
 				$attrId = str_replace('attr_','',$k);	//属性id
 				//先取出最后一个-往后的字符串
 				$attrName = strrchr($v,'-');
-				$attrValue = str_replace($attrName,'',$k);
+				$attrValue = str_replace($attrName,'',$v);
 				//根据属性ID和属性值搜索出这个属性值下的商品id,并返回一个字符串格式:1,2,3,4,5,6,7
 				$gids = $gaModel->field('GROUP_CONCAT(goods_Id) gids')->where(array(
 					'attr_id' => array('eq', $attrId),
@@ -582,7 +583,6 @@ class GoodsModel extends Model{
 			$where['a.id'] = array('IN',$attrGoodsId);
 		}
 		//商品搜索结束
-		
 		//翻页
 		$count = $this->alias('a')->where($where)->count();
 		$page = new \Think\Page($count, $pageSize);
@@ -592,17 +592,16 @@ class GoodsModel extends Model{
 		$page->setConfig('first','首页');
 		$page->setConfig('last','末页');
 		$data['page'] = $page->show();
-
 		//取数据
 		$data['data'] = $this->alias('a')
-		->field('a.id,a.goods_name,a.min_logo,a.shop_price,SUM(b.goods_number) x1')
-		->join('LEFT JOIN __ORDER_GOODS__ b ON(a.id=b.goods_id AND b.order_id IN(SELECT if FROM __ORDER__ WHERE pay_status="是"))')
+		->field('a.id,a.goods_name,a.mid_logo,a.shop_price,SUM(b.goods_number) xl')
+		->join('LEFT JOIN __ORDER_GOODS__ b ON (a.id=b.goods_id AND b.order_id IN(SELECT id FROM __ORDER__ WHERE pay_status="是"))')
 		->where($where)
 		->group('a.id')
 		->limit($page->firstRow.','.$page->listRows)
-		->order('xa DESC')
+		->order("xl DESC")
 		->select();
-
+		// dump($this->getLastSql());die;
 		return $data;
 	}
 }
