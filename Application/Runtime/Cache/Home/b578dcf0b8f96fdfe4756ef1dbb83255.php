@@ -450,7 +450,7 @@
 					<dl>
 						<dt>品牌：</dt>
 						<?php foreach ($searchFilter['brand'] as $k => $v): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/1-%E8%8B%B9%E6%9E%9C/attr_4/8gb-%E5%86%85%E5%AD%98/odby/addtiom/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/<?php echo $v['brand_id']; ?>-<?php echo $v['brand_name']; ?>"><?php echo $v['brand_name']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endif; ?>
@@ -459,7 +459,7 @@
 					<dl>
 						<dt>价格：</dt>
 						<?php foreach ($searchFilter['price'] as $k => $v): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/1-%E8%8B%B9%E6%9E%9C/attr_4/8gb-%E5%86%85%E5%AD%98/odby/addtiom/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/price/<?php echo $v; ?>"><?php echo $v; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endif; ?>
@@ -469,7 +469,7 @@
 					<dl>
 						<dt><?php echo $k; ?>:</dt>
 						<?php foreach ($v as $k1 => $v1): ?>
-							<dd><a href="/index.php/Home/Search/catSearch/catId/22/brand_id/1-%E8%8B%B9%E6%9E%9C/attr_4/8gb-%E5%86%85%E5%AD%98/odby/addtiom/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
+							<dd><a href="/index.php/Home/Search/catSearch/catId/22/<?php echo $attrUrlName; ?>/<?php echo $v1['attr_value']; ?>-<?php echo $k; ?>"><?php echo $v1['attr_value']; ?></a></dd>
 						<?php endforeach; ?>
 					</dl>
 					<?php endforeach; ?>
@@ -493,7 +493,7 @@
 							<?php endif; ?>
 						</a>
 					</dd>
-					<dd <?php if($odby == 'addtiom') echo 'class="cur"'; ?>><a href="<?php echo filterUrl('odby'); ?>/odby/addtiom">上架时间</a></dd>
+					<dd <?php if($odby == 'addtiom') echo 'class="cur"'; ?>><a href="<?php echo filterUrl('odby'); ?>/odby/addtime">上架时间</a></dd>
 				</dl>
 			</div>
 			<!-- 排序 end -->

@@ -177,11 +177,11 @@ class CategoryModel extends Model {
 	}
 
 	//计算一个分类下的：品牌、价格区间、筛选属性
-	public function getSearchConditionByCatId($catId){
+	public function getSearchConditionByGoodsId($goodsId){
 		$ret = array();	//返回的数组
 		$goodsModel = new \Admin\Model\GoodsModel();
 		//先取出这个分类下所有的商品的id
-		$goodsId = $goodsModel->getGoodsIdByCatId($catId);
+		// $goodsId = $goodsModel->getGoodsIdByCatId($catId);
 		// dump($goodsId);die;
 		// $goodsId = implode(',',$goodsId);
 		// dump($goodsId);

@@ -584,8 +584,10 @@ class GoodsModel extends Model{
 		}
 		//商品搜索结束
 		//翻页
-		$count = $this->alias('a')->where($where)->count();
-		$page = new \Think\Page($count, $pageSize);
+		$count = $this->alias('a')->field('COUNT(a.id) goods_count,GROUP_CONCAT(a.id) goods_id')->where($where)->find();
+		//把商品ID返回
+		$data['goods_id'] = explode(',', $count['goods_id']);
+		$page = new \Think\Page($count['goods_count'], $pageSize);
 		//设置翻页样式
 		$page->setConfig('prev','上一页');
 		$page->setConfig('next','下一页');
