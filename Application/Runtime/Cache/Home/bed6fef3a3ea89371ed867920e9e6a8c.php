@@ -26,7 +26,7 @@
 				<ul>
 					<li id="logInfo"></li>
 					<li class="line">|</li>
-					<li>我的订单</li>
+					<li><a href="<?php echo U('My/order'); ?>">我的订单</a></li>
 					<li class="line">|</li>
 					<li>客户服务</li>
 					<li class="line">|</li>

@@ -2,9 +2,9 @@
 //个人中心控制器
 //命名空间
 namespace Home\Controller;
-use Think\Controller;
+// use Think\Controller;
 
-class MyController extends Controller{
+class MyController extends NavController{
 	public function __construct() {
 		parent::__construct();
 		$memberId = session('m_id');

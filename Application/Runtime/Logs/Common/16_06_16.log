@@ -1,0 +1,360 @@
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-06-16T09:36:08+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004019s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+
+[ 2016-06-16T09:36:48+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-06-16T09:37:35+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002349s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-06-16T09:40:05+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001584s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-06-16T09:40:22+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+
+[ 2016-06-16T09:43:12+08:00 ] 127.0.0.1 /index.php/Home/Search/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
