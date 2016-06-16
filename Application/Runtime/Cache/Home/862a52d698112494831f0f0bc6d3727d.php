@@ -755,7 +755,13 @@
 			dataType : "json",	//服务器返回的数据格式
 			success : function(data){
 				if (data.status == 0) {
-					alert(data.info)
+					//未登录就显示弹出窗口
+					if (data.info == '必须先登录!!') {
+						//显示对话框
+						$("#login_dialog").dialog("open");
+					} else {
+						alert(data.info);
+					}
 				} else {
 					//清空表单
 					form.trigger("reset");	//触发表单的reset事件
@@ -774,6 +780,67 @@
 				}
 			}
 		});
+	});
+</script>
+
+<!-- 导入jquery中的dialog插件 -->
+<link rel="stylesheet" type="text/css" href="/Public/jquery-ui-1.9.2.custom/css/blitzer/jquery-ui-1.9.2.custom.css">
+<script type="text/javascript" src="/Public/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js"></script>
+<div id="login_dialog" class="none" title="登录表单">
+	<form id="login_form">
+		<ul>
+			<li>
+				<label form="">用户名:</label>
+				<input type="text" name="username" class="txt" />
+			</li>
+			<li>
+				<label for="">密  码:</label>
+				<input type="password" name="password" class="txt" />
+			</li>
+			<li>
+				<label for="">验证码:</label>
+				<input type="text" name="chkcode" /><br />
+				<img src="<?php echo U('Member/chkcode'); ?>" style="cursor: pointer;" onclick="this.src='<?php echo U('Member/chkcode'); ?>#'+Math.random();" />
+			</li>
+		</ul>
+	</form>	
+</div>
+<script type="text/javascript">
+	//配置对话框
+	$("#login_dialog").dialog({
+		resizable : false,
+		position : {at: "center"},
+		modal : true,
+		autoOpen: false,
+		width: 400,
+		height : 250,
+		buttons: [
+			{
+				text: "登录",
+				click: function(){
+					//ajax提交表单
+					$.ajax({
+						type : "POST",
+						url : "<?php echo U('Member/login'); ?>",
+						data : $("#login_form").serialize(),
+						dataType : "json",
+						success : function(data){
+							if (data.status == 1) {
+								$("#login_dialog").dialog("close");
+							} else {
+								alert(data.info);
+							}
+						}
+					});
+				}
+			},
+			{
+				text: "取消",
+				click: function(){
+					$(this).dialog("close");
+				}
+			}
+		]
 	});
 </script>
 
