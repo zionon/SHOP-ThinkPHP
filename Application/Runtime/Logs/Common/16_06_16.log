@@ -358,3 +358,63 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
 
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/crazy4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/list_hot3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/list_hot1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/goods5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/goods1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/acer4739.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/list_hot2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/goods6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/hpG4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/goods2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/goods3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-06-16T10:58:53+08:00 ] 127.0.0.1 /index.php/Home/Search/catSearch/catId/images/goods4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+

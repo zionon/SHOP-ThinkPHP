@@ -182,16 +182,20 @@ class CategoryModel extends Model {
 		$goodsModel = new \Admin\Model\GoodsModel();
 		//先取出这个分类下所有的商品的id
 		$goodsId = $goodsModel->getGoodsIdByCatId($catId);
-
+		// dump($goodsId);die;
+		// $goodsId = implode(',',$goodsId);
+		// dump($goodsId);
 		//品牌
 		//根据商品ID取出品牌ID再连品牌表取出品牌名称
 		$ret['brand'] = $goodsModel->alias('a')
 		->field('DISTINCT brand_id,b.brand_name,b.logo')
 		->join('LEFT JOIN __BRAND__ b ON a.brand_id=b.id')
 		->where(array(
-			'a.id' => array('eq',$goodsId),
+			'a.id' => array('in',$goodsId),
 			'a.brand_id' => array('neq',0),
 		))->select();
+		dump($this->getLastSql());
+		// dump($ret['brand']);die;
 
 		//价格区间段
 		$sectionCount = 6;	//默认分几段
@@ -213,7 +217,7 @@ class CategoryModel extends Model {
 			} elseif ($priceSection < 1000) {
 				$sectionCount = 4;
 			} elseif ($priceSection < 10000) {
-				$sectionCount = 6
+				$sectionCount = 6;
 			} else {
 				$sectionCount = 7;
 			}
