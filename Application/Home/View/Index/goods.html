@@ -525,14 +525,15 @@
 
 				//根据总的页数，拼出翻页字符串
 				var pageString = "";
-				for (var i = 0; i < data.pageCount; i++) {
+				for (var i = 1; i <= data.pageCount; i++) {
 					if (page == i) {
-						var cls = 'class="curr"';
+						var cls = 'class="cur"';
 					} else {
 						var cls = '';
 					}
 					pageString += '<a '+cls+' onclick="ajaxGetComment('+i+');" href="javascript:void(0);">'+i+'</a>'
 				}
+				// console.log(pageString);
 				//翻页字符串放到页面
 				$('.page').html(pageString);
 
