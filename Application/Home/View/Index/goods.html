@@ -401,7 +401,7 @@
 <!-- 记录浏览历史 -->
 <script type="text/javascript">
 	var is_login = 0;	//是否登录
-	
+
 	<?php $config = C('IMAGE_CONFIG'); ?>
 	var viewPath = '<?php echo $config['viewPath']; ?>';
 	//记录浏览历史
@@ -432,8 +432,6 @@
 
 	//清空最近浏览历史
 	function clearDisplayHistory(){
-		// $("#display_history").empty();
-		// AJAX清空$_COOKIE['display_history']
 		$.ajax({
 			type : "GET",
 			url : "<?php echo U('ajaxClearDisplayHistory'); ?>",
@@ -441,8 +439,6 @@
 				$("#display_history").empty();
 			}
 		})
-		// $.cookie('display_history',null);
-		// $("#display_history").empty();
 	}
 
 	//AJAX发表评论

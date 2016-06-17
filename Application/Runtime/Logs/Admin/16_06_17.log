@@ -49,3 +49,961 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
 
+[ 2016-06-17T17:11:15+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2016-06-17T17:11:15+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-06-17T17:11:24+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `st_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `st_admin` WHERE `username` = 'root' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:11:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:11:30+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-06-17T17:11:32+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-06-17T17:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: INSERT INTO `st_privilege` (`parent_id`,`pri_name`,`module_name`,`controller_name`,`action_name`) VALUES ('0','评论管理','','','') [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+
+[ 2016-06-17T17:11:39+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: children /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/5f62cf3ecb66a47dcb1a9b7512abfb3d.php 第 131 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/5f62cf3ecb66a47dcb1a9b7512abfb3d.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003666s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:11:43+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2016-06-17T17:11:47+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-06-17T17:12:21+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0003s ]
+SQL: INSERT INTO `st_privilege` (`parent_id`,`pri_name`,`module_name`,`controller_name`,`action_name`) VALUES ('27','评论列表','Admin','Comment','commentList') [ RunTime:0.0086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+
+[ 2016-06-17T17:12:22+08:00 ] 127.0.0.1 /index.php/Admin/Privilege/privilegeList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002191s ]
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:12:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:12:24+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+ERR: 无法加载控制器:Comment
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000282s ]
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `st_privilege`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:24:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+ERR: 非法操作:Js
+
+[ 2016-06-17T17:24:30+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-06-17T17:24:32+08:00 ] 127.0.0.1 /index.php/Admin/Comment/goods_number/id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+ERR: 非法操作:goods_number
+
+[ 2016-06-17T17:24:38+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2016-06-17T17:24:45+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-06-17T17:24:46+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-06-17T17:24:46+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-06-17T17:24:46+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2016-06-17T17:24:46+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-06-17T17:24:47+08:00 ] 127.0.0.1 /index.php/Admin/Comment/commentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2048] Declaration of Admin\Model\PrivilegeModel::_before_delete() should be compatible with Think\Model::_before_delete($options) /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Admin/Model/PrivilegeModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `st_privilege` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `st_goods` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM st_goods a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.brand_name,c.cat_name,GROUP_CONCAT(e.cat_name SEPARATOR "<br />") ext_cat_name FROM st_goods a LEFT JOIN st_brand b ON a.brand_id=b.id 
+				LEFT JOIN st_category c ON a.cat_id=c.id
+				LEFT JOIN st_goods_cat d ON a.id=d.goods_id
+				LEFT JOIN st_category e ON d.cat_id=e.id  GROUP BY a.id ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: catData /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/SHOP-ThinkPHP/Application/Runtime/Cache/Admin/b0e80779407d6ad5c15d4aae0872b81e.php 第 30 行.
+SQL: SHOW COLUMNS FROM `st_brand` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`brand_name` FROM `st_brand`  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
