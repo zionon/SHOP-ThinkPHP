@@ -368,19 +368,8 @@
 
 			<!-- 最近浏览 start -->
 			<div class="viewd leftbar mt10">
-				<h2><a onclick="clearDisplayHistory()">清空</a><strong>最近浏览过的商品</strong></h2>
+				<h2><a onclick="clearDisplayHistory()" style="cursor: pointer">清空</a><strong>最近浏览过的商品</strong></h2>
 				<div class="leftbar_wrap" id="display_history"></div>
-<!-- 				<div class="leftbar_wrap">
-					<dl>
-						<dt><a href=""><img src="/Public/Home/images/hpG4.jpg" alt="" /></a></dt>
-						<dd><a href="">惠普G4-1332TX 14英寸笔记...</a></dd>
-					</dl>
-
-					<dl class="last">
-						<dt><a href=""><img src="/Public/Home/images/crazy4.jpg" alt="" /></a></dt>
-						<dd><a href="">直降200元！TCL正1.5匹空调</a></dd>
-					</dl>
-				</div> -->
 			</div>
 			<!-- 最近浏览 end -->
 
@@ -699,6 +688,7 @@
 <!-- 记录浏览历史 -->
 <script type="text/javascript">
 	var is_login = 0;	//是否登录
+	
 	<?php $config = C('IMAGE_CONFIG'); ?>
 	var viewPath = '<?php echo $config['viewPath']; ?>';
 	//记录浏览历史
@@ -730,7 +720,7 @@
 	//清空最近浏览历史
 	function clearDisplayHistory(){
 		// $("#display_history").empty();
-		//AJAX清空$_COOKIE['display_history']
+		// AJAX清空$_COOKIE['display_history']
 		$.ajax({
 			type : "GET",
 			url : "<?php echo U('ajaxClearDisplayHistory'); ?>",
@@ -738,6 +728,8 @@
 				$("#display_history").empty();
 			}
 		})
+		// $.cookie('display_history',null);
+		// $("#display_history").empty();
 	}
 
 	//AJAX发表评论
