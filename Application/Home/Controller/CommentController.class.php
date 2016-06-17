@@ -27,4 +27,22 @@ class CommentController extends Controller{
 			}
 		}
 	}
+
+	//AJAX获取评论
+	public function ajaxGetComment() {
+		$goodsId = I('get.goodsId');
+		$model = new \Admin\Model\CommentModel();
+		$data = $model->search($goodsId,5);
+		echo json_encode($data);
+	}
 }
+
+
+
+
+
+
+
+
+
+

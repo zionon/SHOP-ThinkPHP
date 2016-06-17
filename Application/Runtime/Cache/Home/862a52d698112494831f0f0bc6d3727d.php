@@ -553,15 +553,6 @@
 
 						<!-- 分页信息 start -->
 						<div class="page mt20">
-							<a href="">首页</a>
-							<a href="">上一页</a>
-							<a href="">1</a>
-							<a href="">2</a>
-							<a href="" class="cur">3</a>
-							<a href="">4</a>
-							<a href="">5</a>
-							<a href="">下一页</a>
-							<a href="">尾页</a>
 						</div>
 						<!-- 分页信息 end -->
 
@@ -781,6 +772,64 @@
 			}
 		});
 	});
+
+	//评论的缓存
+	var cache = [];		//每页评论的缓存:格式:[[页码，'评论数据','翻页'],[3,'xxxx','xxxxx']] //缓存到客户端浏览器的内容
+	//获取某一页缓存
+	function getCache(page){
+		for (var i = 0; i < cache.length; i++) {
+			if (cache[i][0] == page) {
+				return cache[i];
+			}
+		}
+		return false;
+	}
+
+	//AJAX获取某一页的评论
+	function ajaxGetComment(page) {
+		var c = getCache(page);
+		// console.log(c);
+		if (c !== false) {
+			$("#comment_container").html(c[1]);
+			$('.page').html(c[2]);
+			return;
+		}
+		$.ajax({
+			type : "GET",
+			url : "<?php echo U('Comment/ajaxGetComment?goodsId='.$info['id'],'',FALSE); ?>/p/"+page,
+			dataType : "json",
+			success : function(data){
+				// console.log(data.data);
+				//循环每个评论拼出HTML字符串放到页面中
+				var html = "";
+				$(data.data).each(function(k,v){
+					html += '<div class="comment_items mt10"><div class="user_pic"><dl><dt><a href=""><img src="'+v.face+'" alt="" /></a></dt><dd><a href="">'+v.username+'</a></dd></dl></div><div class="item"><div class="title"><span>'+v.addtime+'</span><strong class="star star'+v.star+'"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 --></div><div class="comment_content">'+v.content+'</div><div class="btns"><a href="" class="reply">回复(0)</a><a href="" class="useful">有用(0)</a></div></div><div class="cornor"></div></div>';
+					// html = $(html);
+					});
+				// console.log(html);
+				//放到页面中覆盖原数据
+				$("#comment_container").html(html);
+
+				//根据总的页数，拼出翻页字符串
+				var pageString = "";
+				for (var i = 0; i < data.pageCount; i++) {
+					if (page == i) {
+						var cls = 'class="curr"';
+					} else {
+						var cls = '';
+					}
+					pageString += '<a '+cls+' onclick="ajaxGetComment('+i+');" href="javascript:void(0);">'+i+'</a>'
+				}
+				//翻页字符串放到页面
+				$('.page').html(pageString);
+
+				//放到缓存中
+				cache.push([page, html, pageString]);
+			}
+		});
+	}
+	//取第一页评论
+	ajaxGetComment(1);
 </script>
 
 <!-- 导入jquery中的dialog插件 -->
