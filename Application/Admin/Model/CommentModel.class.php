@@ -24,6 +24,47 @@ class CommentModel extends Model{
 		}
 		$data['member_id'] = $memberId;
 		$data['addtime'] = date('Y-m-d H:i:s');
+
+		//处理印象的数据
+		$yxId = I('post.yx_id');	//选择的旧印象
+		$yxName = I('post.yx_name');
+		$yxModel = D('Yinxiang');
+		//处理选择的印象
+		if ($yxId) {
+			foreach ($yxId as $k => $v) {
+				$yxModel->where(array('id'=>$v))->setInc('yx_count');
+			}
+		}
+		//处理新添加的印象
+		if ($yxName) {
+			//处理，号为英文
+			$yxName = str_replace('，',',',$yxName);
+			$yxName = explode(',',$yxName);
+			foreach ($yxName as $k => $v) {
+				$v = trim($v);
+				if (empty($v)) {
+					continue;
+				}
+				//先判断这个印象是否已经存在
+				$has = $yxModel->where(array(
+					'goods_id' => $data['goods_id'],
+					'yx_name' => $v,
+					))->find();
+				if ($has) {
+					$yxModel->where(array(
+						'goods_id' => $data['goods_id'],
+						'yx_name' => $v,
+						))->setInc('yx_count');
+				} else {
+					$yxModel->add(array(
+						'goods_id' => $data['goods_id'],
+						'yx_name' => $v,
+						'yx_count' => 1,
+						));
+				}
+			}
+		}
+		
 	}
 
 	public function search ($goodsId, $pageSize = 5) {
