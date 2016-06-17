@@ -58,7 +58,8 @@
 				<div class="search_form">
 					<div class="form_left fl"></div>
 					<form action="" name="serarch" method="get" class="fl">
-						<input type="text" class="txt" value="请输入商品关键字" /><input type="submit" class="btn" value="搜索" />
+						<input type="text" name="key" id="key" class="txt" value="请输入商品关键字" />
+						<input type="button" class="btn" value="搜索" onclick="location.href='<?php echo U('Search/keySearch','',FALSE); ?>/key/'+$('#key').val()"" />
 					</form>
 					<div class="form_right fl"></div>
 				</div>
@@ -150,14 +151,14 @@
 					<!-- 循环输出三层分类数据 -->
 					<?php foreach ($catData as $k => $v): ?>
 						<div class="cat <?php if($k==0) echo 'item1'; ?>">
-							<h3><a href=""><?php echo $v['cat_name']; ?></a><b></b></h3>
+							<h3><a href="<?php echo U('Search/catSearch?catId='.$v['id'], '', FALSE); ?>"><?php echo $v['cat_name']; ?></a><b></b></h3>
 							<div class="cat_detail none">
 								<?php foreach ($v['children'] as $k1 => $v1): ?>
 									<dl <?php if($k1==0) echo 'class="dl_list"'; ?>>
-										<dt><a href=""><?php echo $v1['cat_name'];?></a></dt>
+										<dt><a href="<?php echo U('Search/catSearch?catId='.$v1['id'], '', FALSE); ?>"><?php echo $v1['cat_name'];?></a></dt>
 										<dd>
 											<?php foreach ($v1['children'] as $k2 => $v2): ?>
-												<a href=""><?php echo $v2['cat_name']; ?></a>
+												<a href="<?php echo U('Search/catSearch?catId='.$v2['id'], '', FALSE); ?>"><?php echo $v2['cat_name']; ?></a>
 											<?php endforeach; ?>
 										</dd>
 									</dl>

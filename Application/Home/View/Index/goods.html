@@ -24,6 +24,13 @@
 	})
 </script>
 
+<style type="text/css">
+	.reply_container{margin-top: 25px;}
+	.reply_container li{min-height: 70px;margin: 3px;background: #DAF1DA;padding: 5px}
+	.reply_container li p{margin-top: 10px;}
+	.reply_container img{float: right;}
+</style>
+
 <include file="Common/nav" />
 
 
@@ -404,6 +411,7 @@
 <include file="Common/help" />
 <!-- 记录浏览历史 -->
 <script type="text/javascript">
+	var is_login = 0;	//是否登录
 	<?php $config = C('IMAGE_CONFIG'); ?>
 	var viewPath = '<?php echo $config['viewPath']; ?>';
 	//记录浏览历史
@@ -467,7 +475,7 @@
 				} else {
 					//清空表单
 					form.trigger("reset");	//触发表单的reset事件
-					var html = '<div class="comment_items mt10 none"><div class="user_pic"><dl><dt><a href=""><img src="'+data.info.face+'" alt="" /></a></dt><dd><a href="">'+data.info.username+'</a></dd></dl></div><div class="item"><div class="title"><span>'+data.info.addtime+'</span><strong class="star star'+data.info.star+'"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 --></div><div class="comment_content">'+data.info.content+'</div><div class="btns"><a href="" class="reply">回复(0)</a><a href="" class="useful">有用(0)</a></div></div><div class="cornor"></div></div>';
+					var html = '<div class="comment_items mt10 none"><div class="user_pic"><dl><dt><a href=""><img src="'+data.info.face+'" alt="" /></a></dt><dd><a href="">'+data.info.username+'</a></dd></dl></div><div class="item"><div class="title"><span>'+data.info.addtime+'</span><strong class="star star'+data.info.star+'"></strong></div><div class="comment_content">'+data.info.content+'</div><div class="btns"><a href="javascript:void(0);" onclick="do_reply(this,'+data.info.id+');" class="reply">回复(0)</a><a href="" class="useful">有用(0)</a></div><div class="reply_form"></div><ul class="reply_container"></ul></div><div class="cornor"></div></div>';
 					//把整个评论的字符串转化成jq的对象
 					html = $(html);
 					//把拼好的评论放到页面中
@@ -510,6 +518,7 @@
 			url : "<?php echo U('Comment/ajaxGetComment?goodsId='.$info['id'],'',FALSE); ?>/p/"+page,
 			dataType : "json",
 			success : function(data){
+				is_login = data.memberId;	//把当前会员ID传给全局变量
 				//如果是第一页的评论那么服务器会返回好评率和印象
 				if (page == 1) {
 					//放好评率
@@ -539,7 +548,12 @@
 				//循环每个评论拼出HTML字符串放到页面中
 				var html = "";
 				$(data.data).each(function(k,v){
-					html += '<div class="comment_items mt10"><div class="user_pic"><dl><dt><a href=""><img src="'+v.face+'" alt="" /></a></dt><dd><a href="">'+v.username+'</a></dd></dl></div><div class="item"><div class="title"><span>'+v.addtime+'</span><strong class="star star'+v.star+'"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 --></div><div class="comment_content">'+v.content+'</div><div class="btns"><a href="" class="reply">回复(0)</a><a href="" class="useful">有用(0)</a></div></div><div class="cornor"></div></div>';
+					//拼每个评论的回复
+					var hfhtml = "";
+					$(v.reply).each(function(k1,v1){
+						hfhtml += '<li><img src="'+v1.face+'" width="50" />'+v1.username+'['+v1.addtime+']回复：<p>'+v1.content+'</p></li>'
+					});
+					html += '<div class="comment_items mt10"><div class="user_pic"><dl><dt><a href=""><img src="'+v.face+'" alt="" /></a></dt><dd><a href="">'+v.username+'</a></dd></dl></div><div class="item"><div class="title"><span>'+v.addtime+'</span><strong class="star star'+v.star+'"></strong></div><div class="comment_content">'+v.content+'</div><div class="btns"><a href="javascript:void(0);" onclick="do_reply(this, '+v.id+');" class="reply">回复('+v.reply_count+')</a><a href="" class="useful">有用('+v.click_count+')</a></div><div class="reply_form"></div><ul class="reply_container">'+hfhtml+'</ul></div><div class="cornor"></div></div>';
 					// html = $(html);
 					});
 				// console.log(html);
@@ -562,6 +576,52 @@
 
 				//放到缓存中
 				cache.push([page, html, pageString]);
+			}
+		});
+	}
+	//回复
+	function do_reply(btn,commentId) {
+		//先选中按钮所在的div
+		var div = $(btn).parent().next("div");
+		//在回复按钮的下面构造一个回复的表单
+		var replyForm = '<br /><hr style="clear:both;margin-top:15px;" /><form><input type="hidden" name="comment_id" value="'+commentId+'" /><textarea name="content" style="width:100%;" rows="6"></textarea><br /><br /><input type="button" onclick="post_reply(this);" value="回复" /> <input onclick="close_reply(this);" type="button" value="取消" /></form>';
+		//放到按钮后面
+		div.html(replyForm);
+		//判断有没有登录
+		if (is_login <= '0') {
+			$("#login_dialog").dialog("open");
+		}
+	}
+
+	//关闭回复按钮
+	function close_reply(btn) {
+		var div = $(btn).parent().parent();
+		div.html('');
+	}
+	//ajax提交回复
+	function post_reply(btn) {
+		var formData =  $(btn).parent().serialize();
+		$.ajax({
+			type : "POST",
+			url : "<?php echo U('Comment/reply'); ?>",
+			data : formData,
+			dataType : "json",
+			success : function(data){
+				if (data.status == 1) {
+					//把回复的内容显示在页面中！！
+					var html = '<li><img src="'+data.info.face+'" width="50" />'+data.info.username+' 【'+data.info.addtime+'】 回复：<p>'+data.info.content+'</p></li>';
+					$(btn).parent().parent().next("ul").append(html);
+					//把表单去掉
+					$(btn).parent().parent().html('');
+				} else {
+					//未登录就显示淡出窗口
+					if (data.info == '必须先登录！') {
+						//显示登录框
+						$("#login_dialog").dialog("open");
+					} else {
+						alert(data.info);
+					}
+				}
 			}
 		});
 	}
@@ -612,6 +672,7 @@
 						dataType : "json",
 						success : function(data){
 							if (data.status == 1) {
+								is_login = 1;
 								$("#login_dialog").dialog("close");
 							} else {
 								alert(data.info);

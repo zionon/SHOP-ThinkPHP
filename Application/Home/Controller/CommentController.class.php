@@ -33,8 +33,29 @@ class CommentController extends Controller{
 		$goodsId = I('get.goodsId');
 		$model = new \Admin\Model\CommentModel();
 		$data = $model->search($goodsId,5);
+		// dump($data);die();
 		echo json_encode($data);
 	}
+
+	//AJAX回复
+	public function reply() {
+		if (IS_POST) {
+			$model = D('Admin/CommentReply');
+			if ($model->create(I('post.'),1)) {
+				if ($model->add()) {
+					$this->success(array(
+						'face' => session('face'),
+						'username' => session('m_username'),
+						'addtime' => date('Y-m-d H:i:s'),
+						'content' => I('post.content'),
+						));
+				}
+			} else {
+				$this->error($model->getError());
+			}
+		}
+	}
+
 }
 
 
