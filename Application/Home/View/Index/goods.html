@@ -293,32 +293,26 @@
 					<div class="comment detail_div mt10">
 						<div class="comment_summary">
 							<div class="rate fl">
-								<strong><em>90</em>%</strong> <br />
+								<strong><em class="hao"></em>%</strong> <br />
 								<span>好评度</span>
 							</div>
 							<div class="percent fl">
 								<dl>
-									<dt>好评（90%）</dt>
-									<dd><div style="width:90px;"></div></dd>
+									<dt>好评（<span class="hao"></span>）%</dt>
+									<dd><div id="hao_width"></div></dd>
 								</dl>
 								<dl>
-									<dt>中评（5%）</dt>
-									<dd><div style="width:5px;"></div></dd>
+									<dt>中评（<span class="zhong"></span>）%</dt>
+									<dd><div id="zhong_width"></div></dd>
 								</dl>
 								<dl>
-									<dt>差评（5%）</dt>
-									<dd><div style="width:5px;" ></div></dd>
+									<dt>差评（<span class="cha"></span>）%</dt>
+									<dd><div id="cha_width" ></div></dd>
 								</dl>
 							</div>
 							<div class="buyer fl">
 								<dl>
 									<dt>买家印象：</dt>
-									<dd><span>屏幕大</span><em>(1953)</em></dd>
-									<dd><span>外观漂亮</span><em>(786)</em></dd>
-									<dd><span>系统流畅</span><em>(1091)</em></dd>
-									<dd><span>功能齐全</span><em>(1109)</em></dd>
-									<dd><span>反应快</span><em>(659)</em></dd>
-									<dd><span>分辨率高</span><em>(824)</em></dd>
 								</dl>
 							</div>
 						</div>
@@ -349,6 +343,10 @@
 									<li>
 										<label for="">评价内容：</label>
 										<textarea name="content" id="" cols="" rows=""></textarea>
+									</li>
+									<li id="mjyx">
+										<label for="">买家印象:</label>
+										<input type="text" name="yx_name" size="60" />多个印象用，号隔开
 									</li>
 									<li>
 										<label for="">&nbsp;</label>
@@ -512,6 +510,31 @@
 			url : "<?php echo U('Comment/ajaxGetComment?goodsId='.$info['id'],'',FALSE); ?>/p/"+page,
 			dataType : "json",
 			success : function(data){
+				//如果是第一页的评论那么服务器会返回好评率和印象
+				if (page == 1) {
+					//放好评率
+					$(".hao").html(data.hao);
+					$("#hao_width").css("width", data.hao+"px");
+
+					$(".zhong").html(data.zhong);
+					$("#zhong_width").css("width", data.zhong+"px");
+
+					$(".cha").html(data.cha);
+					$("#cha_width").css("width",data.cha+"px");
+
+					//循环印象的数据,1.拼成复选框2.拼成DD标签
+					var yxhtml = "";
+					var yxChkHtml = "";		//复选框
+					$(data.yxData).each(function(k,v){
+						yxhtml += '<dd><span>'+v.yx_name+'</span><em>('+v.yx_count+')</em></dd>';
+						yxChkHtml += '<input type="checkbox" name="yx_id[]" value="'+v.id+'" />'+v.yx_name+' ';
+					});
+					$(".buyer dl").append(yxhtml);
+					//把复选框放到买家印象前面
+					if (yxChkHtml !== "") {
+						$("#mjyx").before('<li><label for="">选择印象:</label>'+yxChkHtml+'</li>');
+					}
+				}
 				// console.log(data.data);
 				//循环每个评论拼出HTML字符串放到页面中
 				var html = "";
